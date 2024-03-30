@@ -47,15 +47,6 @@
             <img src="../../public/assets/img/qcu-image6-login.png" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="QCU Photograph by CSS">
           </div>
         </div>
-        <!-- Slider indicators -->
-        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-          <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="5"></button>
-        </div>
       </div>
     </div>
     <!-- Right side -->
@@ -79,7 +70,7 @@
                   <path fill-rule="evenodd" d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4h-4Z" clip-rule="evenodd" />
                 </svg>
               </span>
-              <input type="text" id="user" class="rounded-none rounded-e-md bg-ghost-white border text-deep-koamaru focus:ring-neon-blue focus:border-neon-blue block flex-1 min-w-0 w-full text-sm border-lavender p-2.5 placeholder-moody-blue" placeholder="Your username">
+              <input type="text" id="user" class="rounded-none rounded-e-md bg-ghost-white border text-deep-koamaru focus:ring-neon-blue focus:border-neon-blue block flex-1 min-w-0 w-full text-sm border-lavender p-2.5 placeholder-moody-blue transition ease-in-out duration-300" placeholder="Your username">
             </div>
             <!-- Password Input -->
             <label for="password" class="block text-sm font-medium text-deep-koamaru pt-3">Password</label>
@@ -89,31 +80,29 @@
                   <path fill-rule="evenodd" d="M8 10V7a4 4 0 1 1 8 0v3h1a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7c0-1.1.9-2 2-2h1Zm2-3a2 2 0 1 1 4 0v3h-4V7Zm2 6c.6 0 1 .4 1 1v3a1 1 0 1 1-2 0v-3c0-.6.4-1 1-1Z" clip-rule="evenodd" />
                 </svg>
               </span>
-              <input type="password" id="password" class="rounded-none rounded-e-md bg-ghost-white border text-deep-koamaru focus:ring-neon-blue focus:border-neon-blue block flex-1 min-w-0 w-full text-sm border-lavender p-2.5 placeholder-moody-blue" placeholder="Your password">
+              <input type="password" id="password" class="rounded-none rounded-e-md bg-ghost-white border text-deep-koamaru focus:ring-neon-blue focus:border-neon-blue block flex-1 min-w-0 w-full text-sm border-lavender p-2.5 placeholder-moody-blue transition ease-in-out duration-300" placeholder="Your password">
             </div>
             <!-- Show and Forgot Password container -->
             <div class="flex justify-between pb-4">
               <div class="flex items-start">
                 <div class="flex items-center h-5">
-                  <input id="remember" type="checkbox" onclick="togglePasswordVisibility()" value="" class="w-4 h-4 border border-lavender rounded bg-ghost-white focus:ring-3 focus:ring-neon-blue text-neon-blue cursor-pointer">
+                  <input id="remember" type="checkbox" onclick="togglePasswordVisibility()" value="" class="w-4 h-4 border border-lavender rounded bg-ghost-white focus:ring-3 focus:ring-neon-blue text-neon-blue cursor-pointer transition ease-in-out duration-300">
                 </div>
                 <label for="remember" class="ms-2 text-sm font-medium text-deep-koamaru">Show Password</label>
               </div>
               <a href="./forgot-password.php" data-popover-target="forgot-pass-popover" data-popover-placement="bottom" class="text-neon-blue hover:underline text-sm font-medium">Forgot Password?</a>
-              <!-- Optional kemeruts -->
-              <!-- <a href="#" class="ms-auto text-sm text-blue-700 hover:underline dark:text-blue-500">Lost Password?</a> -->
             </div>
             <!-- Error Message for validation -->
             <!-- <p class="text-sm text-red-600 dark:text-red-500"><span class="font-medium">Oh, snapp!</span> Some error message.</p> -->
             <!-- Login Button -->
-            <button type="submit" class="w-full text-white bg-neon-blue hover:bg-free-speech-blue focus:ring-4 focus:outline-none focus:ring-perano font-medium rounded-md text-sm px-5 py-2.5 text-center">Login</button>
+            <button type="submit" class="w-full text-white bg-neon-blue hover:bg-free-speech-blue focus:ring-4 focus:outline-none focus:ring-perano font-medium rounded-md text-sm px-5 py-2.5 text-center transition ease-in-out duration-300 hover:scale-105">Login</button>
             <!-- Popver for admin login link -->
-            <div data-popover id="forgot-pass-popover" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
-              <div class="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
-                <h3 class="font-semibold text-gray-900 dark:text-white">Forgot Password Page</h3>
+            <div data-popover id="forgot-pass-popover" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-quartz rounded-lg shadow-sm opacity-0">
+              <div class="px-3 py-2 bg-ghost-white border-b border-quartz rounded-t-lg">
+                <h3 class="font-semibold text-deep-koamaru">Forgot Password Page</h3>
               </div>
               <div class="px-3 py-2">
-                <p>Click this link and you'll be directed to the forgot password page.</p>
+                <p class="text-deep-koamaru">Click this link and you'll be directed to the forgot password page.</p>
               </div>
               <div data-popper-arrow></div>
             </div>
@@ -121,24 +110,6 @@
         </div>
         <!-- Footer -->
         <span id="year" class="block text-sm text-deep-koamaru sm:text-center mt-11"></span>
-        <!-- Popover for QCU Website footer -->
-        <div data-popover id="qcu-popover" role="tooltip" class="absolute z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 w-96 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600">
-          <div class="grid grid-cols-5">
-            <div class="col-span-3 p-3">
-              <div class="space-y-2">
-                <h3 class="font-semibold text-gray-900 dark:text-white">About Quezon City University</h3>
-                <p>Quezon City University, formerly known as Quezon City Polytechnic University, is a city government-funded university in Quezon City, Philippines. It was established on March 1, 1994, as the Quezon City Polytechnic, offering technical and vocational courses.</p>
-                <a href="https://qcu.edu.ph/" target="_blank" class="flex items-center font-medium text-blue-600 dark:text-blue-500 dark:hover:text-blue-600 hover:text-blue-700 hover:underline">Read more <svg class="w-2 h-2 ms-1.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
-                  </svg></a>
-              </div>
-            </div>
-            <img src="../../../public/assets/img/qcu-map-preview.png" class="h-full object-cover col-span-2" alt="QCU map" />
-            <!-- Nasisira responsiveness pag nag embed ng map omai -->
-            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15436.896375439417!2d121.0325339!3d14.6999155!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b0d899095555%3A0x523cb309be95e9a6!2sQuezon%20City%20University!5e0!3m2!1sen!2sph!4v1707633815719!5m2!1sen!2sph" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="h-full col-span-2" alt="QCU map"></iframe> -->
-          </div>
-          <div data-popper-arrow></div>
-        </div>
       </div>
     </div>
   </div>

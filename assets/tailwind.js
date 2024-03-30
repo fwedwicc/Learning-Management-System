@@ -12,6 +12,8 @@ tailwind.config = {
         'moody-blue': '#8383B8', // Placeholder
         'witty-blue': '#C1BCFF', // Icon in Input
         'ghost-lavender': '#E4E2FF', // Ghost Button
+        'quartz': '#D8D5FF', // Popover Border
+        
       }
     }
   }
