@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="../../assets/styles.css">
 </head>
 
-<body class="bg-ghost-white">
+<body class="bg-danger">
   <div class="flex-col flex items-center justify-center h-full">
     <div class="w-full max-w-sm p-4 bg-lav-sant border border-lavender-blue rounded-2xl drop-shadows sm:p-6 md:p-8">
       <!-- Form -->
