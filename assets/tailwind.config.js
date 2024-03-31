@@ -6,6 +6,7 @@ tailwind.config = {
         'corn-flower-blue': '#4E4C76', // Heading
         'deep-koamaru': '#36355C', // Paragraph
         'quartz': '#D8D5FF', // Popover Border
+        'lav-sant': '#EDEDFF', // Nav and Side Bar
         // Input
         'lavender': '#DFDFF9', // Input Outline
         'moody-blue': '#8383B8', // Placeholder
@@ -16,7 +17,7 @@ tailwind.config = {
         'perano': '#B4B0FF', // Primary Button Clicked Ring
         // Secondary Button
         'ghost-lavender': '#E4E2FF', // Ghost Button & Accordion Header
-        'lavender-blue': '#D2CFFF', // Ghost Button Hover & Accordion Header Outline
+        'lavender-blue': '#D2CFFF', // Ghost Button Hover & Accordion Header Outline & Nav and Side Bar Border
         'deep-lav-blue': '#C4BFFD', // Ghost Button Clicked Ring
         // Task Button
         'off-green': '#E1EEE3', // Task Button
