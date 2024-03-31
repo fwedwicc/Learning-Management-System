@@ -13,7 +13,8 @@ tailwind.config = {
         'witty-blue': '#C1BCFF', // Icon in Input
         'ghost-lavender': '#E4E2FF', // Ghost Button
         'quartz': '#D8D5FF', // Popover Border
-        
+        'lavender-blue': '#D2CFFF', // Ghost Button Hover
+        'deep-lav-blue': '#C4BFFD', // Ghost Button Clicked Ring
       }
     }
   }

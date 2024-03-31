@@ -126,8 +126,10 @@
       yearSpan.innerHTML = `© ${currentYear} <a href="https://qcu.edu.ph/" data-popover-target="qcu-popover" class="hover:underline" target="_blank">LMS</a>. All Rights Reserved.`;
     });
   </script>
+  <!-- Flowbite cdn -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
-  <script src="../../assets/tailwind.js"></script>
+  <!-- Tailwind colors -->
+  <script src="../../assets/tailwind.config.js"></script>
 </body>
 
 </html>
