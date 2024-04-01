@@ -66,11 +66,13 @@
       </div>
     </div>
   </div>
-
+  
   <!-- Flowbite cdn -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
   <!-- Tailwind colors -->
   <script src="../../assets/tailwind.config.js"></script>
+  <!-- Otp verification js -->
+  <script src="./otp-verification.js"></script>
 </body>
 
 </html>
