@@ -24,27 +24,27 @@
         <div class="relative h-full overflow-hidden">
           <!-- Picture 1 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="../../public/assets/img/qcu-image1-login.png" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="QCU Photograph by CSS">
+            <img src="" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
           </div>
           <!-- Picture 2 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="../../public/assets/img/qcu-image2-login.png" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="QCU Photograph by Joanah Marie Aldave">
+            <img src="" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
           </div>
           <!-- Picture 3 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="../../public/assets/img/qcu-image3-login.png" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="QCU Photograph by CSS">
+            <img src="" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
           </div>
           <!-- Picture 4 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="../../public/assets/img/qcu-image4-login.png" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="QCU Photograph by Joanah Marie Aldave">
+            <img src="" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
           </div>
           <!-- Picture 5 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="../../public/assets/img/qcu-image5-login.png" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="QCU Photograph by CSS">
+            <img src="" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
           </div>
           <!-- Picture 6 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="../../public/assets/img/qcu-image6-login.png" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="QCU Photograph by CSS">
+            <img src="" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Learning Management System | Login</title>
+  <title>Learning Management System | Forgot Password</title>
   <!-- Tailwind cdn -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Flowbite cdn -->
@@ -18,7 +18,7 @@
 <body class="bg-ghost-white">
   <div class="p-12 h-screen">
     <span class="inline-flex">
-      <img src="../../assets/images/LMS-logo.png" alt="Quezon City University Logo" class="h-9 w-auto mr-6">
+      <img src="../../assets/images/LMS-logo.png" alt="LMS Logo" class="h-9 w-auto mr-6">
       <h3 class="font-medium text-corn-flower-blue text-xl">Learning Management System</h3>
     </span>
     <div class="flex-col flex items-center justify-center h-full">
