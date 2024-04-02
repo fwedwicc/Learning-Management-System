@@ -18,8 +18,8 @@
 
 <body class="bg-ghost-white">
   <div class="p-12 h-screen">
-    <span class="inline-flex">
-    <img src="../../assets/images/LMS-logo.png" alt="LMS Logo" class="h-10 w-auto mr-6">
+    <span class="inline-flex items-center">
+      <img src="../../assets/images/LMS-logo.png" alt="LMS Logo" class="h-9 w-auto mr-6">
       <h3 class="font-medium text-deep-koamaru text-xl">Learning Management System</h3>
     </span>
 

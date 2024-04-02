@@ -9,7 +9,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
   <!-- Flowbite cdn -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
   <!-- Icon -->
   <link rel="icon" type="image/png" href="../../assets/images/LMS-logo.png" />
   <!-- Css link -->
@@ -52,8 +52,8 @@
     </div>
     <!-- Right side -->
     <div class="col-span-1 p-12">
-      <span class="inline-flex">
-        <img src="../../assets/images/LMS-logo.png" alt="LMS Logo" class="h-10 w-auto mr-6">
+      <span class="inline-flex items-center">
+        <img src="../../assets/images/LMS-logo.png" alt="LMS Logo" class="h-9 w-auto mr-6">
         <h3 class="font-medium text-deep-koamaru text-xl">Learning Management System</h3>
       </span>
       <!-- Greeting -->
@@ -128,7 +128,7 @@
     });
   </script>
   <!-- Flowbite cdn -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
   <!-- Tailwind colors -->
   <script src="../../assets/tailwind.config.js"></script>
 </body>
