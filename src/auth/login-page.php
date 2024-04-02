@@ -98,7 +98,7 @@
             <!-- Login Button -->
             <button type="submit" class="w-full text-white bg-neon-blue hover:bg-free-speech-blue focus:ring-4 focus:outline-none focus:ring-perano font-medium rounded-md text-sm px-5 py-2.5 text-center transition ease-in-out duration-300 hover:scale-105">Login</button>
             <!-- Popver for admin login link -->
-            <div data-popover id="forgot-pass-popover" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-quartz rounded-lg shadow-sm opacity-0">
+            <div data-popover id="forgot-pass-popover" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-deep-koamaru transition-opacity duration-300 bg-white border border-quartz rounded-lg shadow-sm opacity-0">
               <div class="px-3 py-2 bg-ghost-white border-b border-quartz rounded-t-lg">
                 <h3 class="font-semibold text-deep-koamaru">Forgot Password Page</h3>
               </div>
