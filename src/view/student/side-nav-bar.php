@@ -19,7 +19,7 @@
 <body class="bg-ghost-white">
   <!-- Top navigation -->
   <nav class="fixed top-0 z-50 w-full bg-lav-sant border-b border-lavender-blue">
-    <div class="px-3 py-3 lg:px-5 lg:pl-3">
+    <div class="px-3 py-4 lg:px-5 lg:pl-3">
       <div class="flex items-center justify-between">
         <div class="flex items-center justify-start rtl:justify-end">
           <!-- Sidebar responsive -->
