@@ -19,33 +19,28 @@
 <body class="bg-ghost-white">
   <div class="h-screen grid md:grid-cols-2">
     <!-- Left side -->
+    <!-- bg-gradient-to-t from-violet-50 to-violet-300 , alternative incase magkaproblem sa screen size  -->
     <div class="col-span-1 hidden md:block">
-      <div id="default-carousel" class="relative object-cover w-full h-full" data-carousel="slide">
+      <div id="default-carousel" class="relative w-full h-full" data-carousel="slide">
         <!-- Carousel wrapper -->
         <div class="relative h-full overflow-hidden">
-          <!-- Picture 1 -->
+          <!-- Comment this out for a gradient color background instead of this image -->
+          <img src="../../assets/images/illustration-background.png" class="object-cover w-full h-full block absolute" alt="Illustration Background">
+          <!-- Illustration 1 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+            <img src="../../assets/images/Group 94.png" class="absolute block pr-[8rem] w-[33rem] flex justify-center h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
           </div>
-          <!-- Picture 2 -->
+          <!-- Illustration 2 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+            <img src="../../assets/images/uedd.png" class="absolute block pr-[10rem] w-[46rem] pb-24 flex justify-center h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
           </div>
-          <!-- Picture 3 -->
+          <!-- Illustration 3 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+            <img src="../../assets/images/Group 96.png" class="absolute block pr-[13rem] w-[50rem] flex justify-center h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
           </div>
-          <!-- Picture 4 -->
+          <!-- Illustration 4 -->
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-          </div>
-          <!-- Picture 5 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
-          </div>
-          <!-- Picture 6 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="" class="absolute block object-cover w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+            <img src="../../assets/images/Group 96.png" class="absolute block pr-[13rem] w-[50rem] flex justify-center h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
           </div>
         </div>
       </div>
