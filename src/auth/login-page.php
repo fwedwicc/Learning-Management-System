@@ -27,20 +27,20 @@
           <!-- Comment this out for a gradient color background instead of this image -->
           <img src="../../assets/images/illustration-background.png" class="object-cover w-full h-full block absolute" alt="Illustration Background">
           <!-- Illustration 1 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="../../assets/images/Group 94.png" class="absolute block pr-[8rem] w-[33rem] flex justify-center h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+          <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+            <img src="../../assets/images/learn-illustration.png" class="absolute block pr-[8rem] w-[33rem] flex justify-center h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
           </div>
           <!-- Illustration 2 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="../../assets/images/uedd.png" class="absolute block pr-[10rem] w-[46rem] pb-24 flex justify-center h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+          <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+            <img src="../../assets/images/educate-illustration.png" class="absolute block pr-[10rem] w-[46rem] pb-24 flex justify-center h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
           </div>
           <!-- Illustration 3 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="../../assets/images/Group 96.png" class="absolute block pr-[13rem] w-[50rem] flex justify-center h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+          <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+            <img src="../../assets/images/organize-illustration.png" class="absolute block pr-[13rem] w-[50rem] flex justify-center h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
           </div>
           <!-- Illustration 4 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="../../assets/images/Group 96.png" class="absolute block pr-[13rem] w-[50rem] flex justify-center h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
+          <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+            <img src="../../assets/images/empower-illustration.png" class="absolute block pr-[10rem] w-[38rem] flex justify-center h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="">
           </div>
         </div>
       </div>
@@ -119,7 +119,7 @@
     document.addEventListener('DOMContentLoaded', function() {
       const yearSpan = document.getElementById('year');
       const currentYear = new Date().getFullYear();
-      yearSpan.innerHTML = `© ${currentYear} <a href="https://qcu.edu.ph/" data-popover-target="qcu-popover" class="hover:underline" target="_blank">LMS</a>. All Rights Reserved.`;
+      yearSpan.innerHTML = `© ${currentYear} <a href="https://qcu.edu.ph/" data-popover-target="qcu-popover" class="hover:underline text-neon-blue" target="_blank">LMS</a>. All Rights Reserved.`;
     });
   </script>
   <!-- Flowbite cdn -->
