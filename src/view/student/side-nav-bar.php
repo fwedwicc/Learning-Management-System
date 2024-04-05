@@ -148,7 +148,7 @@
         </div>
       </div>
   </nav>
-  <!-- Sidebar -->
+  <!-- Left Sidebar -->
   <aside id="logo-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full bg-lav-sant border-r border-lavender-blue sm:translate-x-0" aria-label="Sidebar">
     <div class="h-full px-3 pb-4 overflow-y-auto bg-lav-sant">
       <ul class="space-y-2 font-medium">
@@ -283,6 +283,41 @@
 
         </ul>
       </ul>
+    </div>
+  </aside>
+  <!-- Right Sidebar -->
+  <aside id="logo-sidebar" class="fixed top-0 right-0 z-40 w-72 h-screen pt-20 transition-transform -translate-x-full bg-ghost-white sm:translate-x-0 hidden sm:block" aria-label="Sidebar">
+    <div class="h-full pt-2 pb-7 gap-5 pl-1 pr-8 overflow-y-auto bg-ghost-white grid grid-rows-2">
+      <!-- Announcement card -->
+      <div class="block max-w-sm p-6 bg-white rounded-2xl drop-shadows row-span-1 overflow-y-auto space-y-4">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-corn-flower-blue">Announcements</h5>
+        <p class="font-normal text-deep-koamaru">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, dolores. Recusandae consequatur explicabo quibusdam dolore hic accusantium fuga tempore rerum.</p>
+      </div>
+      <!-- Todo card -->
+      <div class="block max-w-sm p-6 bg-white rounded-2xl drop-shadows row-span-1 overflow-y-auto">
+
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-corn-flower-blue">To-do</h5>
+        <ul class="max-w-md space-y-1 text-deep-koamaru list-inside">
+          <li class="flex items-center">
+            <svg class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+            </svg>
+            SE101 - Activity 1
+          </li>
+          <li class="flex items-center">
+            <svg class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+            </svg>
+            SE101 - Activity 2
+          </li>
+          <li class="flex items-center">
+            <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+            </svg>
+            IPT101 - Activit 1
+          </li>
+        </ul>
+      </div>
     </div>
   </aside>
   <script>
