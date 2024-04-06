@@ -120,12 +120,10 @@ include_once './view/student/side-nav-bar.php';
       </div>
       <!-- End Tiptap -->
 
-      <div inline-datepicker datepicker-highlight-today></div>
-
     </div>
   </div>
   <!-- WYSIWYG Script -->
-  <!-- <script type="module">
+  <script type="module">
     // Tiptap
     import {
       Editor
@@ -236,7 +234,7 @@ include_once './view/student/side-nav-bar.php';
 
       action.addEventListener('click', fn);
     });
-  </script> -->
+  </script>
 
   <script>
     window.onload = function() {

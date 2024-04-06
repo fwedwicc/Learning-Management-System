@@ -13,7 +13,7 @@
   <!-- Icon -->
   <link rel="icon" type="image/png" href="../../../assets/images/LMS-logo.png" />
   <!-- Css link -->
-  <link rel="stylesheet" href="../../../assets/style.css">
+  <link rel="stylesheet" href="../assets/style.css">
   <script src="https://jsuites.net/v4/jsuites.js"></script>
   <link rel="stylesheet" href="https://jsuites.net/v4/jsuites.css" type="text/css" />
   <style>
@@ -322,26 +322,26 @@
       <!-- Todo card -->
       <div class="block max-w-sm p-6 bg-white rounded-2xl drop-shadows row-span-2 overflow-y-auto">
 
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-corn-flower-blue">To-do</h5>
-        <div class="max-w-md space-y-1 text-deep-koamaru list-inside">
-          <a href="#" class="flex items-center">
-            <svg class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+        <h5 class="mb-3 text-2xl font-bold tracking-tight text-corn-flower-blue">To-Do</h5>
+        <div class="max-w-md space-y-2.5 text-deep-koamaru list-inside">
+          <a href="#" class="flex items-center bg-ghost-white px-4 py-2.5 rounded-lg flex justify-between hover:bg-ghost-lavender group transition duration-300 ease-in-out hover:text-neon-blue">
+            <span class="text-sm font-medium">SE101 - Lab Activity 1</span>
+            <svg class="w-4 h-4 text-deep-koamaru hover:text-neon-blue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7" />
             </svg>
-            SE101 - Activity 1
           </a>
-          <li class="flex items-center">
-            <svg class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+          <a href="#" class="flex items-center bg-ghost-white px-4 py-2.5 rounded-lg flex justify-between hover:bg-ghost-lavender group transition duration-300 ease-in-out hover:text-neon-blue">
+            <span class="text-sm font-medium">SE101 - Lab Activity 2</span>
+            <svg class="w-4 h-4 text-deep-koamaru hover:text-neon-blue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7" />
             </svg>
-            SE101 - Activity 2
-          </li>
-          <li class="flex items-center">
-            <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+          </a>
+          <a href="#" class="flex items-center bg-ghost-white px-4 py-2.5 rounded-lg flex justify-between hover:bg-ghost-lavender group transition duration-300 ease-in-out hover:text-neon-blue">
+            <span class="text-sm font-medium">IPT101 - Lab Activity 1</span>
+            <svg class="w-4 h-4 text-deep-koamaru hover:text-neon-blue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7" />
             </svg>
-            IPT101 - Activit 1
-          </li>
+          </a>
         </div>
       </div>
     </div>
