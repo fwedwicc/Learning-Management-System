@@ -13,7 +13,7 @@
   <!-- Icon -->
   <link rel="icon" type="image/png" href="../../../assets/images/LMS-logo.png" />
   <!-- Css link -->
-  <link rel="stylesheet" href="../../../assets/styles.css">
+  <link rel="stylesheet" href="../../../assets/style.css">
 </head>
 
 <body class="bg-ghost-white">
@@ -291,7 +291,7 @@
       <!-- Announcement card -->
       <div class="block max-w-sm p-6 bg-white rounded-2xl drop-shadows row-span-1 overflow-y-auto space-y-4">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-corn-flower-blue">Announcements</h5>
-        <p class="font-normal text-deep-koamaru">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, dolores. Recusandae consequatur explicabo quibusdam dolore hic accusantium fuga tempore rerum.</p>
+        <p class="font-normal text-deep-koamaru">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, dolores. Recusandae consequatur explicabo quibusdam dolore hic accusantium fuga tempore rerum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam pariatur voluptates velit, architecto quia obcaecati expedita esse ea enim rem laborum incidunt at consequatur blanditiis repudiandae! Itaque libero eum enim?</p>
       </div>
       <!-- Todo card -->
       <div class="block max-w-sm p-6 bg-white rounded-2xl drop-shadows row-span-1 overflow-y-auto">

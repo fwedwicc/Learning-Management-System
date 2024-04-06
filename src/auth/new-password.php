@@ -13,7 +13,7 @@
   <!-- Icon -->
   <link rel="icon" type="image/png" href="../../assets/images/LMS-logo.png" />
   <!-- Css link -->
-  <link rel="stylesheet" href="../../assets/styles.css">
+  <link rel="stylesheet" href="../../assets/style.css">
 </head>
 
 <body class="bg-ghost-white">
