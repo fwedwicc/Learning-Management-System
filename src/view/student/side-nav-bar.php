@@ -44,7 +44,7 @@
           </button>
           <!-- Dropdown menu ng notif bell-->
           <div id="dropdownNotification" class="z-20 hidden w-full max-w-sm bg-white divide-y divide-indigo-100 rounded-2xl drop-shadows" aria-labelledby="dropdownNotificationButton">
-            <div class="block px-4 py-2 font-medium text-center text-deep-koamaru rounded-t-lg bg-white">
+            <div class="block px-4 py-2 font-medium text-center text-deep-koamaru rounded-t-2xl bg-white">
               Notifications
             </div>
             <div class="divide-y divide-indigo-100">
@@ -109,7 +109,7 @@
                 </div>
               </a>
             </div>
-            <a href="#" class="block py-2 text-sm font-medium text-center text-deep-koamaru rounded-b-lg bg-white hover:bg-lav-sant hover:text-neon-blue transtion duration-300 ease-in-out">
+            <a href="#" class="block py-2 text-sm font-medium text-center text-deep-koamaru rounded-b-2xl bg-white hover:bg-lav-sant hover:text-neon-blue transtion duration-300 ease-in-out">
               <div class="inline-flex items-center hover:text-neon-blue">
                 <svg class="w-4 h-4 me-2 text-deep-koamaru hover:text-neon-blue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 14">
                   <path d="M10 0C4.612 0 0 5.336 0 7c0 1.742 3.546 7 10 7 6.454 0 10-5.258 10-7 0-1.664-4.612-7-10-7Zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z" />
@@ -297,13 +297,13 @@
       <div class="block max-w-sm p-6 bg-white rounded-2xl drop-shadows row-span-1 overflow-y-auto">
 
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-corn-flower-blue">To-do</h5>
-        <ul class="max-w-md space-y-1 text-deep-koamaru list-inside">
-          <li class="flex items-center">
+        <div class="max-w-md space-y-1 text-deep-koamaru list-inside">
+          <a href="#" class="flex items-center">
             <svg class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
               <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
             </svg>
             SE101 - Activity 1
-          </li>
+          </a>
           <li class="flex items-center">
             <svg class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
               <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
@@ -316,7 +316,7 @@
             </svg>
             IPT101 - Activit 1
           </li>
-        </ul>
+        </div>
       </div>
     </div>
   </aside>
