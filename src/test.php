@@ -120,11 +120,12 @@ include_once './view/student/side-nav-bar.php';
       </div>
       <!-- End Tiptap -->
 
+      <div inline-datepicker datepicker-highlight-today></div>
 
     </div>
   </div>
   <!-- WYSIWYG Script -->
-  <script type="module">
+  <!-- <script type="module">
     // Tiptap
     import {
       Editor
@@ -235,7 +236,24 @@ include_once './view/student/side-nav-bar.php';
 
       action.addEventListener('click', fn);
     });
+  </script> -->
+
+  <script>
+    window.onload = function() {
+      var datepicker = document.querySelector('[inline-datepicker]');
+      var today = new Date();
+      var day = String(today.getDate()).padStart(2, '0');
+      var month = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+      var year = today.getFullYear();
+
+      today = month + '/' + day + '/' + year;
+      datepicker.setAttribute('data-date', today);
+    }
   </script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js"></script>
   <!-- Flowbite cdn -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
   <!-- Tailwind colors -->
