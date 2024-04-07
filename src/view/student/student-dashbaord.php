@@ -35,14 +35,62 @@ include_once './side-nav-calendar.php';
       </div>
       <!--  Enrolled Course -->
       <h1 class="font-bold text-4xl pb-6 text-corn-flower-blue mt-8 mb-2">Enrolled Courses</h1>
-      <div class="grid grid-cols-2 gap-5">
-        <a href="#" class="block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue">
-          <h5 class="mb-3 text-2xl font-bold tracking-tight text-corn-flower-blue">To-Do</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et obcaecati eveniet ut iusto repellat ex culpa assumenda voluptatum, dolorem excepturi similique quisquam repellendus consectetur nostrum, placeat, cum asperiores odio.</p>
+      <div class="grid grid-cols-2 gap-5 mb-6">
+        <!-- Course Card -->
+        <a href="#" class="relative block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue">
+          <div class="relative">
+            <img src="../../../assets/images/course-card-illustration.png" class="rounded-xl" alt="">
+            <h5 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mb-3 text-4xl font-bold tracking-tight text-white">SE101</h5>
+          </div>
+          <h5 class="mt-7 text-2xl font-medium tracking-tight text-corn-flower-blue">Software Engineering</h5>
+          <span class="block">Mary Anne Manandeg</span>
+          <span class="block">SBIT-2B</span>
+          <!-- Semester Indicator -->
+          <span class="mt-4 inline-flex items-center bg-ghost-lavender text-neon-blue text-sm font-medium px-4 py-2 rounded-full">
+            2nd Semester
+          </span>
         </a>
-        <a href="#" class="block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue">
-          <h5 class="mb-3 text-2xl font-bold tracking-tight text-corn-flower-blue">To-Do</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et obcaecati eveniet ut iusto repellat ex culpa assumenda voluptatum, dolorem excepturi similique quisquam repellendus consectetur nostrum, placeat, cum asperiores odio.</p>
+        <!-- Course Card -->
+        <a href="#" class="relative block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue">
+          <div class="relative">
+            <img src="../../../assets/images/course-card-illustration.png" class="rounded-xl" alt="">
+            <h5 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mb-3 text-4xl font-bold tracking-tight text-white">IPT101</h5>
+          </div>
+          <h5 class="mt-7 text-2xl font-medium tracking-tight text-corn-flower-blue">Intergative Programming Technologies 1</h5>
+          <span class="block">Chrisitan Escoto</span>
+          <span class="block">SBIT-2B</span>
+          <!-- Semester Indicator -->
+          <span class="mt-4 inline-flex items-center bg-ghost-lavender text-neon-blue text-sm font-medium px-4 py-2 rounded-full">
+            2nd Semester
+          </span>
+        </a>
+        <!-- Course Card -->
+        <a href="#" class="relative block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue">
+          <div class="relative">
+            <img src="../../../assets/images/course-card-illustration.png" class="rounded-xl" alt="">
+            <h5 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mb-3 text-4xl font-bold tracking-tight text-white">IM101</h5>
+          </div>
+          <h5 class="mt-7 text-2xl font-medium tracking-tight text-corn-flower-blue">Advanced Database</h5>
+          <span class="block">Zharina Pascual</span>
+          <span class="block">SBIT-2B</span>
+          <!-- Semester Indicator -->
+          <span class="mt-4 inline-flex items-center bg-ghost-lavender text-neon-blue text-sm font-medium px-4 py-2 rounded-full">
+            2nd Semester
+          </span>
+        </a>
+        <!-- Course Card -->
+        <a href="#" class="relative block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue">
+          <div class="relative">
+            <img src="../../../assets/images/course-card-illustration.png" class="rounded-xl" alt="">
+            <h5 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mb-3 text-4xl font-bold tracking-tight text-white">MS101</h5>
+          </div>
+          <h5 class="mt-7 text-2xl font-medium tracking-tight text-corn-flower-blue">Quantitative Methods</h5>
+          <span class="block">Luisito Soriano</span>
+          <span class="block">SBIT-3G</span>
+          <!-- Semester Indicator -->
+          <span class="mt-4 inline-flex items-center bg-ghost-lavender text-neon-blue text-sm font-medium px-4 py-2 rounded-full">
+            2nd Semester
+          </span>
         </a>
       </div>
     </div>
