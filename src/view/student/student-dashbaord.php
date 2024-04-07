@@ -14,6 +14,8 @@
   <link rel="icon" type="image/png" href="../../../assets/images/LMS-logo.png" />
   <!-- Css link -->
   <link rel="stylesheet" href="../../../assets/style.css">
+  <!-- Jsuites Link -->
+  <link rel="stylesheet" href="https://jsuites.net/v4/jsuites.css" type="text/css" />
 </head>
 <!-- Student side/navigation bar -->
 <?php
@@ -35,11 +37,11 @@ include_once './side-nav-calendar.php';
       </div>
       <!--  Enrolled Course -->
       <h1 class="font-bold text-4xl pb-6 text-corn-flower-blue mt-8 mb-2">Enrolled Courses</h1>
-      <div class="grid grid-cols-2 gap-5 mb-6">
+      <div class="grid grid-cols-2 gap-5 mb-6" id='draggable-elements'>
         <!-- Course Card -->
         <a href="./student-course-overview.php" class="relative block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue">
           <div class="relative">
-            <img src="../../../assets/images/course-card-illustration.png" class="rounded-xl" alt="">
+            <img src="../../../assets/images/course-card-illustration.png" class="rounded-xl" alt="Course Card Illustration" draggable="false">
             <h5 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mb-3 text-4xl font-bold tracking-tight text-white">SE101</h5>
           </div>
           <h5 class="mt-7 text-2xl font-medium tracking-tight text-corn-flower-blue">Software Engineering</h5>
@@ -53,7 +55,7 @@ include_once './side-nav-calendar.php';
         <!-- Course Card -->
         <a href="#" class="relative block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue">
           <div class="relative">
-            <img src="../../../assets/images/course-card-illustration.png" class="rounded-xl" alt="">
+            <img src="../../../assets/images/course-card-illustration.png" class="rounded-xl" alt="Course Card Illustration" draggable="false">
             <h5 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mb-3 text-4xl font-bold tracking-tight text-white">IPT101</h5>
           </div>
           <h5 class="mt-7 text-2xl font-medium tracking-tight text-corn-flower-blue">Intergative Programming Technologies 1</h5>
@@ -67,7 +69,7 @@ include_once './side-nav-calendar.php';
         <!-- Course Card -->
         <a href="#" class="relative block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue">
           <div class="relative">
-            <img src="../../../assets/images/course-card-illustration.png" class="rounded-xl" alt="">
+            <img src="../../../assets/images/course-card-illustration.png" class="rounded-xl" alt="Course Card Illustration" draggable="false">
             <h5 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mb-3 text-4xl font-bold tracking-tight text-white">IM101</h5>
           </div>
           <h5 class="mt-7 text-2xl font-medium tracking-tight text-corn-flower-blue">Advanced Database</h5>
@@ -81,7 +83,7 @@ include_once './side-nav-calendar.php';
         <!-- Course Card -->
         <a href="#" class="relative block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue">
           <div class="relative">
-            <img src="../../../assets/images/course-card-illustration.png" class="rounded-xl" alt="">
+            <img src="../../../assets/images/course-card-illustration.png" class="rounded-xl" alt="Course Card Illustration" draggable="false">
             <h5 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mb-3 text-4xl font-bold tracking-tight text-white">MS101</h5>
           </div>
           <h5 class="mt-7 text-2xl font-medium tracking-tight text-corn-flower-blue">Quantitative Methods</h5>
@@ -95,7 +97,16 @@ include_once './side-nav-calendar.php';
       </div>
     </div>
   </div>
-
+  <!-- Jsuites Script -->
+  <script>
+    jSuites.sorting(document.getElementById('draggable-elements'), {
+      ondrop: function() {
+        console.log(arguments);
+      }
+    });
+  </script>
+  <!-- Jsuites CDN -->
+  <script src="https://jsuites.net/v4/jsuites.js"></script>
   <!-- Flowbite cdn -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
   <!-- Tailwind colors -->
