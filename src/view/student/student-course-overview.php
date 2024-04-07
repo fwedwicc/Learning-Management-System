@@ -21,7 +21,7 @@ include_once './side-nav-bar.php';
 ?>
 
 <body class="bg-ghost-white">
-  <div class="p-4 sm:ml-64 sm:mr-72">
+  <div class="p-4 sm:ml-64 sm:mr-[21rem]">
     <div class="pt-4 pl-4 rounded-2xl border-purple-blue mt-14">
       <h1 class="font-bold text-4xl pb-6 text-corn-flower-blue">Software Engineering</h1>
       <div id="accordion-color" data-accordion="collapse" data-active-classes="bg-ghost-lavender dark:text-neon-blue">
