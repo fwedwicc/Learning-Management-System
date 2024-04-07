@@ -154,7 +154,7 @@
       <ul class="space-y-2 font-medium">
         <li>
           <!-- Link -->
-          <a href="#" class="flex items-center p-3 text-corn-flower-blue rounded-lg hover:bg-ghost-lavender group transition duration-300 ease-in-out hover:text-neon-blue">
+          <a href="./student-dashbaord.php" class="flex items-center p-3 text-corn-flower-blue rounded-lg hover:bg-ghost-lavender group transition duration-300 ease-in-out hover:text-neon-blue">
             <svg class="w-5 h-5 text-corn-flower-blue group-hover:text-neon-blue transition duration-300 ease-in-out" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
               <path fill-rule="evenodd" d="M4.857 3A1.857 1.857 0 0 0 3 4.857v4.286C3 10.169 3.831 11 4.857 11h4.286A1.857 1.857 0 0 0 11 9.143V4.857A1.857 1.857 0 0 0 9.143 3H4.857Zm10 0A1.857 1.857 0 0 0 13 4.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 21 9.143V4.857A1.857 1.857 0 0 0 19.143 3h-4.286Zm-10 10A1.857 1.857 0 0 0 3 14.857v4.286C3 20.169 3.831 21 4.857 21h4.286A1.857 1.857 0 0 0 11 19.143v-4.286A1.857 1.857 0 0 0 9.143 13H4.857Zm10 0A1.857 1.857 0 0 0 13 14.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 21 19.143v-4.286A1.857 1.857 0 0 0 19.143 13h-4.286Z" clip-rule="evenodd" />
             </svg>
@@ -173,9 +173,9 @@
         </button>
         <ul id="dropdown-programs" class="hidden py-2 space-y-2">
           <li>
-            <a href="#" data-popover-target="first-subject" data-popover-placement="right" type="button" class="flex items-center w-full p-2 text-corn-flower-blue transition duration-300 ease-in-out rounded-lg pl-11 group hover:bg-ghost-lavender hover:text-neon-blue">SE101</a>
+            <a href="./student-course-overview.php" data-popover-target="first-subject" data-popover-placement="right" type="button" class="flex items-center w-full p-2 text-corn-flower-blue transition duration-300 ease-in-out rounded-lg pl-11 group hover:bg-ghost-lavender hover:text-neon-blue">SE101</a>
             <!-- Course overview popover -->
-            <div data-popover id="first-subject" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-deep-koamaru transition-opacity duration-300 bg-white border border-quartz rounded-lg shadow-sm opacity-0">
+            <!-- <div data-popover id="first-subject" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-deep-koamaru transition-opacity duration-300 bg-white border border-quartz rounded-lg shadow-sm opacity-0">
               <div class="px-3 py-2 bg-ghost-white border-b border-quartz rounded-t-lg">
                 <h3 class="font-bold text-deep-koamaru">Title: Software Engineering</h3>
               </div>
@@ -197,12 +197,12 @@
                   </svg></a>
               </div>
               <div data-popper-arrow></div>
-            </div>
+            </div> -->
           </li>
           <li>
             <a href="#" data-popover-target="second-subject" data-popover-placement="right" type="button" class="flex items-center w-full p-2 text-corn-flower-blue transition duration-300 ease-in-out rounded-lg pl-11 group hover:bg-ghost-lavender hover:text-neon-blue">IPT101</a>
             <!-- Course overview popover -->
-            <div data-popover id="second-subject" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-deep-koamaru transition-opacity duration-300 bg-white border border-quartz rounded-lg shadow-sm opacity-0">
+            <!-- <div data-popover id="second-subject" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-deep-koamaru transition-opacity duration-300 bg-white border border-quartz rounded-lg shadow-sm opacity-0">
               <div class="px-3 py-2 bg-ghost-white border-b border-quartz rounded-t-lg">
                 <h3 class="font-bold text-deep-koamaru">Title: Integrative Programming and Technologies 1</h3>
               </div>
@@ -224,12 +224,12 @@
                   </svg></a>
               </div>
               <div data-popper-arrow></div>
-            </div>
+            </div> -->
           </li>
           <li>
             <a href="#" data-popover-target="third-subject" data-popover-placement="right" type="button" class="flex items-center w-full p-2 text-corn-flower-blue transition duration-300 ease-in-out rounded-lg pl-11 group hover:bg-ghost-lavender hover:text-neon-blue">IM101</a>
             <!-- Course overview popover -->
-            <div data-popover id="third-subject" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-deep-koamaru transition-opacity duration-300 bg-white border border-quartz rounded-lg shadow-sm opacity-0">
+            <!-- <div data-popover id="third-subject" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-deep-koamaru transition-opacity duration-300 bg-white border border-quartz rounded-lg shadow-sm opacity-0">
               <div class="px-3 py-2 bg-ghost-white border-b border-quartz rounded-t-lg">
                 <h3 class="font-bold text-deep-koamaru">Title: Advance Database Systems</h3>
               </div>
@@ -251,12 +251,12 @@
                   </svg></a>
               </div>
               <div data-popper-arrow></div>
-            </div>
+            </div> -->
           </li>
           <li>
             <a href="#" data-popover-target="fourth-subject" data-popover-placement="right" type="button" class="flex items-center w-full p-2 text-corn-flower-blue transition duration-300 ease-in-out rounded-lg pl-11 group hover:bg-ghost-lavender hover:text-neon-blue">MS102</a>
             <!-- Course overview popover -->
-            <div data-popover id="fourth-subject" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-deep-koamaru transition-opacity duration-300 bg-white border border-quartz rounded-lg shadow-sm opacity-0">
+            <!-- <div data-popover id="fourth-subject" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-deep-koamaru transition-opacity duration-300 bg-white border border-quartz rounded-lg shadow-sm opacity-0">
               <div class="px-3 py-2 bg-ghost-white border-b border-quartz rounded-t-lg">
                 <h3 class="font-bold text-deep-koamaru">Title: Quantitative Methods</h3>
               </div>
@@ -278,7 +278,7 @@
                   </svg></a>
               </div>
               <div data-popper-arrow></div>
-            </div>
+            </div> -->
           </li>
 
         </ul>

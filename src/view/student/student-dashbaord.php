@@ -23,7 +23,6 @@ include_once './side-nav-calendar.php';
 <body class="bg-ghost-white">
   <div class="p-4 sm:ml-64 sm:mr-[22rem]">
     <div class="pt-4 pl-4 mt-14">
-      <h1 class="font-bold text-4xl pb-6 text-corn-flower-blue">Dashboard</h1>
       <!-- General Announcement Container -->
       <div class="block rounded-2xl border border-purple-blue overflow-y-auto space-y-4">
         <span class="border-purple-blue border-b border-solid block bg-ghost-lavender flex items-center py-4 pl-7 gap-2.5">
@@ -33,6 +32,18 @@ include_once './side-nav-calendar.php';
           <h5 class="text-xl font-medium text-corn-flower-blue">General Announcements</h5>
         </span>
         <p class="font-normal text-deep-koamaru px-8 pt-1 pb-8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, dolores. Recusandae consequatur explicabo quibusdam dolore hic accusantium fuga tempore rerum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam pariatur voluptates velit, architecto quia obcaecati expedita esse ea enim rem laborum incidunt at consequatur blanditiis repudiandae! Itaque libero eum enim?</p>
+      </div>
+      <!--  Enrolled Course -->
+      <h1 class="font-bold text-4xl pb-6 text-corn-flower-blue mt-8 mb-2">Enrolled Courses</h1>
+      <div class="grid grid-cols-2 gap-5">
+        <a href="#" class="block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue">
+          <h5 class="mb-3 text-2xl font-bold tracking-tight text-corn-flower-blue">To-Do</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et obcaecati eveniet ut iusto repellat ex culpa assumenda voluptatum, dolorem excepturi similique quisquam repellendus consectetur nostrum, placeat, cum asperiores odio.</p>
+        </a>
+        <a href="#" class="block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue">
+          <h5 class="mb-3 text-2xl font-bold tracking-tight text-corn-flower-blue">To-Do</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero et obcaecati eveniet ut iusto repellat ex culpa assumenda voluptatum, dolorem excepturi similique quisquam repellendus consectetur nostrum, placeat, cum asperiores odio.</p>
+        </a>
       </div>
     </div>
   </div>
