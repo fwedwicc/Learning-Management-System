@@ -41,7 +41,7 @@ include_once './view/student/side-nav-bar.php';
 <body class="bg-ghost-white">
   <div class="p-4 sm:ml-64 sm:mr-72">
     <div class="pt-4 pl-4 rounded-2xl border-purple-blue mt-14">
-      <h1 class="font-bold text-4xl pb-6 text-corn-flower-blue">Text Editor Trial</h1>
+      <h1 class="font-bold text-4xl pb-6 text-corn-flower-blue">WYSIWYG Editor Trial</h1>
       <!-- Tiptap -->
       <div class="border border-purple-blue rounded-xl overflow-hidden">
         <div id="hs-editor-tiptap">

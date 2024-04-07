@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Learning Management System | Student Layout</title>
+  <title>Learning Management System | Student Dashboard Layout</title>
   <!-- Tailwind cdn -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
@@ -14,6 +14,33 @@
   <link rel="icon" type="image/png" href="../../../assets/images/LMS-logo.png" />
   <!-- Css link -->
   <link rel="stylesheet" href="../../../assets/style.css">
+  <script src="https://jsuites.net/v4/jsuites.js"></script>
+  <link rel="stylesheet" href="https://jsuites.net/v4/jsuites.css" type="text/css" />
+  <style>
+    .jcalendar-selected {
+      background-color: #4F46E5 !important;
+      border-radius: 0.5rem;
+      color: #ffffff;
+    }
+
+    .jcalendar-weekday {
+      color: #4F46E5;
+      font-weight: 700px;
+    }
+
+    .jcalendar-header {
+      color: #4F46E5;
+    }
+
+    .jcalendar-content {
+      font-size: 15px;
+    }
+
+    .jcalendar-table {
+      padding: 0;
+      height: 0px;
+    }
+  </style>
 </head>
 
 <body class="bg-ghost-white">
@@ -286,17 +313,16 @@
     </div>
   </aside>
   <!-- Right Sidebar -->
-  <aside id="logo-sidebar" class="fixed top-0 right-0 z-40 w-72 h-screen pt-20 transition-transform -translate-x-full bg-ghost-white sm:translate-x-0 hidden sm:block" aria-label="Sidebar">
-    <div class="h-full pt-2 pb-7 gap-5 pl-1 pr-8 overflow-y-auto bg-ghost-white grid grid-rows-2">
+  <aside id="logo-sidebar" class="fixed top-0 right-0 z-40 w-[22rem] h-screen pt-20 transition-transform -translate-x-full bg-ghost-white sm:translate-x-0 hidden sm:block" aria-label="Sidebar">
+    <div class="h-full pt-2 pb-7 gap-5 pl-1 pr-8 overflow-y-auto bg-ghost-white grid grid-rows-5">
       <!-- Announcement card -->
-      <div class="block max-w-sm p-8 bg-white rounded-2xl drop-shadows row-span-1 overflow-y-auto space-y-4">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-corn-flower-blue">Announcements</h5>
-        <p class="font-normal text-deep-koamaru">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, dolores. Recusandae consequatur explicabo quibusdam dolore hic accusantium fuga tempore rerum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam pariatur voluptates velit, architecto quia obcaecati expedita esse ea enim rem laborum incidunt at consequatur blanditiis repudiandae! Itaque libero eum enim?</p>
+      <div class="block max-w-sm p-7 bg-white rounded-2xl drop-shadows row-span-3 overflow-y-auto">
+        <div id='calendar'></div>
       </div>
       <!-- Todo card -->
-      <div class="block max-w-sm p-6 bg-white rounded-2xl drop-shadows row-span-1 overflow-y-auto">
+      <div class="block max-w-sm p-6 bg-white rounded-2xl drop-shadows row-span-2 overflow-y-auto">
 
-        <h5 class="mb-4 text-2xl font-bold tracking-tight text-corn-flower-blue">To-do</h5>
+        <h5 class="mb-3 text-2xl font-bold tracking-tight text-corn-flower-blue">To-Do</h5>
         <div class="max-w-md space-y-2.5 text-deep-koamaru list-inside">
           <a href="#" class="flex items-center bg-ghost-white px-4 py-2.5 rounded-lg flex justify-between hover:bg-ghost-lavender group transition duration-300 ease-in-out hover:text-neon-blue">
             <span class="text-sm font-medium">SE101 - Lab Activity 1</span>
@@ -349,6 +375,14 @@
           localStorage.setItem(dropdownId, isDropdownOpen.toString());
         });
       });
+    });
+
+    // Create a new calendar
+    jSuites.calendar(document.getElementById('calendar'), {
+      format: 'YYYY-MM-DD',
+      onupdate: function(a, b) {
+        document.getElementById('calendar-value').innerText = b;
+      }
     });
   </script>
   <!-- Flowbite cdn -->
