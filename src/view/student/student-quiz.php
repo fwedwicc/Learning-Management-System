@@ -28,7 +28,7 @@ include_once './side-nav-bar.php';
         <!-- Back Button -->
         <a href="./student-course-overview.php" type="button" class="inline-flex gap-1.5 items-center justify-center text-neon-blue focus:outline-none hover:bg-ghost-lavender focus:ring-4 focus:ring-deep-lav-blue font-medium rounded-md text-sm pl-5 pr-3 py-2.5 transition ease-in-out duration-300 hover:scale-105 cursor-pointer">
           Back
-          <svg class="w-4 h-4 text-neon-blue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <svg class="w-4 h-4 text-neon-blue mt-[0.2rem]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7" />
           </svg>
         </a>
@@ -38,7 +38,7 @@ include_once './side-nav-bar.php';
         <div class="space-y-6 flex flex-col justify-center w-full max-w-[28rem] p-4 bg-white rounded-2xl drop-shadows sm:p-6 md:p-8">
           <!-- Illustration -->
           <div class="flex flex-col justify-center items-center gap-4">
-            <img src="../../../assets/images/quiz-illustration.png" class="w-[8rem] h-auto" alt="Quiz Illustration">
+            <img src="../../../assets/images/quiz-illustration.png" class="w-[10rem] h-auto" alt="Quiz Illustration">
             <h5 class="text-2xl font-bold text-corn-flower-blue">Quiz 1</h5>
           </div>
           <!-- Instructions -->
@@ -52,7 +52,7 @@ include_once './side-nav-bar.php';
                 <span class="font-medium">Items:</span> ...
               </li> -->
               <li>
-                <span class="font-medium">Time to Complete:</span> Complete it within 30 minutes of starting.
+                <span class="font-medium">Time:</span> Complete it within 30 minutes of starting.
               </li>
               <li>
                 <span class="font-medium">Due Date:</span> Due by 11:59 PM on April 30, 2024
