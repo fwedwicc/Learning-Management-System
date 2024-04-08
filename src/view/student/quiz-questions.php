@@ -24,17 +24,17 @@ include_once './side-nav-bar.php';
   <div class="p-4 sm:ml-64">
     <div class="pt-4 px-5 rounded-2xl mt-14">
       <h1 class="font-bold text-4xl text-corn-flower-blue">Software Engineering</h1>
-      <div class="flex items-center justify-between pt-12 px-10">
-        <h1 class="font-bold text-3xl text-corn-flower-blue">Quiz 1</h1>
-        <!-- Timer -->
-        <div class="inline-flex gap-2 items-center justify-center text-neon-blue border border-neon-blue bg-lav-sant font-medium rounded-md text-sm px-4 py-2.5">
-          <svg class="w-5 h-5 text-neon-blue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-          </svg>
-          <span>5:00</span>
+      <div class="flex flex-col items-center gap-8 mt-8 mb-12 pt-12 px-10">
+        <div class="flex items-center justify-between w-full">
+          <h1 class="font-bold text-3xl text-corn-flower-blue">Quiz 1</h1>
+          <!-- Timer -->
+          <div class="inline-flex gap-2 items-center justify-center text-neon-blue border border-neon-blue bg-lav-sant font-medium rounded-md text-sm px-4 py-2.5">
+            <svg class="w-5 h-5 text-neon-blue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+            <span>5:00</span>
+          </div>
         </div>
-      </div>
-      <div class="flex flex-col items-center gap-8 mt-12 mb-12">
         <!-- Quiz Container -->
         <div class="space-y-6 w-full max-w-[70rem] p-4 bg-white rounded-2xl drop-shadows sm:p-6 md:p-8">
           <!-- Question 1 -->
