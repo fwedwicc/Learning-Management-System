@@ -26,50 +26,188 @@ include_once './side-nav-bar.php';
       <h1 class="font-bold text-4xl pb-6 text-corn-flower-blue">Software Engineering</h1>
       <div class="flex flex-col items-center gap-8 mt-12 mb-12">
         <!-- Quiz Container -->
-        <div class="space-y-6  w-full max-w-[70rem] p-4 bg-white rounded-2xl drop-shadows sm:p-6 md:p-8">
+        <div class="space-y-6 w-full max-w-[70rem] p-4 bg-white rounded-2xl drop-shadows sm:p-6 md:p-8">
+          <!-- Question 1 -->
           <span class="mt-4 items-center bg-ghost-lavender text-neon-blue text-sm font-medium px-4 py-2 rounded-lg">
             Question # 1
           </span>
-          <!-- Question -->
-          <h3 class="mb-5 text-lg font-medium text-corn-flower-blue">How much do you expect to use each month?</h3>
-          <ul class="grid w-full gap-4 md:grid-cols-2">
-            <!-- Answers/Radio Buttons -->
-            <li>
-              <input type="radio" id="answer-1" name="answers" value="answer-1" class="hidden peer" required />
-              <label for="answer-1" class="inline-flex items-center justify-between w-full p-5 text-deep-koamaru bg-white border border-quartz rounded-lg cursor-pointer peer-checked:border-neon-blue peer-checked:bg-ghost-white peer-checked:text-neon-blue peer-checked:border-2 hover:text-neon-blue hover:bg-ghost-white transition duration-300 ease-in-out">
-                <div class="w-full">Good for small websites</div>
+          <h3 class="mb-5 text-lg font-medium text-corn-flower-blue">What is the difference between a software library and a framework?</h3>
+          <!-- Answers/Radio Buttons for Question 5 -->
+          <ul class="grid w-full gap-4 md:grid-cols-2 flex flex-col">
+            <li class="flex">
+              <input type="radio" id="answer-1-1" name="answers5" value="answer-1-1" class="hidden peer" required />
+              <label for="answer-1-1" class="inline-flex items-center justify-between w-full p-5 text-deep-koamaru bg-white border border-quartz rounded-lg cursor-pointer peer-checked:border-neon-blue peer-checked:bg-ghost-white peer-checked:text-neon-blue peer-checked:border-2 hover:text-neon-blue hover:bg-ghost-white transition duration-300 ease-in-out">
+                <div class="w-full">A library is a set of functions that you can call, whereas a framework is a system where you define the flow of control</div>
               </label>
             </li>
-            <li>
-              <input type="radio" id="answer-2" name="answers" value="answer-2" class="hidden peer" required />
-              <label for="answer-2" class="inline-flex items-center justify-between w-full p-5 text-deep-koamaru bg-white border border-quartz rounded-lg cursor-pointer peer-checked:border-neon-blue peer-checked:bg-ghost-white peer-checked:text-neon-blue peer-checked:border-2 hover:text-neon-blue hover:bg-ghost-white transition duration-300 ease-in-out">
-                <div class="w-full">Good for small websites</div>
+            <li class="flex">
+              <input type="radio" id="answer-1-2" name="answers5" value="answer-1-2" class="hidden peer" required />
+              <label for="answer-1-2" class="inline-flex items-center justify-between w-full p-5 text-deep-koamaru bg-white border border-quartz rounded-lg cursor-pointer peer-checked:border-neon-blue peer-checked:bg-ghost-white peer-checked:text-neon-blue peer-checked:border-2 hover:text-neon-blue hover:bg-ghost-white transition duration-300 ease-in-out">
+                <div class="w-full">A library provides specific functionalities that can be directly used in your code, while a framework dictates the overall structure and design of your application</div>
               </label>
             </li>
-            <li>
-              <input type="radio" id="answer-3" name="answers" value="answer-3" class="hidden peer" required />
-              <label for="answer-3" class="inline-flex items-center justify-between w-full p-5 text-deep-koamaru bg-white border border-quartz rounded-lg cursor-pointer peer-checked:border-neon-blue peer-checked:bg-ghost-white peer-checked:text-neon-blue peer-checked:border-2 hover:text-neon-blue hover:bg-ghost-white transition duration-300 ease-in-out">
-                <div class="w-full">Good for small websites</div>
+            <li class="flex">
+              <input type="radio" id="answer-1-3" name="answers5" value="answer-1-3" class="hidden peer" required />
+              <label for="answer-1-3" class="inline-flex items-center justify-between w-full p-5 text-deep-koamaru bg-white border border-quartz rounded-lg cursor-pointer peer-checked:border-neon-blue peer-checked:bg-ghost-white peer-checked:text-neon-blue peer-checked:border-2 hover:text-neon-blue hover:bg-ghost-white transition duration-300 ease-in-out">
+                <div class="w-full">A library is a collection of reusable code modules that you can incorporate into your own programs, while a framework is a comprehensive architecture that dictates the structure and flow of your application</div>
               </label>
             </li>
-            <li>
-              <input type="radio" id="answer-4" name="answers" value="answer-4" class="hidden peer" required />
-              <label for="answer-4" class="inline-flex items-center justify-between w-full p-5 text-deep-koamaru bg-white border border-quartz rounded-lg cursor-pointer peer-checked:border-neon-blue peer-checked:bg-ghost-white peer-checked:text-neon-blue peer-checked:border-2 hover:text-neon-blue hover:bg-ghost-white transition duration-300 ease-in-out">
-                <div class="w-full">Good for small websites</div>
+            <li class="flex">
+              <input type="radio" id="answer-1-4" name="answers5" value="answer-1-4" class="hidden peer" required />
+              <label for="answer-1-4" class="inline-flex items-center justify-between w-full p-5 text-deep-koamaru bg-white border border-quartz rounded-lg cursor-pointer peer-checked:border-neon-blue peer-checked:bg-ghost-white peer-checked:text-neon-blue peer-checked:border-2 hover:text-neon-blue hover:bg-ghost-white transition duration-300 ease-in-out">
+                <div class="w-full">A library offers specific functionalities that can be utilized in your projects, while a framework provides a complete structure and set of rules for developing applications</div>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <!-- Quiz Container -->
+        <div class="space-y-6 w-full max-w-[70rem] p-4 bg-white rounded-2xl drop-shadows sm:p-6 md:p-8">
+          <!-- Question 2 -->
+          <span class="mt-4 items-center bg-ghost-lavender text-neon-blue text-sm font-medium px-4 py-2 rounded-lg">
+            Question # 2
+          </span>
+          <h3 class="mb-5 text-lg font-medium text-corn-flower-blue">What is the primary purpose of software testing?</h3>
+          <!-- Answers/Radio Buttons for Question 2 -->
+          <ul class="grid w-full gap-4 md:grid-cols-2 flex flex-col">
+            <li class="flex">
+              <input type="radio" id="answer-2-1" name="answers2" value="answer-2-1" class="hidden peer" required />
+              <label for="answer-2-1" class="inline-flex items-center justify-between w-full p-5 text-deep-koamaru bg-white border border-quartz rounded-lg cursor-pointer peer-checked:border-neon-blue peer-checked:bg-ghost-white peer-checked:text-neon-blue peer-checked:border-2 hover:text-neon-blue hover:bg-ghost-white transition duration-300 ease-in-out">
+                <div class="w-full">To find and fix all bugs</div>
+              </label>
+            </li>
+            <li class="flex">
+              <input type="radio" id="answer-2-2" name="answers2" value="answer-2-2" class="hidden peer" required />
+              <label for="answer-2-2" class="inline-flex items-center justify-between w-full p-5 text-deep-koamaru bg-white border border-quartz rounded-lg cursor-pointer peer-checked:border-neon-blue peer-checked:bg-ghost-white peer-checked:text-neon-blue peer-checked:border-2 hover:text-neon-blue hover:bg-ghost-white transition duration-300 ease-in-out">
+                <div class="w-full">To ensure the software meets requirements and specifications</div>
+              </label>
+            </li>
+            <li class="flex">
+              <input type="radio" id="answer-2-3" name="answers2" value="answer-2-3" class="hidden peer" required />
+              <label for="answer-2-3" class="inline-flex items-center justify-between w-full p-5 text-deep-koamaru bg-white border border-quartz rounded-lg cursor-pointer peer-checked:border-neon-blue peer-checked:bg-ghost-white peer-checked:text-neon-blue peer-checked:border-2 hover:text-neon-blue hover:bg-ghost-white transition duration-300 ease-in-out">
+                <div class="w-full">To evaluate the software's functionality and performance</div>
+              </label>
+            </li>
+            <li class="flex">
+              <input type="radio" id="answer-2-4" name="answers2" value="answer-2-4" class="hidden peer" required />
+              <label for="answer-2-4" class="inline-flex items-center justify-between w-full p-5 text-deep-koamaru bg-white border border-quartz rounded-lg cursor-pointer peer-checked:border-neon-blue peer-checked:bg-ghost-white peer-checked:text-neon-blue peer-checked:border-2 hover:text-neon-blue hover:bg-ghost-white transition duration-300 ease-in-out">
+                <div class="w-full">To enhance the software's reliability and stability</div>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <!-- Quiz Container -->
+        <div class="space-y-6 w-full max-w-[70rem] p-4 bg-white rounded-2xl drop-shadows sm:p-6 md:p-8">
+          <!-- Question 3 -->
+          <span class="mt-4 items-center bg-ghost-lavender text-neon-blue text-sm font-medium px-4 py-2 rounded-lg">
+            Question # 3
+          </span>
+          <h3 class="mb-5 text-lg font-medium text-corn-flower-blue">What is a software development life cycle (SDLC)?</h3>
+          <!-- Answers/Radio Buttons for Question 3 -->
+          <ul class="grid w-full gap-4 md:grid-cols-2 flex flex-col">
+            <li class="flex">
+              <input type="radio" id="answer-3-1" name="answers3" value="answer-3-1" class="hidden peer" required />
+              <label for="answer-3-1" class="inline-flex items-center justify-between w-full p-5 text-deep-koamaru bg-white border border-quartz rounded-lg cursor-pointer peer-checked:border-neon-blue peer-checked:bg-ghost-white peer-checked:text-neon-blue peer-checked:border-2 hover:text-neon-blue hover:bg-ghost-white transition duration-300 ease-in-out">
+                <div class="w-full">A process of creating software</div>
+              </label>
+            </li>
+            <li class="flex">
+              <input type="radio" id="answer-3-2" name="answers3" value="answer-3-2" class="hidden peer" required />
+              <label for="answer-3-2" class="inline-flex items-center justify-between w-full p-5 text-deep-koamaru bg-white border border-quartz rounded-lg cursor-pointer peer-checked:border-neon-blue peer-checked:bg-ghost-white peer-checked:text-neon-blue peer-checked:border-2 hover:text-neon-blue hover:bg-ghost-white transition duration-300 ease-in-out">
+                <div class="w-full">A framework that defines tasks performed at each phase of software development</div>
+              </label>
+            </li>
+            <li class="flex">
+              <input type="radio" id="answer-3-3" name="answers3" value="answer-3-3" class="hidden peer" required />
+              <label for="answer-3-3" class="inline-flex items-center justify-between w-full p-5 text-deep-koamaru bg-white border border-quartz rounded-lg cursor-pointer peer-checked:border-neon-blue peer-checked:bg-ghost-white peer-checked:text-neon-blue peer-checked:border-2 hover:text-neon-blue hover:bg-ghost-white transition duration-300 ease-in-out">
+                <div class="w-full">A systematic approach to software development, encompassing planning, design, development, testing, deployment, and maintenance</div>
+              </label>
+            </li>
+            <li class="flex">
+              <input type="radio" id="answer-3-4" name="answers3" value="answer-3-4" class="hidden peer" required />
+              <label for="answer-3-4" class="inline-flex items-center justify-between w-full p-5 text-deep-koamaru bg-white border border-quartz rounded-lg cursor-pointer peer-checked:border-neon-blue peer-checked:bg-ghost-white peer-checked:text-neon-blue peer-checked:border-2 hover:text-neon-blue hover:bg-ghost-white transition duration-300 ease-in-out">
+                <div class="w-full">A set of methodologies for project management and software development</div>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <!-- Quiz Container -->
+        <div class="space-y-6 w-full max-w-[70rem] p-4 bg-white rounded-2xl drop-shadows sm:p-6 md:p-8">
+          <!-- Question 4 -->
+          <span class="mt-4 items-center bg-ghost-lavender text-neon-blue text-sm font-medium px-4 py-2 rounded-lg">
+            Question # 4
+          </span>
+          <h3 class="mb-5 text-lg font-medium text-corn-flower-blue">What is Agile methodology?</h3>
+          <!-- Answers/Radio Buttons for Question 4 -->
+          <ul class="grid w-full gap-4 md:grid-cols-2 flex flex-col">
+            <li class="flex">
+              <input type="radio" id="answer-4-1" name="answers4" value="answer-4-1" class="hidden peer" required />
+              <label for="answer-4-1" class="inline-flex items-center justify-between w-full p-5 text-deep-koamaru bg-white border border-quartz rounded-lg cursor-pointer peer-checked:border-neon-blue peer-checked:bg-ghost-white peer-checked:text-neon-blue peer-checked:border-2 hover:text-neon-blue hover:bg-ghost-white transition duration-300 ease-in-out">
+                <div class="w-full">A software development approach that promotes flexibility and customer satisfaction</div>
+              </label>
+            </li>
+            <li class="flex">
+              <input type="radio" id="answer-4-2" name="answers4" value="answer-4-2" class="hidden peer" required />
+              <label for="answer-4-2" class="inline-flex items-center justify-between w-full p-5 text-deep-koamaru bg-white border border-quartz rounded-lg cursor-pointer peer-checked:border-neon-blue peer-checked:bg-ghost-white peer-checked:text-neon-blue peer-checked:border-2 hover:text-neon-blue hover:bg-ghost-white transition duration-300 ease-in-out">
+                <div class="w-full">An iterative and incremental software development methodology</div>
+              </label>
+            </li>
+            <li class="flex">
+              <input type="radio" id="answer-4-3" name="answers4" value="answer-4-3" class="hidden peer" required />
+              <label for="answer-4-3" class="inline-flex items-center justify-between w-full p-5 text-deep-koamaru bg-white border border-quartz rounded-lg cursor-pointer peer-checked:border-neon-blue peer-checked:bg-ghost-white peer-checked:text-neon-blue peer-checked:border-2 hover:text-neon-blue hover:bg-ghost-white transition duration-300 ease-in-out">
+                <div class="w-full">Focuses on delivering working software frequently, with a preference for face-to-face communication</div>
+              </label>
+            </li>
+            <li class="flex">
+              <input type="radio" id="answer-4-4" name="answers4" value="answer-4-4" class="hidden peer" required />
+              <label for="answer-4-4" class="inline-flex items-center justify-between w-full p-5 text-deep-koamaru bg-white border border-quartz rounded-lg cursor-pointer peer-checked:border-neon-blue peer-checked:bg-ghost-white peer-checked:text-neon-blue peer-checked:border-2 hover:text-neon-blue hover:bg-ghost-white transition duration-300 ease-in-out">
+                <div class="w-full">Based on principles outlined in the Agile Manifesto</div>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <!-- Quiz Container -->
+        <div class="space-y-6 w-full max-w-[70rem] p-4 bg-white rounded-2xl drop-shadows sm:p-6 md:p-8">
+          <!-- Question 5 -->
+          <span class="mt-4 items-center bg-ghost-lavender text-neon-blue text-sm font-medium px-4 py-2 rounded-lg">
+            Question # 5
+          </span>
+          <h3 class="mb-5 text-lg font-medium text-corn-flower-blue">What is object-oriented programming (OOP)?</h3>
+          <!-- Answers/Radio Buttons for Question 6 -->
+          <ul class="grid w-full gap-4 md:grid-cols-2 flex flex-col">
+            <li class="flex">
+              <input type="radio" id="answer-5-1" name="answers6" value="answer-5-1" class="hidden peer" required />
+              <label for="answer-5-1" class="inline-flex items-center justify-between w-full p-5 text-deep-koamaru bg-white border border-quartz rounded-lg cursor-pointer peer-checked:border-neon-blue peer-checked:bg-ghost-white peer-checked:text-neon-blue peer-checked:border-2 hover:text-neon-blue hover:bg-ghost-white transition duration-300 ease-in-out">
+                <div class="w-full">OOP is a programming paradigm that uses objects and classes to design applications and software</div>
+              </label>
+            </li>
+            <li class="flex">
+              <input type="radio" id="answer-5-2" name="answers6" value="answer-5-2" class="hidden peer" required />
+              <label for="answer-5-2" class="inline-flex items-center justify-between w-full p-5 text-deep-koamaru bg-white border border-quartz rounded-lg cursor-pointer peer-checked:border-neon-blue peer-checked:bg-ghost-white peer-checked:text-neon-blue peer-checked:border-2 hover:text-neon-blue hover:bg-ghost-white transition duration-300 ease-in-out">
+                <div class="w-full">OOP is centered around the concept of objects, which encapsulate data and behavior, promoting code reusability and modularity</div>
+              </label>
+            </li>
+            <li class="flex">
+              <input type="radio" id="answer-5-3" name="answers6" value="answer-5-3" class="hidden peer" required />
+              <label for="answer-5-3" class="inline-flex items-center justify-between w-full p-5 text-deep-koamaru bg-white border border-quartz rounded-lg cursor-pointer peer-checked:border-neon-blue peer-checked:bg-ghost-white peer-checked:text-neon-blue peer-checked:border-2 hover:text-neon-blue hover:bg-ghost-white transition duration-300 ease-in-out">
+                <div class="w-full">OOP allows for the organization of code into reusable components, promoting easier maintenance and scalability of software systems</div>
+              </label>
+            </li>
+            <li class="flex">
+              <input type="radio" id="answer-5-4" name="answers6" value="answer-5-4" class="hidden peer" required />
+              <label for="answer-5-4" class="inline-flex items-center justify-between w-full p-5 text-deep-koamaru bg-white border border-quartz rounded-lg cursor-pointer peer-checked:border-neon-blue peer-checked:bg-ghost-white peer-checked:text-neon-blue peer-checked:border-2 hover:text-neon-blue hover:bg-ghost-white transition duration-300 ease-in-out">
+                <div class="w-full">OOP enables the modeling of real-world entities and relationships in software development, fostering a more intuitive and organized approach to programming</div>
               </label>
             </li>
           </ul>
         </div>
         
-
-
+      </div>
     </div>
-  </div>
 
-  <!-- Flowbite cdn -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-  <!-- Tailwind colors -->
-  <script src="../../../assets/tailwind.config.js"></script>
+    <!-- Flowbite cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <!-- Tailwind colors -->
+    <script src="../../../assets/tailwind.config.js"></script>
 </body>
 
 </html>
