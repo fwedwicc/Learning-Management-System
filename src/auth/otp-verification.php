@@ -33,27 +33,27 @@
           <div class="flex pb-6 space-x-2 rtl:space-x-reverse">
             <div>
               <label for="code-1" class="sr-only">First code</label>
-              <input type="text" maxlength="1" data-focus-input-init data-focus-input-next="code-2" id="code-1" class="block w-full h-auto py-3 text-sm bg-ghost-white border border-lavender text-corn-flower-blue font-extrabold text-center text-gray-900 rounded-lg focus:ring-neon-blue focus:border-neon-blue" required />
+              <input type="text" maxlength="1" data-focus-input-init data-focus-input-next="code-2" id="code-1" class="block w-full h-auto py-3 text-sm bg-ghost-white border border-lavender text-corn-flower-blue font-extrabold text-center text-deep-koamaru rounded-lg focus:ring-neon-blue focus:border-neon-blue transition duration-300 ease-in-out" required />
             </div>
             <div>
               <label for="code-2" class="sr-only">Second code</label>
-              <input type="text" maxlength="1" data-focus-input-init data-focus-input-prev="code-1" data-focus-input-next="code-3" id="code-2" class="block w-full h-auto py-3 text-sm bg-ghost-white border border-lavender text-corn-flower-blue font-extrabold text-center text-gray-900 rounded-lg focus:ring-neon-blue focus:border-neon-blue" required />
+              <input type="text" maxlength="1" data-focus-input-init data-focus-input-prev="code-1" data-focus-input-next="code-3" id="code-2" class="block w-full h-auto py-3 text-sm bg-ghost-white border border-lavender text-corn-flower-blue font-extrabold text-center text-deep-koamaru rounded-lg focus:ring-neon-blue focus:border-neon-blue transition duration-300 ease-in-out" required />
             </div>
             <div>
               <label for="code-3" class="sr-only">Third code</label>
-              <input type="text" maxlength="1" data-focus-input-init data-focus-input-prev="code-2" data-focus-input-next="code-4" id="code-3" class="block w-full h-auto py-3 text-sm bg-ghost-white border border-lavender text-corn-flower-blue font-extrabold text-center text-gray-900 rounded-lg focus:ring-neon-blue focus:border-neon-blue" required />
+              <input type="text" maxlength="1" data-focus-input-init data-focus-input-prev="code-2" data-focus-input-next="code-4" id="code-3" class="block w-full h-auto py-3 text-sm bg-ghost-white border border-lavender text-corn-flower-blue font-extrabold text-center text-deep-koamaru rounded-lg focus:ring-neon-blue focus:border-neon-blue transition duration-300 ease-in-out" required />
             </div>
             <div>
               <label for="code-4" class="sr-only">Fourth code</label>
-              <input type="text" maxlength="1" data-focus-input-init data-focus-input-prev="code-3" data-focus-input-next="code-5" id="code-4" class="block w-full h-auto py-3 text-sm bg-ghost-white border border-lavender text-corn-flower-blue font-extrabold text-center text-gray-900 rounded-lg focus:ring-neon-blue focus:border-neon-blue" required />
+              <input type="text" maxlength="1" data-focus-input-init data-focus-input-prev="code-3" data-focus-input-next="code-5" id="code-4" class="block w-full h-auto py-3 text-sm bg-ghost-white border border-lavender text-corn-flower-blue font-extrabold text-center text-deep-koamaru rounded-lg focus:ring-neon-blue focus:border-neon-blue transition duration-300 ease-in-out" required />
             </div>
             <div>
               <label for="code-5" class="sr-only">Fifth code</label>
-              <input type="text" maxlength="1" data-focus-input-init data-focus-input-prev="code-4" data-focus-input-next="code-6" id="code-5" class="block w-full h-auto py-3 text-sm bg-ghost-white border border-lavender text-corn-flower-blue font-extrabold text-center text-gray-900 rounded-lg focus:ring-neon-blue focus:border-neon-blue" required />
+              <input type="text" maxlength="1" data-focus-input-init data-focus-input-prev="code-4" data-focus-input-next="code-6" id="code-5" class="block w-full h-auto py-3 text-sm bg-ghost-white border border-lavender text-corn-flower-blue font-extrabold text-center text-deep-koamaru rounded-lg focus:ring-neon-blue focus:border-neon-blue transition duration-300 ease-in-out" required />
             </div>
             <div>
               <label for="code-6" class="sr-only">Sixth code</label>
-              <input type="text" maxlength="1" data-focus-input-init data-focus-input-prev="code-5" id="code-6" class="block w-full h-auto py-3 text-sm bg-ghost-white border border-lavender text-corn-flower-blue font-extrabold text-center text-gray-900 rounded-lg focus:ring-neon-blue focus:border-neon-blue" required />
+              <input type="text" maxlength="1" data-focus-input-init data-focus-input-prev="code-5" id="code-6" class="block w-full h-auto py-3 text-sm bg-ghost-white border border-lavender text-corn-flower-blue font-extrabold text-center text-deep-koamaru rounded-lg focus:ring-neon-blue focus:border-neon-blue transition duration-300 ease-in-out" required />
             </div>
           </div>
           <!-- Error Message for validation -->
