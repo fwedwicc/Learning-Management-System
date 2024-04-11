@@ -24,7 +24,7 @@ include_once './side-nav-bar.php';
   <div class="p-4 sm:ml-64">
     <div class="pt-4 px-5 rounded-2xl mt-14">
       <h1 class="font-bold text-4xl text-corn-flower-blue">Software Engineering</h1>
-      <div class="flex flex-col items-center gap-8 mt-8 mb-12 pt-12 px-10">
+      <div class="flex flex-col items-center gap-8 mt-8 mb-12 pt-8 px-10">
         <div class="flex items-center justify-between w-full">
           <h1 class="font-bold text-3xl text-corn-flower-blue">Quiz 1</h1>
           <!-- Timer -->
