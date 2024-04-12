@@ -57,8 +57,6 @@ include_once './side-nav-bar.php';
             <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Change email address tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
           </div>
         </div>
-        <!-- Submit Button -->
-        <button class="w-[10rem] text-white bg-neon-blue hover:bg-free-speech-blue focus:ring-4 focus:outline-none focus:ring-perano font-medium rounded-md text-sm px-5 py-2.5 text-center transition ease-in-out duration-300 hover:scale-105 mt-8">Save Changes</button>
       </div>
     </div>
   </div>

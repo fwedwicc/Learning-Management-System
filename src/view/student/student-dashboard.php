@@ -26,7 +26,7 @@
 
     .jcalendar-weekday {
       color: #4F46E5;
-      font-weight: 700px;
+      font-weight: bold;
     }
 
     .jcalendar-header {
@@ -34,7 +34,8 @@
     }
 
     .jcalendar-content {
-      font-size: 15px;
+      font-size: 14px;
+      font-weight: 400;
     }
 
     .jcalendar-table {
@@ -125,17 +126,15 @@ include_once './side-nav-bar.php';
   </div>
   <!-- Right Sidebar -->
   <aside id="logo-sidebar" class="fixed top-0 right-0 z-40 w-[22rem] h-screen pt-20 transition-transform -translate-x-full bg-ghost-white sm:translate-x-0 hidden sm:block" aria-label="Sidebar">
-    <div class="h-full pt-2 pb-7 gap-5 pl-1 pr-8 overflow-y-auto bg-ghost-white grid grid-rows-5">
+    <div class="h-full pt-2 pb-7 gap-5 pl-1 pr-8 overflow-y-auto bg-ghost-white grid grid-rows-2">
       <!-- Calendar card -->
-      <div class="block max-w-sm p-7 bg-white rounded-2xl drop-shadows row-span-3 overflow-y-auto">
+      <div class="block max-w-sm px-5 pt-3 bg-white rounded-2xl drop-shadows row-span-1 md:overflow-y-hidden">
         <div id='calendar'></div>
       </div>
       <!-- Todo card -->
-      <div class="row-span-2">
-        <?php
-        include 'todo-card.php';
-        ?>
-      </div>
+      <?php
+      include 'todo-card.php';
+      ?>
     </div>
   </aside>
   <!-- Jsuites Script -->
