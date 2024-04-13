@@ -39,7 +39,9 @@ include_once './side-nav-bar.php';
             <span class="font-medium">Number of Attempts:</span> You have only 1 attempt for this quiz.
           </li>
         </ul>
-        <a href="">SE101-Activity-1.pdf</a>
+        <a href="" id="pdfLink">SE101-Activity-1.pdf</a>
+        <!-- <iframe class="pdf w-full h-full py-8 px-[5rem] rounded-2xl" id="learning-material" src="../../../assets/learning-materials/sample-learning-material.pdf">
+        </iframe> -->
       </div>
     </div>
   </div>
@@ -150,6 +152,12 @@ include_once './side-nav-bar.php';
         submitButton.classList.remove('text-witty-blue', 'cursor-not-allowed');
       }
     });
+
+    // PDF Viewer
+    document.getElementById('pdfLink').onclick = function() {
+      var win = window.open();
+      win.document.write('<iframe src="../../../assets/learning-materials/sample-learning-material.pdf" frameborder="0" style="width: 100%; height: 100%;" allowfullscreen></iframe>');
+    };
   </script>
   <!-- Flowbite cdn -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
