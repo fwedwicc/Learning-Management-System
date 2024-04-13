@@ -68,7 +68,7 @@ include_once './side-nav-bar.php';
         <!-- Course Card -->
         <a href="./student-course-overview.php" class="relative block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue">
           <div class="relative">
-            <img src="../../../assets/images/course-card-illustration.png" class="rounded-xl" alt="Course Card Illustration" draggable="false">
+            <img src="../../../assets/images/course-card-illustration.png" class="rounded-xl w-full" alt="Course Card Illustration" draggable="false">
             <h5 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mb-3 text-4xl font-bold tracking-tight text-white">SE101</h5>
           </div>
           <h5 class="mt-7 text-2xl font-medium tracking-tight text-corn-flower-blue">Software Engineering</h5>
@@ -82,7 +82,7 @@ include_once './side-nav-bar.php';
         <!-- Course Card -->
         <a href="#" class="relative block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue">
           <div class="relative">
-            <img src="../../../assets/images/course-card-illustration.png" class="rounded-xl" alt="Course Card Illustration" draggable="false">
+            <img src="../../../assets/images/course-card-illustration.png" class="rounded-xl w-full" alt="Course Card Illustration" draggable="false">
             <h5 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mb-3 text-4xl font-bold tracking-tight text-white">IPT101</h5>
           </div>
           <h5 class="mt-7 text-2xl font-medium tracking-tight text-corn-flower-blue">Intergative Programming Technologies 1</h5>
@@ -96,7 +96,7 @@ include_once './side-nav-bar.php';
         <!-- Course Card -->
         <a href="#" class="relative block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue">
           <div class="relative">
-            <img src="../../../assets/images/course-card-illustration.png" class="rounded-xl" alt="Course Card Illustration" draggable="false">
+            <img src="../../../assets/images/course-card-illustration.png" class="rounded-xl w-full" alt="Course Card Illustration" draggable="false">
             <h5 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mb-3 text-4xl font-bold tracking-tight text-white">IM101</h5>
           </div>
           <h5 class="mt-7 text-2xl font-medium tracking-tight text-corn-flower-blue">Advanced Database</h5>
@@ -110,7 +110,7 @@ include_once './side-nav-bar.php';
         <!-- Course Card -->
         <a href="#" class="relative block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue">
           <div class="relative">
-            <img src="../../../assets/images/course-card-illustration.png" class="rounded-xl" alt="Course Card Illustration" draggable="false">
+            <img src="../../../assets/images/course-card-illustration.png" class="rounded-xl w-full" alt="Course Card Illustration" draggable="false">
             <h5 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mb-3 text-4xl font-bold tracking-tight text-white">MS101</h5>
           </div>
           <h5 class="mt-7 text-2xl font-medium tracking-tight text-corn-flower-blue">Quantitative Methods</h5>
