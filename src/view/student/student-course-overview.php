@@ -137,7 +137,7 @@ include_once './side-nav-bar.php';
                 <h3 class="text-lg font-semibold text-deep-koamaru">Assessment and Tasks</h3>
                 <ul class="list-none pt-4 text-gray-500 dark:text-gray-400 space-y-3">
                   <li>
-                    <a href="#" class="w-full px-3 py-2 text-sm font-medium text-center inline-flex items-center text-camarone border border-camarone hover:bg-granny-apple focus:ring-4 focus:outline-none focus:ring-chinook rounded-lg transition duration-300 ease-in-out bg-off-green">
+                    <a href="./student-activity.php" class="w-full px-3 py-2 text-sm font-medium text-center inline-flex items-center text-camarone border border-camarone hover:bg-granny-apple focus:ring-4 focus:outline-none focus:ring-chinook rounded-lg transition duration-300 ease-in-out bg-off-green">
                       <svg class="w-3 h-3 me-2 text-camarone" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 4h3c.6 0 1 .4 1 1v15c0 .6-.4 1-1 1H6a1 1 0 0 1-1-1V5c0-.6.4-1 1-1h3m0 3h6m-6 5h6m-6 4h6M10 3v4h4V3h-4Z" />
                       </svg>

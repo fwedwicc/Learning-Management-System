@@ -20,11 +20,12 @@
 include_once './side-nav-bar.php';
 ?>
 
+
 <body class="bg-ghost-white">
   <div class="p-4 sm:ml-64 sm:mr-[22rem]">
     <div class="pt-4 pl-4 mt-14">
       <!-- Course/Activity Title -->
-      <h1 class="font-bold text-4xl pb-6 text-corn-flower-blue mb-2">Software Engineering | Activity 1</h1>
+      <h1 class="font-bold text-4xl pb-6 text-corn-flower-blue mb-2">Software Engineering | Laboratory Activity 1</h1>
       <!-- Instructions -->
       <div class="bg-lav-sant pt-6 pb-8 px-8 rounded-2xl">
         <h2 class="text-lg font-medium text-deep-koamaru mb-3">Instructions:</h2>
@@ -39,9 +40,12 @@ include_once './side-nav-bar.php';
             <span class="font-medium">Number of Attempts:</span> You have only 1 attempt for this quiz.
           </li>
         </ul>
-        <a href="" id="pdfLink">SE101-Activity-1.pdf</a>
-        <!-- <iframe class="pdf w-full h-full py-8 px-[5rem] rounded-2xl" id="learning-material" src="../../../assets/learning-materials/sample-learning-material.pdf">
-        </iframe> -->
+        <a href="../../../assets/learning-materials/sample-learning-material.pdf" class="inline-flex gap-1 items-center justify-center px-4 py-2 bg-neon-blue text-white font-medium flex items-center cursor-pointer transition ease-in-out duration-300 hover:scale-105 rounded-md hover:bg-free-speech-blue focus:ring-4 focus:outline-none focus:ring-perano" target="_blank">
+          SE101-Lab-Activity#1
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ml-2 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+          </svg>
+        </a>
       </div>
     </div>
   </div>
@@ -152,12 +156,6 @@ include_once './side-nav-bar.php';
         submitButton.classList.remove('text-witty-blue', 'cursor-not-allowed');
       }
     });
-
-    // PDF Viewer
-    document.getElementById('pdfLink').onclick = function() {
-      var win = window.open();
-      win.document.write('<iframe src="../../../assets/learning-materials/sample-learning-material.pdf" frameborder="0" style="width: 100%; height: 100%;" allowfullscreen></iframe>');
-    };
   </script>
   <!-- Flowbite cdn -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
