@@ -51,7 +51,7 @@ include_once './side-nav-bar.php';
       </div>
       <!-- Drag and drop file -->
       <section class="section-container">
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center mb-4">
           <div class="mt-6 py-3 rounded-lg w-full">
             <h3 class="text-corn-flower-blue text-2xl font-medium text-center">
               Upload your work here
@@ -59,8 +59,8 @@ include_once './side-nav-bar.php';
             <!-- Documents uploads form and instructions -->
             <section class="mt-5 flex gap-6">
               <div class="flex-1 flex flex-col items-center p-3 border-4 bg-lav-sant border-dashed border-lavender-blue rounded-lg drag-area">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-16 h-16 text-corn-flower-blue mt-3">
-                  <path fill-rule="evenodd" d="M10.5 3.75a6 6 0 0 0-5.98 6.496A5.25 5.25 0 0 0 6.75 20.25H18a4.5 4.5 0 0 0 2.206-8.423 3.75 3.75 0 0 0-4.133-4.303A6.001 6.001 0 0 0 10.5 3.75Zm2.03 5.47a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 1 0 1.06 1.06l1.72-1.72v4.94a.75.75 0 0 0 1.5 0v-4.94l1.72 1.72a.75.75 0 1 0 1.06-1.06l-3-3Z" clip-rule="evenodd" />
+                <svg class="w-16 h-16 text-corn-flower-blue mt-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h3a3 3 0 0 0 0-6h-.025a5.56 5.56 0 0 0 .025-.5A5.5 5.5 0 0 0 7.207 9.021C7.137 9.017 7.071 9 7 9a4 4 0 1 0 0 8h2.167M12 19v-9m0 0-2 2m2-2 2 2" />
                 </svg>
                 <header class="mt-1 text-deep-koamaru">
                   <span class="drag-file">Drag files here </span> or
@@ -69,14 +69,14 @@ include_once './side-nav-bar.php';
                   </button>
                 </header>
                 <p class="mt-8 text-slate-400 text-sm">
-                  JPG, DOCX, PNG or PDF only, maximum file size-5MB
+                  JPG, DOCX, PNG or PDF only, maximum file size-25MB
                 </p>
                 <input type="file" class="file-input" hidden />
               </div>
             </section>
             <!-- Images groups - All the selected images will be shown here -->
             <p class="text-red-700 text-sm hidden" id="filesize-error">
-              The file size should be less than 5mb
+              The file size should be less than 25mb
             </p>
             <p class="text-red-700 text-sm hidden" id="filetype-error">
               The file should be an image or pdf only
@@ -373,10 +373,10 @@ include_once './side-nav-bar.php';
         let filesizeErrorMessage = document.getElementById("filesize-error");
         let filetypeErrorMessage = document.getElementById("filetype-error");
 
-        /* This is checking the file size. If the file size is greater than 5mb, it will show an error
+        /* This is checking the file size. If the file size is greater than 25mb, it will show an error
           message. */
         let sizeInMB = Number.parseFloat(fileSize / (1024 * 1024)).toFixed(2);
-        if (sizeInMB > 5) {
+        if (sizeInMB > 25) {
           filesizeErrorMessage.classList.remove("hidden");
           filetypeErrorMessage.classList.add("hidden");
         } else {
