@@ -399,15 +399,15 @@ include_once './side-nav-bar.php';
 
             /* Setting the html markup of the new element and setting the file name, file size, and file type. */
             newDocument.innerHTML = `
-  <p class="whitespace-nowrap overflow-hidden text-ellipsis w-40"><i class="fa-solid text-xl mr-5 ${fileTypeLogo(
-    fileType
-  )}"></i> 
-  <span>${fileName}<span></p>
-  <p>${fileType}</p>
-  <p>${sizeInMB}mb</p>
-  <p>Uploaded</p>
-  <button class="delete-document"><i class="fa-solid fa-trash"></i></button>
-  `;
+            <p class="whitespace-nowrap overflow-hidden text-ellipsis w-40"><i class="fa-solid text-xl mr-5 ${fileTypeLogo(
+              fileType
+            )}"></i> 
+            <span>${fileName}<span></p>
+            <p>${fileType}</p>
+            <p>${sizeInMB}mb</p>
+            <p>Uploaded</p>
+            <button class="delete-document"><i class="fa-solid fa-trash"></i></button>
+            `;
             /* Adding the newDocument element to the documentImages element. */
             documentImages.append(newDocument);
             /* This is adding the file name to the documentFileObj object. */
