@@ -72,8 +72,8 @@ include_once './side-nav-bar.php';
             <h5 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mb-3 text-4xl font-bold tracking-tight text-white">SE101</h5>
           </div>
           <h5 class="mt-7 text-2xl font-medium tracking-tight text-corn-flower-blue">Software Engineering</h5>
-          <span class="block">Mary Anne Manandeg</span>
-          <span class="block">SBIT-2B</span>
+          <span class="block text-deep-koamaru">Mary Anne Manandeg</span>
+          <span class="block text-deep-koamaru">SBIT-2B</span>
           <!-- Semester Indicator -->
           <span class="mt-4 inline-flex items-center bg-ghost-lavender text-neon-blue text-sm font-medium px-4 py-2 rounded-full">
             2nd Semester
@@ -86,8 +86,8 @@ include_once './side-nav-bar.php';
             <h5 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mb-3 text-4xl font-bold tracking-tight text-white">IPT101</h5>
           </div>
           <h5 class="mt-7 text-2xl font-medium tracking-tight text-corn-flower-blue">Intergative Programming Technologies 1</h5>
-          <span class="block">Chrisitan Escoto</span>
-          <span class="block">SBIT-2B</span>
+          <span class="block text-deep-koamaru">Chrisitan Escoto</span>
+          <span class="block text-deep-koamaru">SBIT-2B</span>
           <!-- Semester Indicator -->
           <span class="mt-4 inline-flex items-center bg-ghost-lavender text-neon-blue text-sm font-medium px-4 py-2 rounded-full">
             2nd Semester
@@ -100,8 +100,8 @@ include_once './side-nav-bar.php';
             <h5 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mb-3 text-4xl font-bold tracking-tight text-white">IM101</h5>
           </div>
           <h5 class="mt-7 text-2xl font-medium tracking-tight text-corn-flower-blue">Advanced Database</h5>
-          <span class="block">Zharina Pascual</span>
-          <span class="block">SBIT-2B</span>
+          <span class="block text-deep-koamaru">Zharina Pascual</span>
+          <span class="block text-deep-koamaru">SBIT-2B</span>
           <!-- Semester Indicator -->
           <span class="mt-4 inline-flex items-center bg-ghost-lavender text-neon-blue text-sm font-medium px-4 py-2 rounded-full">
             2nd Semester
@@ -114,8 +114,8 @@ include_once './side-nav-bar.php';
             <h5 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mb-3 text-4xl font-bold tracking-tight text-white">MS101</h5>
           </div>
           <h5 class="mt-7 text-2xl font-medium tracking-tight text-corn-flower-blue">Quantitative Methods</h5>
-          <span class="block">Luisito Soriano</span>
-          <span class="block">SBIT-3G</span>
+          <span class="block text-deep-koamaru">Luisito Soriano</span>
+          <span class="block text-deep-koamaru">SBIT-3G</span>
           <!-- Semester Indicator -->
           <span class="mt-4 inline-flex items-center bg-ghost-lavender text-neon-blue text-sm font-medium px-4 py-2 rounded-full">
             2nd Semester
