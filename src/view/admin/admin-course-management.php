@@ -42,6 +42,7 @@ include_once './side-nav-bar.php';
         </svg>
         Add Course
       </button>
+      <!-- TODO: Card links to Course Content Management Page -->
       <!-- Cards Man Container -->
       <div class="grid grid-cols-3 mt-12 gap-6">
         <!-- Course Card 1 -->
@@ -181,10 +182,12 @@ include_once './side-nav-bar.php';
             <li>
               <button class="w-full px-4 py-2 font-medium hover:bg-ghost-white hover:text-neon-blue transtion duration-300 ease-in-out">Edit Course</a>
               </button>
+              <!-- TODO: Edit Course -->
             </li>
             <li>
               <button class="w-full px-4 py-2 font-medium hover:bg-ghost-white hover:text-neon-blue transtion duration-300 ease-in-out">Delete Course</a>
               </button>
+              <!-- TODO: Delete Course -->
             </li>
           </ul>
         </div>

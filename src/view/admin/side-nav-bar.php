@@ -118,6 +118,7 @@
               </div>
             </a>
           </div>
+          <!-- TODO: Notification Content -->
           <div class="flex items-center ms-3">
             <div>
               <!-- Profile sa taas -->
@@ -131,15 +132,17 @@
               <div id="dropdownAvatar" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-2xl drop-shadows w-56">
                 <div class="px-4 py-3 text-sm text-deep-koamaru flex flex-col justify-center items-center">
                   <img class="w-14 h-auto rounded-full mb-3" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="user photo">
-                  <div class="font-medium">Juan Dela Cruz</div>
-                  <div class="truncate">juan.dela.cruz@gmail.com</div>
+                  <div class="font-medium">John Doe</div>
+                  <div class="truncate">john.doe@gmail.com</div>
                 </div>
                 <ul class="py-2 text-sm font-medium text-deep-koamaru text-center" aria-labelledby="dropdownUserAvatarButton">
                   <li>
                     <a href="./student-settings.php" class="block px-4 py-2 hover:bg-ghost-white hover:text-neon-blue transtion duration-300 ease-in-out">Settings</a>
+                    <!-- TODO: Settings for Admin -->
                   </li>
                   <li>
                     <a href="#" class="block px-4 py-2 hover:bg-ghost-white hover:text-neon-blue transtion duration-300 ease-in-out">Sign out</a>
+                    <!-- TODO: Sign Out Modal -->
                   </li>
                 </ul>
               </div>

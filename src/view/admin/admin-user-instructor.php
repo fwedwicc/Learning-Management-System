@@ -19,7 +19,7 @@
 <?php
 include_once './side-nav-bar.php';
 ?>
-
+<!-- FIXME:  Instructor User Content-->
 <body class="bg-ghost-white">
   <div class="p-4 sm:ml-64 h-screen flex flex-col">
     <div class="pt-4 px-5 mt-14 flex-grow flex flex-col">

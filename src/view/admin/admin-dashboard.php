@@ -24,7 +24,7 @@ include_once './side-nav-bar.php';
   <div class="p-4 sm:ml-64 sm:mr-[22rem]">
     <div class="pt-4 pl-4 mt-14">
       <!-- Dashboard Content -->
-
+      <!-- TODO: Create Admin Dashboard -->
     </div>
   </div>
   <!-- Flowbite cdn -->
