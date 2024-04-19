@@ -378,6 +378,7 @@ include_once './side-nav-bar.php';
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-corn-flower-blue">Announcements</h5>
         <p class="font-normal text-deep-koamaru text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, dolores. Recusandae consequatur explicabo quibusdam dolore hic accusantium fuga tempore rerum. Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
       </div>
+      <!-- TODO: Modal for instructor's announcement -->
       <!-- Todo card test -->
       <?php
       include './todo-card.php';

@@ -61,6 +61,7 @@ include_once './side-nav-bar.php';
           <h5 class="text-xl font-medium text-corn-flower-blue">General Announcements</h5>
         </span>
         <p class="font-normal text-deep-koamaru px-8 pt-1 pb-8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, dolores. Recusandae consequatur explicabo quibusdam dolore hic accusantium fuga tempore rerum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam pariatur voluptates velit, architecto quia obcaecati expedita esse ea enim rem laborum incidunt at consequatur blanditiis repudiandae! Itaque libero eum enim?</p>
+        <!-- TODO: Modal for general announcements -->
       </div>
       <!--  Enrolled Course -->
       <h1 class="font-bold text-4xl pb-6 text-corn-flower-blue mt-8 mb-2">Enrolled Courses</h1>

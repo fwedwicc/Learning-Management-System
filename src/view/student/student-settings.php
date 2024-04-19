@@ -25,8 +25,7 @@ include_once './side-nav-bar.php';
     <div class="pt-4 px-5 rounded-2xl mt-14">
       <h1 class="font-bold text-4xl text-corn-flower-blue">Profile Settings</h1>
       <div class="flex flex-col gap-8 pt-8">
-
-
+        <!-- FIXME: Settings for Student -->
         <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
           <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-tab" data-tabs-toggle="tab-content" role="tablist">
             <li class="me-2" role="presentation">

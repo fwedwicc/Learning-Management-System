@@ -137,9 +137,11 @@
                 <ul class="py-2 text-sm font-medium text-deep-koamaru text-center" aria-labelledby="dropdownUserAvatarButton">
                   <li>
                     <a href="./student-settings.php" class="block px-4 py-2 hover:bg-ghost-white hover:text-neon-blue transtion duration-300 ease-in-out">Settings</a>
+                    <!-- TODO: Student Settings Page -->
                   </li>
                   <li>
                     <a href="#" class="block px-4 py-2 hover:bg-ghost-white hover:text-neon-blue transtion duration-300 ease-in-out">Sign out</a>
+                    <!-- TODO: Sign Out Modal -->
                   </li>
                 </ul>
               </div>
@@ -173,114 +175,17 @@
         </button>
         <ul id="dropdown-programs" class="hidden py-2 space-y-2">
           <li>
-            <a href="./student-course-overview.php" data-popover-target="first-subject" data-popover-placement="right" type="button" class="flex items-center w-full p-2 text-corn-flower-blue transition duration-300 ease-in-out rounded-lg pl-11 group hover:bg-ghost-lavender hover:text-neon-blue">SE101</a>
-            <!-- Course overview popover -->
-            <!-- <div data-popover id="first-subject" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-deep-koamaru transition-opacity duration-300 bg-white border border-quartz rounded-lg shadow-sm opacity-0">
-              <div class="px-3 py-2 bg-ghost-white border-b border-quartz rounded-t-lg">
-                <h3 class="font-bold text-deep-koamaru">Title: Software Engineering</h3>
-              </div>
-              <div class="px-3 py-2 space-y-2">
-                <span class="block">
-                  <span class="font-bold">Professor:</span>
-                  <span>Mary Ann Manandeg</span>
-                </span>
-                <span class="block">
-                  <span class="font-bold">Section:</span>
-                  <span>SBIT-2A</span>
-                </span>
-                <span class="block">
-                  <span class="font-bold">Description:</span>
-                  <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure voluptas neque molestiae quibusdam aspernatur esse libero magnam mollitia quod, consequuntur facere soluta obcaecati eveniet voluptatem cumque.</span>
-                </span>
-                <a href="" target="_blank" class="flex items-center font-medium text-neon-blue hover:underline">View Subject <svg class="w-2 h-2 ms-1.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
-                  </svg></a>
-              </div>
-              <div data-popper-arrow></div>
-            </div> -->
+            <a href="./student-course-overview.php" data-popover-target="first-subject" type="button" class="flex items-center w-full p-2 text-corn-flower-blue transition duration-300 ease-in-out rounded-lg pl-11 group hover:bg-ghost-lavender hover:text-neon-blue">SE101</a>
           </li>
           <li>
-            <a href="#" data-popover-target="second-subject" data-popover-placement="right" type="button" class="flex items-center w-full p-2 text-corn-flower-blue transition duration-300 ease-in-out rounded-lg pl-11 group hover:bg-ghost-lavender hover:text-neon-blue">IPT101</a>
-            <!-- Course overview popover -->
-            <!-- <div data-popover id="second-subject" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-deep-koamaru transition-opacity duration-300 bg-white border border-quartz rounded-lg shadow-sm opacity-0">
-              <div class="px-3 py-2 bg-ghost-white border-b border-quartz rounded-t-lg">
-                <h3 class="font-bold text-deep-koamaru">Title: Integrative Programming and Technologies 1</h3>
-              </div>
-              <div class="px-3 py-2 space-y-2">
-                <span class="block">
-                  <span class="font-bold">Professor:</span>
-                  <span>Chrisitan Escoto</span>
-                </span>
-                <span class="block">
-                  <span class="font-bold">Section:</span>
-                  <span>SBIT-2A</span>
-                </span>
-                <span class="block">
-                  <span class="font-bold">Description:</span>
-                  <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure voluptas neque molestiae quibusdam aspernatur esse libero magnam mollitia quod, consequuntur facere soluta obcaecati eveniet voluptatem cumque.</span>
-                </span>
-                <a href="" target="_blank" class="flex items-center font-medium text-neon-blue hover:underline">View Subject <svg class="w-2 h-2 ms-1.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
-                  </svg></a>
-              </div>
-              <div data-popper-arrow></div>
-            </div> -->
+            <a href="#" data-popover-target="second-subject" type="button" class="flex items-center w-full p-2 text-corn-flower-blue transition duration-300 ease-in-out rounded-lg pl-11 group hover:bg-ghost-lavender hover:text-neon-blue">IPT101</a>
           </li>
           <li>
-            <a href="#" data-popover-target="third-subject" data-popover-placement="right" type="button" class="flex items-center w-full p-2 text-corn-flower-blue transition duration-300 ease-in-out rounded-lg pl-11 group hover:bg-ghost-lavender hover:text-neon-blue">IM101</a>
-            <!-- Course overview popover -->
-            <!-- <div data-popover id="third-subject" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-deep-koamaru transition-opacity duration-300 bg-white border border-quartz rounded-lg shadow-sm opacity-0">
-              <div class="px-3 py-2 bg-ghost-white border-b border-quartz rounded-t-lg">
-                <h3 class="font-bold text-deep-koamaru">Title: Advance Database Systems</h3>
-              </div>
-              <div class="px-3 py-2 space-y-2">
-                <span class="block">
-                  <span class="font-bold">Professor:</span>
-                  <span>Zharina Pascual</span>
-                </span>
-                <span class="block">
-                  <span class="font-bold">Section:</span>
-                  <span>SBIT-2A</span>
-                </span>
-                <span class="block">
-                  <span class="font-bold">Description:</span>
-                  <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure voluptas neque molestiae quibusdam aspernatur esse libero magnam mollitia quod, consequuntur facere soluta obcaecati eveniet voluptatem cumque.</span>
-                </span>
-                <a href="" target="_blank" class="flex items-center font-medium text-neon-blue hover:underline">View Subject <svg class="w-2 h-2 ms-1.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
-                  </svg></a>
-              </div>
-              <div data-popper-arrow></div>
-            </div> -->
+            <a href="#" data-popover-target="third-subject" type="button" class="flex items-center w-full p-2 text-corn-flower-blue transition duration-300 ease-in-out rounded-lg pl-11 group hover:bg-ghost-lavender hover:text-neon-blue">IM101</a>
           </li>
           <li>
-            <a href="#" data-popover-target="fourth-subject" data-popover-placement="right" type="button" class="flex items-center w-full p-2 text-corn-flower-blue transition duration-300 ease-in-out rounded-lg pl-11 group hover:bg-ghost-lavender hover:text-neon-blue">MS102</a>
-            <!-- Course overview popover -->
-            <!-- <div data-popover id="fourth-subject" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-deep-koamaru transition-opacity duration-300 bg-white border border-quartz rounded-lg shadow-sm opacity-0">
-              <div class="px-3 py-2 bg-ghost-white border-b border-quartz rounded-t-lg">
-                <h3 class="font-bold text-deep-koamaru">Title: Quantitative Methods</h3>
-              </div>
-              <div class="px-3 py-2 space-y-1">
-                <span class="block">
-                  <span class="font-bold">Professor:</span>
-                  <span>Luisito Soriano</span>
-                </span>
-                <span class="block">
-                  <span class="font-bold">Section:</span>
-                  <span>SBIT-3G</span>
-                </span>
-                <span class="block">
-                  <span class="font-bold">Description:</span>
-                  <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure voluptas neque molestiae quibusdam aspernatur esse libero magnam mollitia quod, consequuntur facere soluta obcaecati eveniet voluptatem cumque.</span>
-                </span>
-                <a href="" target="_blank" class="flex items-center font-medium text-neon-blue hover:underline">View Subject <svg class="w-2 h-2 ms-1.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
-                  </svg></a>
-              </div>
-              <div data-popper-arrow></div>
-            </div> -->
+            <a href="#" data-popover-target="fourth-subject" type="button" class="flex items-center w-full p-2 text-corn-flower-blue transition duration-300 ease-in-out rounded-lg pl-11 group hover:bg-ghost-lavender hover:text-neon-blue">MS102</a>
           </li>
-
         </ul>
       </ul>
     </div>

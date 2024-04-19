@@ -96,6 +96,7 @@ include_once './side-nav-bar.php';
         <iframe class="pdf w-full h-[60rem] py-7 rounded-2xl" id="learning-material" src="../../../assets/learning-materials/sample-learning-material.pdf">
         </iframe>
       </section>
+      <!-- TODO: Interface for Uploaded and Finished Work -->
     </div>
     <!-- Right Sidebar -->
     <aside id="logo-sidebar" class="fixed top-0 right-0 z-40 w-[22rem] h-screen pt-20 transition-transform -translate-x-full bg-ghost-white sm:translate-x-0 hidden sm:block" aria-label="Sidebar">
@@ -159,6 +160,7 @@ include_once './side-nav-bar.php';
               </button>
             </div>
           </form>
+          <!-- TODO: Private Comments -->
         </div>
       </div>
     </aside>
