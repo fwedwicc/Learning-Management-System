@@ -250,7 +250,7 @@
           <ul class="px-5 py-5 gap-4 grid grid-cols-2">
             <li class="col-span-1">
               <!-- 1st Year 1st Semester -->
-              <a href="./admin-course-management.php" class="relative block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue flex justify-between items-center">
+              <a href="#" class="relative block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue flex justify-between items-center">
                 <div class="block space-y-2">
                   <div class="w-full text-xl font-bold text-corn-flower-blue">1Y1</div>
                   <div class="w-full text-normal text-deep-koamaru">1st Year, 1st Semester</div>
@@ -286,7 +286,7 @@
             </li>
             <li class="col-span-1">
               <!-- 2nd Year 2nd Semester -->
-              <a href="#" class="relative block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue flex justify-between items-center">
+              <a href="./admin-course-management.php" class="relative block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue flex justify-between items-center">
                 <div class="block space-y-2">
                   <div class="w-full text-xl font-bold text-corn-flower-blue">2Y2</div>
                   <div class="w-full text-normal text-deep-koamaru">2nd Year, 2nd Semester</div>
