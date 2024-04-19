@@ -23,21 +23,12 @@ include_once './side-nav-bar.php';
 <body class="bg-ghost-white">
   <div class="p-4 sm:ml-64 h-screen flex flex-col">
     <div class="pt-4 px-5 mt-14 flex-grow flex flex-col">
-      <div class="flex items-center justify-between">
-        <h1 class="font-bold text-4xl text-corn-flower-blue">Student List</h1>
-        <!-- Back Button -->
-        <a href="./student-course-overview.php" type="button" class="inline-flex gap-1.5 items-center justify-center text-neon-blue focus:outline-none hover:bg-ghost-lavender focus:ring-4 focus:ring-deep-lav-blue font-medium rounded-md text-sm pl-5 pr-3 py-2.5 transition ease-in-out duration-300 hover:scale-105 cursor-pointer">
-          Back
-          <svg class="w-4 h-4 text-neon-blue mt-[0.2rem]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7" />
-          </svg>
-        </a>
-      </div>
+      <h1 class="font-bold text-4xl text-corn-flower-blue">Student List</h1>
       <!-- Main Container -->
-      <div class="flex flex-column sm:flex-row flex-wrap space-y-4 sm:space-y-0 items-center justify-between pb-4 pt-8">
+      <div class="flex flex-column sm:flex-row flex-wrap space-y-4 sm:space-y-0 items-center justify-between pb-6 pt-8">
         <!-- Register new account -->
         <button type="button" data-modal-target="register-modal" data-modal-toggle="register-modal" class="px-5 py-2.5 text-sm font-medium inline-flex items-center rounded-md bg-neon-blue text-white cursor-pointer transition ease-in-out duration-300 hover:scale-105 hover:bg-free-speech-blue focus:ring-4 focus:outline-none focus:ring-perano">
-          <svg class="w-4 h-4 mr-2 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+          <svg class="w-4 h-4 mr-2 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
             <path fill-rule="evenodd" d="M8 7V2.2a2 2 0 0 0-.5.4l-4 3.9a2 2 0 0 0-.3.5H8Zm2 0V2h7a2 2 0 0 1 2 2v.1a5 5 0 0 0-4.7 1.4l-6.7 6.6a3 3 0 0 0-.8 1.6l-.7 3.7a3 3 0 0 0 3.5 3.5l3.7-.7a3 3 0 0 0 1.5-.9l4.2-4.2V20a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9h5a2 2 0 0 0 2-2Z" clip-rule="evenodd" />
             <path fill-rule="evenodd" d="M17.4 8a1 1 0 0 1 1.2.3 1 1 0 0 1 0 1.6l-.3.3-1.6-1.5.4-.4.3-.2Zm-2.1 2.1-4.6 4.7-.4 1.9 1.9-.4 4.6-4.7-1.5-1.5ZM17.9 6a3 3 0 0 0-2.2 1L9 13.5a1 1 0 0 0-.2.5L8 17.8a1 1 0 0 0 1.2 1.1l3.7-.7c.2 0 .4-.1.5-.3l6.6-6.6A3 3 0 0 0 18 6Z" clip-rule="evenodd" />
           </svg>
@@ -208,45 +199,30 @@ include_once './side-nav-bar.php';
         <!-- Search and filter bar -->
         <div class="flex">
           <!-- <label for="search-dropdown" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Your</label> -->
-          <button id="dropdown-button" data-dropdown-toggle="dropdown" class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-s-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600" type="button">All programs <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <button id="dropdown-button" data-dropdown-toggle="dropdown" class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-white bg-neon-blue rounded-s-md hover:bg-free-speech-blue focus:ring-4 focus:outline-none focus:ring-perano transition ease-in-out duration-300" type="button">All programs
+            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
             </svg>
           </button>
           <!-- programs dropdown - tabi ng search bar -->
-          <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdown-button">
+          <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg drop-shadows w-44">
+            <ul class="py-2 text-sm text-deep-koamaru" aria-labelledby="dropdown-button">
               <li>
-                <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BSENT</button>
+                <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-ghost-white hover:text-neon-blue transition duration-300 ease-in-out">BSIT</button>
               </li>
               <li>
-                <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BSA</button>
+                <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-ghost-white hover:text-neon-blue transition duration-300 ease-in-out">BSCS</button>
               </li>
               <li>
-                <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BSMA</button>
-              </li>
-              <li>
-                <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BSIE</button>
-              </li>
-              <li>
-                <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BSECE</button>
-              </li>
-              <li>
-                <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BSIT</button>
-              </li>
-              <li>
-                <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BSCS</button>
-              </li>
-              <li>
-                <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BSIS</button>
-              </li>
-              <li>
-                <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BSCE</button>
+                <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-ghost-white hover:text-neon-blue transition duration-300 ease-in-out">BSIS</button>
               </li>
             </ul>
           </div>
-          <div class="relative w-full">
-            <input type="search" id="search-dropdown" class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg border-s-gray-50 border-s-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-s-gray-700  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500" placeholder="Search..." required>
-            <button type="submit" class="absolute top-0 end-0 p-2.5 text-sm font-medium h-full text-white bg-blue-700 rounded-e-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          <div class="relative w-[15rem]">
+            <!-- Search -->
+            <input type="search" id="search-dropdown" class="block p-2.5 w-full z-20 text-sm border border-lavender text-deep-koamaru bg-lav-sant rounded-e-lg focus:ring-neon-blue focus:border-neon-blue placeholder-moody-blue transition ease-in-out duration-300" placeholder="Search...">
+            <!-- Search Button -->
+            <button type="submit" class="absolute top-0 end-0 p-2.5 px-4 text-sm font-medium h-full text-white bg-neon-blue rounded-e-md hover:bg-free-speech-blue focus:ring-4 focus:outline-none focus:ring-perano transition duration-300 ease-in-out">
               <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
               </svg>
@@ -255,224 +231,205 @@ include_once './side-nav-bar.php';
           </div>
         </div>
       </div>
-      <!-- Main table of students list -->
-      <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-        <div class="max-h-[480px] overflow-y-auto">
-          <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 sticky top-0">
-              <tr>
-                <th scope="col" class="px-6 py-3">
-                  Student name
-                </th>
-                <th scope="col" class="px-6 py-3">
-                  Student number
-                </th>
-                <th scope="col" class="px-6 py-3">
-                  Program
-                </th>
-                <th scope="col" class="px-6 py-3">
-                  Classification
-                </th>
-                <th scope="col" class="px-6 py-3">
-                  Section
-                </th>
-                <th scope="col" class="px-6 py-3">
-                  Actions
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                  Frederick C. Moreno
-                </th>
-                <td class="px-6 py-4">
-                  22-2808
-                </td>
-                <td class="px-6 py-4">
-                  BSIT
-                </td>
-                <td class="px-6 py-4">
-                  Irregular
-                </td>
-                <td class="px-6 py-4">
-                  -
-                </td>
-                <td class="flex items-center px-6 py-4">
-                  <a href="./admin-edit-student.php" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                  <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Archive</a>
-                </td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                  Lian V. Torres
-                </th>
-                <td class="px-6 py-4">
-                  22-2806
-                </td>
-                <td class="px-6 py-4">
-                  BSIT
-                </td>
-                <td class="px-6 py-4">
-                  Irregular
-                </td>
-                <td class="px-6 py-4">
-                  -
-                </td>
-                <td class="flex items-center px-6 py-4">
-                  <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                  <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Archive</a>
-                </td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                  Reanna M. Carreon
-                </th>
-                <td class="px-6 py-4">
-                  22-2879
-                </td>
-                <td class="px-6 py-4">
-                  BSIT
-                </td>
-                <td class="px-6 py-4">
-                  Irregular
-                </td>
-                <td class="px-6 py-4">
-                  -
-                </td>
-                <td class="flex items-center px-6 py-4">
-                  <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                  <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Archive</a>
-                </td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                  Frederick C. Moreno
-                </th>
-                <td class="px-6 py-4">
-                  22-2808
-                </td>
-                <td class="px-6 py-4">
-                  BSIT
-                </td>
-                <td class="px-6 py-4">
-                  Irregular
-                </td>
-                <td class="px-6 py-4">
-                  -
-                </td>
-                <td class="flex items-center px-6 py-4">
-                  <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                  <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Archive</a>
-                </td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                  Lian V. Torres
-                </th>
-                <td class="px-6 py-4">
-                  22-2806
-                </td>
-                <td class="px-6 py-4">
-                  BSIT
-                </td>
-                <td class="px-6 py-4">
-                  Irregular
-                </td>
-                <td class="px-6 py-4">
-                  -
-                </td>
-                <td class="flex items-center px-6 py-4">
-                  <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                  <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Archive</a>
-                </td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                  Reanna M. Carreon
-                </th>
-                <td class="px-6 py-4">
-                  22-2879
-                </td>
-                <td class="px-6 py-4">
-                  BSIT
-                </td>
-                <td class="px-6 py-4">
-                  Irregular
-                </td>
-                <td class="px-6 py-4">
-                  -
-                </td>
-                <td class="flex items-center px-6 py-4">
-                  <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                  <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Archive</a>
-                </td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                  Frederick C. Moreno
-                </th>
-                <td class="px-6 py-4">
-                  22-2808
-                </td>
-                <td class="px-6 py-4">
-                  BSIT
-                </td>
-                <td class="px-6 py-4">
-                  Irregular
-                </td>
-                <td class="px-6 py-4">
-                  -
-                </td>
-                <td class="flex items-center px-6 py-4">
-                  <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                  <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Archive</a>
-                </td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                  Frederick C. Moreno
-                </th>
-                <td class="px-6 py-4">
-                  22-2808
-                </td>
-                <td class="px-6 py-4">
-                  BSIT
-                </td>
-                <td class="px-6 py-4">
-                  Irregular
-                </td>
-                <td class="px-6 py-4">
-                  -
-                </td>
-                <td class="flex items-center px-6 py-4">
-                  <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                  <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Archive</a>
-                </td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                  Frederick C. Moreno
-                </th>
-                <td class="px-6 py-4">
-                  22-2808
-                </td>
-                <td class="px-6 py-4">
-                  BSIT
-                </td>
-                <td class="px-6 py-4">
-                  Irregular
-                </td>
-                <td class="px-6 py-4">
-                  -
-                </td>
-                <td class="flex items-center px-6 py-4">
-                  <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                  <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Archive</a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+      <!-- Tab Component for Enrolled and Unenrolled -->
+      <div class="mb-4">
+        <ul class="flex flex-wrap -mb-px text-sm font-medium text-center transition duration-300 ease-in-out" id="default-tab" data-tabs-toggle="tab-content" role="tablist" data-tabs-inactive-classes="text-moody-blue" data-tabs-active-classes="text-neon-blue border-neon-blue bg-ghost-lavender">
+          <li class="me-2" role="presentation">
+            <button class="inline-block px-4 py-2 hover:bg-ghost-lavender transition duration-300 ease-in-out border-b-2 rounded-t-lg" id="enrolled-table-tab" data-tabs-target="#enrolled" type="button" role="tab" aria-controls="enrolled" aria-selected="false">Enrolled</button>
+          </li>
+          <li class="me-2" role="presentation">
+            <button class="inline-block px-4 py-2 hover:bg-ghost-lavender transition duration-300 ease-in-out border-b-2 rounded-t-lg" id="unenrolled-table-tab" data-tabs-target="#unenrolled" type="button" role="tab" aria-controls="unenrolled" aria-selected="false">Unenrolled</button>
+          </li>
+        </ul>
+      </div>
+      <!-- Enrolled Table -->
+      <div id="tab-content">
+        <div class="hidden relative overflow-x-auto sm:rounded-lg" id="enrolled" role="tabpanel" aria-labelledby="enrolled-table-tab">
+          <div class="max-h-[480px] overflow-y-auto">
+            <table class="w-full text-sm text-left rtl:text-right text-deep-koamaru">
+              <thead class="text-xs text-corn-flower-blue uppercase bg-ghost-lavender sticky top-0">
+                <tr>
+                  <th scope="col" class="px-6 py-3">
+                    Student name
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                    Student number
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                    Program
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                    Classification
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                    Section
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                    Actions
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-white border-b border-indigo-100">
+                  <th scope="row" class="px-6 py-4 font-medium text-deep-koamaru whitespace-nowrap">
+                    Frederick C. Moreno
+                  </th>
+                  <td class="px-6 py-4">
+                    22-2808
+                  </td>
+                  <td class="px-6 py-4">
+                    BSIT
+                  </td>
+                  <td class="px-6 py-4">
+                    Irregular
+                  </td>
+                  <td class="px-6 py-4">
+                    -
+                  </td>
+                  <td class="flex items-center px-6 py-4">
+                    <a href="./admin-edit-student.php" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Archive</a>
+                  </td>
+                </tr>
+                <tr class="bg-white border-b border-indigo-100">
+                  <th scope="row" class="px-6 py-4 font-medium text-deep-koamaru whitespace-nowrap">
+                    Lian V. Torres
+                  </th>
+                  <td class="px-6 py-4">
+                    22-2806
+                  </td>
+                  <td class="px-6 py-4">
+                    BSIT
+                  </td>
+                  <td class="px-6 py-4">
+                    Irregular
+                  </td>
+                  <td class="px-6 py-4">
+                    -
+                  </td>
+                  <td class="flex items-center px-6 py-4">
+                    <a href="./admin-edit-student.php" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Archive</a>
+                  </td>
+                </tr>
+                <tr class="bg-white border-b border-indigo-100">
+                  <th scope="row" class="px-6 py-4 font-medium text-deep-koamaru whitespace-nowrap">
+                    Reanna M. Carreon
+                  </th>
+                  <td class="px-6 py-4">
+                    22-2879
+                  </td>
+                  <td class="px-6 py-4">
+                    BSIT
+                  </td>
+                  <td class="px-6 py-4">
+                    Irregular
+                  </td>
+                  <td class="px-6 py-4">
+                    -
+                  </td>
+                  <td class="flex items-center px-6 py-4">
+                    <a href="./admin-edit-student.php" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Archive</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Unenrolled Table -->
+        <div class="hidden relative overflow-x-auto sm:rounded-lg" id="unenrolled" role="tabpanel" aria-labelledby="unenrolled-table-tab">
+          <div class="max-h-[480px] overflow-y-auto">
+            <table class="w-full text-sm text-left rtl:text-right text-deep-koamaru">
+              <thead class="text-xs text-corn-flower-blue uppercase bg-ghost-lavender sticky top-0">
+                <tr>
+                  <th scope="col" class="px-6 py-3">
+                    Student name
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                    Student number
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                    Program
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                    Classification
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                    Section
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                    Actions
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-white border-b border-indigo-100">
+                  <th scope="row" class="px-6 py-4 font-medium text-deep-koamaru whitespace-nowrap">
+                    Lian V. Torres
+                  </th>
+                  <td class="px-6 py-4">
+                    22-2806
+                  </td>
+                  <td class="px-6 py-4">
+                    BSIT
+                  </td>
+                  <td class="px-6 py-4">
+                    Irregular
+                  </td>
+                  <td class="px-6 py-4">
+                    -
+                  </td>
+                  <td class="flex items-center px-6 py-4">
+                    <a href="./admin-edit-student.php" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Archive</a>
+                  </td>
+                </tr>
+                <tr class="bg-white border-b border-indigo-100">
+                  <th scope="row" class="px-6 py-4 font-medium text-deep-koamaru whitespace-nowrap">
+                    Reanna M. Carreon
+                  </th>
+                  <td class="px-6 py-4">
+                    22-2879
+                  </td>
+                  <td class="px-6 py-4">
+                    BSIT
+                  </td>
+                  <td class="px-6 py-4">
+                    Irregular
+                  </td>
+                  <td class="px-6 py-4">
+                    -
+                  </td>
+                  <td class="flex items-center px-6 py-4">
+                    <a href="./admin-edit-student.php" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Archive</a>
+                  </td>
+                </tr>
+                <tr class="bg-white border-b border-indigo-100">
+                  <th scope="row" class="px-6 py-4 font-medium text-deep-koamaru whitespace-nowrap">
+                    Frederick C. Moreno
+                  </th>
+                  <td class="px-6 py-4">
+                    22-2808
+                  </td>
+                  <td class="px-6 py-4">
+                    BSIT
+                  </td>
+                  <td class="px-6 py-4">
+                    Irregular
+                  </td>
+                  <td class="px-6 py-4">
+                    -
+                  </td>
+                  <td class="flex items-center px-6 py-4">
+                    <a href="./admin-edit-student.php" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Archive</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
