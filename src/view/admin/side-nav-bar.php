@@ -154,7 +154,7 @@
       <ul class="space-y-2 font-medium">
         <li>
           <!-- Link -->
-          <a href="./student-dashboard.php" class="flex items-center p-3 text-corn-flower-blue rounded-lg hover:bg-ghost-lavender group transition duration-300 ease-in-out hover:text-neon-blue">
+          <a href="./admin-dashboard.php" class="flex items-center p-3 text-corn-flower-blue rounded-lg hover:bg-ghost-lavender group transition duration-300 ease-in-out hover:text-neon-blue">
             <svg class="w-5 h-5 text-corn-flower-blue group-hover:text-neon-blue transition duration-300 ease-in-out" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
               <path fill-rule="evenodd" d="M4.857 3A1.857 1.857 0 0 0 3 4.857v4.286C3 10.169 3.831 11 4.857 11h4.286A1.857 1.857 0 0 0 11 9.143V4.857A1.857 1.857 0 0 0 9.143 3H4.857Zm10 0A1.857 1.857 0 0 0 13 4.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 21 9.143V4.857A1.857 1.857 0 0 0 19.143 3h-4.286Zm-10 10A1.857 1.857 0 0 0 3 14.857v4.286C3 20.169 3.831 21 4.857 21h4.286A1.857 1.857 0 0 0 11 19.143v-4.286A1.857 1.857 0 0 0 9.143 13H4.857Zm10 0A1.857 1.857 0 0 0 13 14.857v4.286c0 1.026.831 1.857 1.857 1.857h4.286A1.857 1.857 0 0 0 21 19.143v-4.286A1.857 1.857 0 0 0 19.143 13h-4.286Z" clip-rule="evenodd" />
             </svg>
@@ -195,13 +195,13 @@
         </button>
         <ul id="dropdown-users" class="hidden py-2 space-y-2">
           <li>
-            <a href="#" type="button" class="flex items-center w-full p-2 text-corn-flower-blue transition duration-300 ease-in-out rounded-lg pl-11 group hover:bg-ghost-lavender hover:text-neon-blue">Student</a>
+            <a href="./admin-user-student.php" type="button" class="flex items-center w-full p-2 text-corn-flower-blue transition duration-300 ease-in-out rounded-lg pl-11 group hover:bg-ghost-lavender hover:text-neon-blue">Student</a>
           </li>
           <li>
-            <a href="#" type="button" class="flex items-center w-full p-2 text-corn-flower-blue transition duration-300 ease-in-out rounded-lg pl-11 group hover:bg-ghost-lavender hover:text-neon-blue">Instructor</a>
+            <a href="./admin-user-instructor.php" type="button" class="flex items-center w-full p-2 text-corn-flower-blue transition duration-300 ease-in-out rounded-lg pl-11 group hover:bg-ghost-lavender hover:text-neon-blue">Instructor</a>
           </li>
           <li>
-            <a href="#" type="button" class="flex items-center w-full p-2 text-corn-flower-blue transition duration-300 ease-in-out rounded-lg pl-11 group hover:bg-ghost-lavender hover:text-neon-blue">Admin</a>
+            <a href="./admin-user-admin.php" type="button" class="flex items-center w-full p-2 text-corn-flower-blue transition duration-300 ease-in-out rounded-lg pl-11 group hover:bg-ghost-lavender hover:text-neon-blue">Admin</a>
           </li>
         </ul>
         <!-- Section Dropdown -->
@@ -229,7 +229,7 @@
     </div>
   </aside>
   <!-- Main modal -->
-  <div id="year-term-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full backdrop-blur-sm bg-ghost-white bg-opacity-40">
+  <div id="year-term-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full backdrop-blur-sm bg-ghost-lavender bg-opacity-50">
     <div class="relative p-4 w-full max-w-3xl max-h-full">
       <!-- Modal content -->
       <div class="relative bg-ghost-white rounded-2xl shadow">
@@ -250,7 +250,7 @@
           <ul class="px-5 py-5 gap-4 grid grid-cols-2">
             <li class="col-span-1">
               <!-- 1st Year 1st Semester -->
-              <a href="#" class="relative block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue flex justify-between items-center">
+              <a href="./admin-course-management.php" class="relative block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue flex justify-between items-center">
                 <div class="block space-y-2">
                   <div class="w-full text-xl font-bold text-corn-flower-blue">1Y1</div>
                   <div class="w-full text-normal text-deep-koamaru">1st Year, 1st Semester</div>
