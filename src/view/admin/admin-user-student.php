@@ -36,7 +36,7 @@ include_once './side-nav-bar.php';
       <!-- Main Container -->
       <div class="flex flex-column sm:flex-row flex-wrap space-y-4 sm:space-y-0 items-center justify-between pb-4 pt-8">
         <!-- Register new account -->
-        <button type="button" data-modal-target="register-modal" data-modal-toggle="register-modal" class="px-5 py-2.5 text-sm font-medium text-white inline-flex items-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        <button type="button" data-modal-target="register-modal" data-modal-toggle="register-modal" class="px-5 py-2.5 text-sm font-medium inline-flex items-center rounded-md bg-neon-blue text-white cursor-pointer transition ease-in-out duration-300 hover:scale-105 hover:bg-free-speech-blue focus:ring-4 focus:outline-none focus:ring-perano">
           <svg class="w-4 h-4 mr-2 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
             <path fill-rule="evenodd" d="M8 7V2.2a2 2 0 0 0-.5.4l-4 3.9a2 2 0 0 0-.3.5H8Zm2 0V2h7a2 2 0 0 1 2 2v.1a5 5 0 0 0-4.7 1.4l-6.7 6.6a3 3 0 0 0-.8 1.6l-.7 3.7a3 3 0 0 0 3.5 3.5l3.7-.7a3 3 0 0 0 1.5-.9l4.2-4.2V20a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9h5a2 2 0 0 0 2-2Z" clip-rule="evenodd" />
             <path fill-rule="evenodd" d="M17.4 8a1 1 0 0 1 1.2.3 1 1 0 0 1 0 1.6l-.3.3-1.6-1.5.4-.4.3-.2Zm-2.1 2.1-4.6 4.7-.4 1.9 1.9-.4 4.6-4.7-1.5-1.5ZM17.9 6a3 3 0 0 0-2.2 1L9 13.5a1 1 0 0 0-.2.5L8 17.8a1 1 0 0 0 1.2 1.1l3.7-.7c.2 0 .4-.1.5-.3l6.6-6.6A3 3 0 0 0 18 6Z" clip-rule="evenodd" />
@@ -44,17 +44,17 @@ include_once './side-nav-bar.php';
           Register
         </button>
         <!-- Main modal -->
-        <div id="register-modal" data-modal-backdrop="static" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div id="register-modal" data-modal-backdrop="static" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full backdrop-blur-sm bg-ghost-lavender bg-opacity-50">
           <div class="relative w-full max-w-4xl max-h-full">
             <!-- Modal content -->
-            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <div class="relative bg-white rounded-2xl shadow">
               <!-- Modal header -->
-              <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-                <h1 class="text-4xl font-bold text-gray-900 dark:text-white">
+              <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t border-indigo-100">
+                <h1 class="text-4xl font-bold text-corn-flower-blue">
                   Create account
                 </h1>
                 <!-- Close modal -->
-                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="register-modal">
+                <button type="button" class="rounded-lg text-sm h-8 w-8 ms-auto inline-flex justify-center items-center text-neon-blue focus:outline-none hover:bg-ghost-lavender focus:ring-4 focus:ring-deep-lav-blue transition ease-in-out duration-300 hover:scale-105 cursor-pointer" data-modal-toggle="register-modal">
                   <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
                   </svg>
@@ -62,39 +62,39 @@ include_once './side-nav-bar.php';
                 </button>
               </div>
               <!-- Modal body -->
-              <form class="p-6">
+              <form class="p-6 bg-white">
                 <!-- Student number -->
                 <div class="grid gap-6 mb-6 md:grid-cols-7">
                   <div class="col-span-2">
-                    <label for="student-number" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Student number</label>
-                    <input type="text" id="student-number" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" pattern="[0-9]{2}-[0-9]{4}" placeholder="12-3456" required>
+                    <label for="student-number" class="block mb-2 text-sm font-medium text-deep-koamaru">Student number</label>
+                    <input type="text" id="student-number" class="bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-lg focus:ring-neon-blue focus:border-neon-blue block w-full p-2.5 placeholder-moody-blue transition ease-in-out duration-300" pattern="[0-9]{2}-[0-9]{4}" placeholder="12-3456" required>
                   </div>
                 </div>
                 <!-- Personal data section -->
-                <hr class="h-px my-4 bg-gray-600 border-0 dark:border-gray-600">
-                <h3 class="text-2xl font-medium text-gray-900 dark:text-white mb-6">
+                <hr class="h-px my-4 bg-indigo-100 border-0 border-indigo-100">
+                <h3 class="text-2xl font-medium text-deep-koamaru mb-6">
                   Personal
                 </h3>
                 <div class="grid gap-6 mb-6 md:grid-cols-7">
                   <!-- First name -->
                   <div class="col-span-2">
-                    <label for="first-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First name</label>
-                    <input type="text" id="first-name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Juan" required>
+                    <label for="first-name" class="block mb-2 text-sm font-medium text-deep-koamaru">First name</label>
+                    <input type="text" id="first-name" class="bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-lg focus:ring-neon-blue focus:border-neon-blue block w-full p-2.5 placeholder-moody-blue transition ease-in-out duration-300" placeholder="Juan" required>
                   </div>
                   <!-- Middle name -->
                   <div class="col-span-2">
-                    <label for="middle-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Middle name</label>
-                    <input type="text" id="middle-name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Dela">
+                    <label for="middle-name" class="block mb-2 text-sm font-medium text-deep-koamaru">Middle name</label>
+                    <input type="text" id="middle-name" class="bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-lg focus:ring-neon-blue focus:border-neon-blue block w-full p-2.5 placeholder-moody-blue transition ease-in-out duration-300" placeholder="Dela">
                   </div>
                   <!-- Last name -->
                   <div class="col-span-2">
-                    <label for="last-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last name</label>
-                    <input type="text" id="last-name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Dela Cruz" required>
+                    <label for="last-name" class="block mb-2 text-sm font-medium text-deep-koamaru">Last name</label>
+                    <input type="text" id="last-name" class="bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-lg focus:ring-neon-blue focus:border-neon-blue block w-full p-2.5 placeholder-moody-blue transition ease-in-out duration-300" placeholder="Dela Cruz" required>
                   </div>
                   <!-- Suffix -->
                   <div class="col-span-1">
-                    <label for="suffix" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Suffix</label>
-                    <select id="suffix" class="cursor-pointer bg-gray-50 border border-gray-300 text-gray-900 rounded-lg text-sm px-5 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 focus:ring-blue-500 dark:text-white dark:focus:border-blue-500">
+                    <label for="suffix" class="block mb-2 text-sm font-medium text-deep-koamaru">Suffix</label>
+                    <select id="suffix" class="bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-lg focus:ring-neon-blue focus:border-neon-blue block w-full p-2.5 placeholder-moody-blue transition ease-in-out duration-300">
                       <option value="" selected>Select</option>
                       <option value="Jr.">Jr.</option>
                       <option value="Sr.">Sr.</option>
@@ -107,27 +107,27 @@ include_once './side-nav-bar.php';
                   </div>
                   <!-- Birth date -->
                   <div class="col-span-2">
-                    <label for="birth-date" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Date of birth</label>
+                    <label for="birth-date" class="block mb-2 text-sm font-medium text-deep-koamaru">Date of birth</label>
                     <div class="relative max-w-sm">
                       <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <svg class="w-4 h-4 text-moody-blue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                           <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
                         </svg>
                       </div>
-                      <input datepicker datepicker-autohide type="text" id="birth-date" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Select date" required>
+                      <input datepicker datepicker-autohide type="text" id="birth-date" class="bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-lg focus:ring-neon-blue focus:border-neon-blue block w-full ps-10 p-2.5 placeholder-moody-blue transition ease-in-out duration-300" placeholder="Select date" required>
                     </div>
                   </div>
                 </div>
                 <!-- Academic data section -->
-                <hr class="h-px my-4 bg-gray-600 border-0 dark:border-gray-600">
-                <h3 class="text-2xl font-medium text-gray-900 dark:text-white mb-6">
+                <hr class="h-px my-4 bg-indigo-100 border-0 border-indigo-100">
+                <h3 class="text-2xl font-medium text-deep-koamaru mb-6">
                   Academic
                 </h3>
                 <div class="grid gap-6 mb-6 md:grid-cols-7">
                   <!-- Program -->
                   <div class="col-span-2">
-                    <label for="program" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Program</label>
-                    <select id="program" class="cursor-pointer bg-gray-50 border border-gray-300 text-gray-900 rounded-lg text-sm w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 focus:ring-blue-500 dark:text-white dark:focus:border-blue-500" required>
+                    <label for="program" class="block mb-2 text-sm font-medium text-deep-koamaru">Program</label>
+                    <select id="program" class="bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-lg focus:ring-neon-blue focus:border-neon-blue block w-full p-2.5 placeholder-moody-blue transition ease-in-out duration-300" required>
                       <option value="" selected disabled>Select</option>
                       <option value="BSENT">BSENT</option>
                       <option value="BSA">BSA</option>
@@ -142,8 +142,8 @@ include_once './side-nav-bar.php';
                   </div>
                   <!-- Year level -->
                   <div class="col-span-2">
-                    <label for="year-level" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Year level</label>
-                    <select id="year-level" class="cursor-pointer bg-gray-50 border border-gray-300 text-gray-900 rounded-lg text-sm w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 focus:ring-blue-500 dark:text-white dark:focus:border-blue-500" required>
+                    <label for="year-level" class="block mb-2 text-sm font-medium text-deep-koamaru">Year level</label>
+                    <select id="year-level" class="bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-lg focus:ring-neon-blue focus:border-neon-blue block w-full p-2.5 placeholder-moody-blue transition ease-in-out duration-300" required>
                       <option value="" selected disabled>Select</option>
                       <option value="1st-year">1st year</option>
                       <option value="2nd-year">2nd year</option>
@@ -154,53 +154,53 @@ include_once './side-nav-bar.php';
                   </div>
                   <!-- Classification -->
                   <div class="col-span-2">
-                    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Classification</label>
+                    <label class="block mb-2 text-sm font-medium text-deep-koamaru">Classification</label>
                     <div class="flex mt-4">
                       <div class="flex items-center me-10">
-                        <input id="regular" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 cursor-pointer">
-                        <label for="regular" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Regular</label>
+                        <input id="regular" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-neon-blue bg-ghost-white border-lavender focus:ring-neon-blue focus:ring-2 cursor-pointer transition duration-300 ease-in-out">
+                        <label for="regular" class="ms-2 text-sm font-medium text-deep-koamaru">Regular</label>
                       </div>
                       <div class="flex items-center me-4">
-                        <input id="irregular" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 cursor-pointer">
-                        <label for="irregular" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Irregular</label>
+                        <input id="irregular" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-neon-blue bg-ghost-white border-lavender focus:ring-neon-blue focus:ring-2 cursor-pointer transition duration-300 ease-in-out">
+                        <label for="irregular" class="ms-2 text-sm font-medium text-deep-koamaru">Irregular</label>
                       </div>
                     </div>
                   </div>
                   <!-- Section -->
                   <div class="col-span-1">
-                    <label for="section" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Section</label>
-                    <input type="text" id="section" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="SBIT-1A" required>
+                    <label for="section" class="block mb-2 text-sm font-medium text-deep-koamaru">Section</label>
+                    <input type="text" id="section" class="bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-lg focus:ring-neon-blue focus:border-neon-blue block w-full p-2.5 placeholder-moody-blue transition ease-in-out duration-300" placeholder="SBIT-1A" required>
                   </div>
                 </div>
                 <!-- Account data section -->
-                <hr class="h-px my-4 bg-gray-600 border-0 dark:border-gray-600">
-                <h3 class="text-2xl font-medium text-gray-900 dark:text-white mb-6">
+                <hr class="h-px my-4 bg-indigo-100 border-0 dark:border-indigo-100">
+                <h3 class="text-2xl font-medium text-deep-koamaru mb-6">
                   Account
                 </h3>
                 <div class="grid gap-6 mb-6 md:grid-cols-7">
                   <!-- Email address -->
                   <div class="col-span-2">
-                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email address</label>
-                    <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="juan.dela.cruz@gmail.com" required>
+                    <label for="email" class="block mb-2 text-sm font-medium text-deep-koamaru">Email address</label>
+                    <input type="email" id="email" class="bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-lg focus:ring-neon-blue focus:border-neon-blue block w-full p-2.5 placeholder-moody-blue transition ease-in-out duration-300" placeholder="juan.dela.cruz@gmail.com" required>
                   </div>
                   <!-- Username -->
                   <div class="col-span-2">
-                    <label for="username" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Username</label>
-                    <input type="text" id="username" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Juan123" required>
+                    <label for="username" class="block mb-2 text-sm font-medium text-deep-koamaru">Username</label>
+                    <input type="text" id="username" class="bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-lg focus:ring-neon-blue focus:border-neon-blue block w-full p-2.5 placeholder-moody-blue transition ease-in-out duration-300" placeholder="Juan123" required>
                   </div>
                   <!-- Temporary password -->
                   <div class="col-span-2">
-                    <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Temporary password</label>
-                    <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="•••••••••" required>
+                    <label for="password" class="block mb-2 text-sm font-medium text-deep-koamaru">Temporary password</label>
+                    <input type="text" id="password" class="bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-lg focus:ring-neon-blue focus:border-neon-blue block w-full p-2.5 placeholder-moody-blue transition ease-in-out duration-300" placeholder="•••••••••" required>
                   </div>
                 </div>
               </form>
               <!-- Modal footer -->
-              <div class="flex items-center p-4 md:p-5 space-x-3 rtl:space-x-reverse border-t border-gray-200 rounded-b dark:border-gray-600">
+              <div class="flex items-center p-4 md:p-5 space-x-3 rtl:space-x-reverse border-t border-indigo-100 rounded-b">
                 <!-- Register button -->
-                <button data-modal-hide="register-modal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Register</button>
+                <button data-modal-hide="register-modal" type="button" class="text-white bg-neon-blue hover:bg-free-speech-blue focus:ring-4 focus:outline-none focus:ring-perano font-medium rounded-md text-sm px-5 py-2.5 text-center transition ease-in-out duration-300 hover:scale-105">Register</button>
                 <!-- Cancel button -->
-                <button data-modal-hide="register-modal" type="button" class="ms-3 text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Cancel</button>
+                <button data-modal-hide="register-modal" type="button" class="ms-3 text-neon-blue bg-ghost-lavender hover:bg-lavender-blue focus:ring-4 focus:outline-none focus:ring-deep-lav-blue rounded-md text-sm font-medium px-5 py-2.5 focus:z-10 transition duration-300 ease-in-out hover:scale-105">Cancel</button>
               </div>
             </div>
           </div>
