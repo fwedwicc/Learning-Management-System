@@ -18,7 +18,7 @@
 
 <body class="bg-ghost-white">
   <!-- Top navigation -->
-  <nav class="fixed top-0 z-50 w-full bg-lav-sant border-b border-lavender-blue">
+  <nav class="fixed top-0 z-40 w-full bg-lav-sant border-b border-lavender-blue">
     <div class="px-3 py-4 lg:px-5 lg:pl-3">
       <div class="flex items-center justify-between">
         <div class="flex items-center justify-start rtl:justify-end">
@@ -149,7 +149,7 @@
       </div>
   </nav>
   <!-- Left Sidebar -->
-  <aside id="logo-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full bg-lav-sant border-r border-lavender-blue sm:translate-x-0" aria-label="Sidebar">
+  <aside id="logo-sidebar" class="fixed top-0 left-0 z-30 w-64 h-screen pt-20 transition-transform -translate-x-full bg-lav-sant border-r border-lavender-blue sm:translate-x-0" aria-label="Sidebar">
     <div class="h-full px-3 pb-4 overflow-y-auto bg-lav-sant">
       <ul class="space-y-2 font-medium">
         <li>
@@ -229,16 +229,16 @@
     </div>
   </aside>
   <!-- Main modal -->
-  <div id="year-term-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-    <div class="relative p-4 w-full max-w-md max-h-full">
+  <div id="year-term-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full backdrop-blur-sm bg-ghost-white bg-opacity-40">
+    <div class="relative p-4 w-full max-w-3xl max-h-full">
       <!-- Modal content -->
-      <div class="relative bg-white rounded-lg shadow">
+      <div class="relative bg-ghost-white rounded-2xl shadow">
         <!-- Modal header -->
-        <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-            Open positions
+        <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t border-indigo-100">
+          <h3 class="text-2xl font-bold text-corn-flower-blue">
+            Year and Terms
           </h3>
-          <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm h-8 w-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="year-term-modal">
+          <button type="button" class="rounded-lg text-sm h-8 w-8 ms-auto inline-flex justify-center items-center text-neon-blue focus:outline-none hover:bg-ghost-lavender focus:ring-4 focus:ring-deep-lav-blue transition ease-in-out duration-300 hover:scale-105 cursor-pointer" data-modal-toggle="year-term-modal">
             <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
             </svg>
@@ -247,48 +247,104 @@
         </div>
         <!-- Modal body -->
         <div class="p-4 md:p-5">
-          <p class="text-gray-500 dark:text-gray-400 mb-4">Select your desired position:</p>
-          <ul class="space-y-4 mb-4">
-            <li>
-              <input type="radio" id="job-1" name="job" value="job-1" class="hidden peer" required />
-              <label for="job-1" class="inline-flex items-center justify-between w-full p-5 text-gray-900 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-500 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-500">
-                <div class="block">
-                  <div class="w-full text-lg font-semibold">UI/UX Engineer</div>
-                  <div class="w-full text-gray-500 dark:text-gray-400">Flowbite</div>
+          <ul class="px-5 py-5 gap-4 grid grid-cols-2">
+            <li class="col-span-1">
+              <!-- 1st Year 1st Semester -->
+              <a href="#" class="relative block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue flex justify-between items-center">
+                <div class="block space-y-2">
+                  <div class="w-full text-xl font-bold text-corn-flower-blue">1Y1</div>
+                  <div class="w-full text-normal text-deep-koamaru">1st Year, 1st Semester</div>
                 </div>
-                <svg class="w-4 h-4 ms-3 rtl:rotate-180 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <svg class="w-4 h-4 ms-3 rtl:rotate-180 text-corn-flower-blue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                 </svg>
-              </label>
+              </a>
             </li>
-            <li>
-              <input type="radio" id="job-2" name="job" value="job-2" class="hidden peer">
-              <label for="job-2" class="inline-flex items-center justify-between w-full p-5 text-gray-900 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-500 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-500">
-                <div class="block">
-                  <div class="w-full text-lg font-semibold">React Developer</div>
-                  <div class="w-full text-gray-500 dark:text-gray-400">Alphabet</div>
+            <li class="col-span-1">
+              <!-- 1st Year 2nd Semester -->
+              <a href="#" class="relative block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue flex justify-between items-center">
+                <div class="block space-y-2">
+                  <div class="w-full text-xl font-bold text-corn-flower-blue">1Y2</div>
+                  <div class="w-full text-normal text-deep-koamaru">1st Year, 2nd Semester</div>
                 </div>
-                <svg class="w-4 h-4 ms-3 rtl:rotate-180 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <svg class="w-4 h-4 ms-3 rtl:rotate-180 text-corn-flower-blue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                 </svg>
-              </label>
+              </a>
             </li>
-            <li>
-              <input type="radio" id="job-3" name="job" value="job-3" class="hidden peer">
-              <label for="job-3" class="inline-flex items-center justify-between w-full p-5 text-gray-900 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-500 dark:peer-checked:text-blue-500 peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-900 hover:bg-gray-100 dark:text-white dark:bg-gray-600 dark:hover:bg-gray-500">
-                <div class="block">
-                  <div class="w-full text-lg font-semibold">Full Stack Engineer</div>
-                  <div class="w-full text-gray-500 dark:text-gray-400">Apple</div>
+            <li class="col-span-1">
+              <!-- 2nd Year 1st Semester -->
+              <a href="#" class="relative block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue flex justify-between items-center">
+                <div class="block space-y-2">
+                  <div class="w-full text-xl font-bold text-corn-flower-blue">2Y1</div>
+                  <div class="w-full text-normal text-deep-koamaru">2nd Year, 1st Semester</div>
                 </div>
-                <svg class="w-4 h-4 ms-3 rtl:rotate-180 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <svg class="w-4 h-4 ms-3 rtl:rotate-180 text-corn-flower-blue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                 </svg>
-              </label>
+              </a>
+            </li>
+            <li class="col-span-1">
+              <!-- 2nd Year 2nd Semester -->
+              <a href="#" class="relative block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue flex justify-between items-center">
+                <div class="block space-y-2">
+                  <div class="w-full text-xl font-bold text-corn-flower-blue">2Y2</div>
+                  <div class="w-full text-normal text-deep-koamaru">2nd Year, 2nd Semester</div>
+                </div>
+                <svg class="w-4 h-4 ms-3 rtl:rotate-180 text-corn-flower-blue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+              </a>
+            </li>
+            <li class="col-span-1">
+              <!-- 3rd Year 1st Semester -->
+              <a href="#" class="relative block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue flex justify-between items-center">
+                <div class="block space-y-2">
+                  <div class="w-full text-xl font-bold text-corn-flower-blue">3Y1</div>
+                  <div class="w-full text-normal text-deep-koamaru">3rd Year, 1st Semester</div>
+                </div>
+                <svg class="w-4 h-4 ms-3 rtl:rotate-180 text-corn-flower-blue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+              </a>
+            </li>
+            <li class="col-span-1">
+              <!-- 3rd Year 2nd Semester -->
+              <a href="#" class="relative block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue flex justify-between items-center">
+                <div class="block space-y-2">
+                  <div class="w-full text-xl font-bold text-corn-flower-blue">3Y2</div>
+                  <div class="w-full text-normal text-deep-koamaru">3rd Year, 2nd Semester</div>
+                </div>
+                <svg class="w-4 h-4 ms-3 rtl:rotate-180 text-corn-flower-blue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+              </a>
+            </li>
+            <li class="col-span-1">
+              <!-- 4th Year 1st Semester -->
+              <a href="#" class="relative block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue flex justify-between items-center">
+                <div class="block space-y-2">
+                  <div class="w-full text-xl font-bold text-corn-flower-blue">4Y1</div>
+                  <div class="w-full text-normal text-deep-koamaru">4th Year, 1st Semester</div>
+                </div>
+                <svg class="w-4 h-4 ms-3 rtl:rotate-180 text-corn-flower-blue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+              </a>
+            </li>
+            <li class="col-span-1">
+              <!-- 4th Year 2nd Semester -->
+              <a href="#" class="relative block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue flex justify-between items-center">
+                <div class="block space-y-2">
+                  <div class="w-full text-xl font-bold text-corn-flower-blue">4Y2</div>
+                  <div class="w-full text-normal text-deep-koamaru">4th Year, 2nd Semester</div>
+                </div>
+                <svg class="w-4 h-4 ms-3 rtl:rotate-180 text-corn-flower-blue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+              </a>
             </li>
           </ul>
-          <button class="text-white inline-flex w-full justify-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            Next step
-          </button>
         </div>
       </div>
     </div>
