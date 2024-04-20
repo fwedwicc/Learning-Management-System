@@ -219,7 +219,7 @@
         </button>
         <ul id="dropdown-section" class="hidden py-2 space-y-2">
           <li>
-            <a href="#" type="button" class="flex items-center w-full p-2 text-corn-flower-blue transition duration-300 ease-in-out rounded-lg pl-11 group hover:bg-ghost-lavender hover:text-neon-blue">BSIT</a>
+            <button data-modal-target="section-modal" data-modal-toggle="section-modal" class="flex items-center w-full p-2 text-corn-flower-blue transition duration-300 ease-in-out rounded-lg pl-11 group hover:bg-ghost-lavender hover:text-neon-blue">BSIT</button>
           </li>
           <li>
             <a href="#" type="button" class="flex items-center w-full p-2 text-corn-flower-blue transition duration-300 ease-in-out rounded-lg pl-11 group hover:bg-ghost-lavender hover:text-neon-blue">BSCS</a>
@@ -231,7 +231,7 @@
       </ul>
     </div>
   </aside>
-  <!-- Main modal -->
+  <!-- Main modal for Year and Terms -->
   <div id="year-term-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full backdrop-blur-sm bg-ghost-lavender bg-opacity-50">
     <div class="relative p-4 w-full max-w-3xl max-h-full">
       <!-- Modal content -->
@@ -352,7 +352,86 @@
       </div>
     </div>
   </div>
+  <!-- Main modal for Sections List -->
+  <div id="section-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full backdrop-blur-sm bg-ghost-lavender bg-opacity-50">
+    <div class="relative p-4 w-full max-w-xl max-h-full">
+      <!-- Modal content -->
+      <div class="relative bg-ghost-white rounded-2xl shadow">
+        <!-- Modal header -->
+        <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t border-indigo-100">
+          <h3 class="text-2xl font-bold text-corn-flower-blue">
+            Sections List | BSIT
+          </h3>
+          <button type="button" class="rounded-lg text-sm h-8 w-8 ms-auto inline-flex justify-center items-center text-neon-blue focus:outline-none hover:bg-ghost-lavender focus:ring-4 focus:ring-deep-lav-blue transition ease-in-out duration-300 hover:scale-105 cursor-pointer" data-modal-toggle="section-modal">
+            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+            </svg>
+            <span class="sr-only">Close modal</span>
+          </button>
+        </div>
+        <!-- Modal body -->
+        <div class="p-4 md:p-5">
+          <div class="flex justify-end items-center gap-4 px-5 mb-6">
+            <!-- Remove Section -->
+            <button class="inline-flex gap-1 items-center justify-center pl-3 pr-4 py-2 bg-ghost-lavender text-neon-blue font-medium cursor-pointer transition ease-in-out duration-300 hover:scale-105 rounded-md hover:bg-lavender-blue focus:ring-4 focus:outline-none focus:ring-deep-lav-blue">
+              <svg class="w-5 h-5 mr-1 text-neon-blue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14" />
+              </svg>
+              Remove
+            </button>
+            <!-- Add Section -->
+            <button class="inline-flex gap-1 items-center justify-center pl-3 pr-4 py-2 bg-neon-blue text-white font-medium cursor-pointer transition ease-in-out duration-300 hover:scale-105 rounded-md hover:bg-free-speech-blue focus:ring-4 focus:outline-none focus:ring-perano">
+              <svg class="w-5 h-5 mr-1 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7 7V5" />
+              </svg>
+              Add
+            </button>
+          </div>
+          <!-- TODO: Section links to table modal -->
+          <ul class="px-5 py-5 gap-4 space-y-4">
+            <li class="">
+              <!-- 1A -->
+              <a href="#" class="relative block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue flex justify-between items-center">
+                <h1 class="w-full text-xl font-bold text-corn-flower-blue">1A</h1>
+                <svg class="w-4 h-4 ms-3 rtl:rotate-180 text-corn-flower-blue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+              </a>
+            </li>
+            <li class="">
+              <!-- 1B -->
+              <a href="#" class="relative block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue flex justify-between items-center">
+                <h1 class="w-full text-xl font-bold text-corn-flower-blue">1B</h1>
+                <svg class="w-4 h-4 ms-3 rtl:rotate-180 text-corn-flower-blue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+              </a>
+            </li>
+            <li class="">
+              <!-- 1C -->
+              <a href="#" class="relative block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue flex justify-between items-center">
+                <h1 class="w-full text-xl font-bold text-corn-flower-blue">1C</h1>
+                <svg class="w-4 h-4 ms-3 rtl:rotate-180 text-corn-flower-blue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+              </a>
+            </li>
+            <li class="">
+              <!-- 1D -->
+              <a href="#" class="relative block p-6 bg-white rounded-2xl hover:shadow-[15px_15px_30px_-3px_rgba(224,227,246)] transition duration-700 ease-in-out col-span-1 overflow-y-auto border-b-4 border-transparent hover:border-neon-blue flex justify-between items-center">
+                <h1 class="w-full text-xl font-bold text-corn-flower-blue">1D</h1>
+                <svg class="w-4 h-4 ms-3 rtl:rotate-180 text-corn-flower-blue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+              </a>
+            </li>
 
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
   <script>
     // JS for state persistence of dropdown in sidebar
     document.addEventListener("DOMContentLoaded", function() {
