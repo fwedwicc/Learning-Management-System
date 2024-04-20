@@ -374,12 +374,17 @@ include_once './side-nav-bar.php';
   <aside id="logo-sidebar" class="fixed top-0 right-0 z-40 w-[21rem] h-screen pt-20 transition-transform -translate-x-full bg-ghost-white sm:translate-x-0 hidden sm:block" aria-label="Sidebar">
     <div class="h-full pt-2 pb-7 gap-5 pl-1 pr-8 overflow-y-auto bg-ghost-white grid grid-rows-2">
       <!-- Announcement card -->
-      <div class="block max-w-sm p-8 bg-white rounded-2xl drop-shadows row-span-1 overflow-y-auto space-y-4">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-corn-flower-blue">Announcements</h5>
-        <p class="font-normal text-deep-koamaru text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, dolores. Recusandae consequatur explicabo quibusdam dolore hic accusantium fuga tempore rerum. Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      <div class="block max-w-sm p-8 bg-white rounded-2xl drop-shadows row-span-1 overflow-y-auto space-y-4 flex flex-col justify-between">
+        <div>
+          <h5 class="mb-4 text-2xl font-bold tracking-tight text-corn-flower-blue">Announcements</h5>
+          <p class="font-normal text-deep-koamaru text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, dolores. Recusandae consequatur explicabo quibusdam dolore hic accusantium fuga tempore rerum. Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </div>
+        <span>Posted on:
+          <span class="italic font-medium text-deep-koamaru">
+            April 18, 2024
+          </span>
+        </span>
       </div>
-      <!-- TODO: Modal for instructor's announcement -->
-      <!-- Todo card test -->
       <?php
       include './todo-card.php';
       ?>

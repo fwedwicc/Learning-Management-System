@@ -137,13 +137,28 @@
                 <ul class="py-2 text-sm font-medium text-deep-koamaru text-center" aria-labelledby="dropdownUserAvatarButton">
                   <li>
                     <a href="./student-settings.php" class="block px-4 py-2 hover:bg-ghost-white hover:text-neon-blue transtion duration-300 ease-in-out">Settings</a>
-                    <!-- TODO: Student Settings Page -->
                   </li>
                   <li>
-                    <a href="#" class="block px-4 py-2 hover:bg-ghost-white hover:text-neon-blue transtion duration-300 ease-in-out">Sign out</a>
-                    <!-- TODO: Sign Out Modal -->
+                    <button data-modal-target="sign-out-modal" data-modal-toggle="sign-out-modal" type="button" class="w-full px-4 py-2 hover:bg-ghost-white hover:text-neon-blue transtion duration-300 ease-in-out">Logout</button>
                   </li>
                 </ul>
+              </div>
+              <!-- Sign Out Modal -->
+              <div id="sign-out-modal" tabindex="-1" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full backdrop-blur-sm bg-ghost-lavender bg-opacity-50">
+                <div class="relative p-4 w-full max-w-md max-h-full">
+                  <div class="relative bg-white rounded-2xl py-8">
+                    <div class="p-4 md:p-5 text-center space-x-4">
+                      <svg class="mx-auto mb-4 text-corn-flower-blue w-12 h-12" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                      </svg>
+                      <h3 class="mb-12 text-lg font-normal text-deep-koamaru">Are you sure you want to Logout?</h3>
+                      <button data-modal-hide="sign-out-modal" type="button" class="text-white bg-red-400 hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-lg font-medium inline-flex items-center px-7 py-2.5 text-center transition duration-300 ease-in-out hover:scale-105">
+                        Yes
+                      </button>
+                      <button data-modal-hide="sign-out-modal" type="button" class="text-deep-koamaru bg-transparent border border-purple-blue hover:bg-ghost-lavender focus:ring-4 focus:outline-none focus:ring-perano font-medium rounded-lg text-lg font-medium inline-flex items-center px-7 py-2.5 text-center transition duration-300 ease-in-out hover:scale-105">No</button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -151,7 +166,7 @@
       </div>
   </nav>
   <!-- Left Sidebar -->
-  <aside id="logo-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full bg-lav-sant border-r border-lavender-blue sm:translate-x-0" aria-label="Sidebar">
+  <aside id="logo-sidebar" class="fixed top-0 left-0 z-30 w-64 h-screen pt-20 transition-transform -translate-x-full bg-lav-sant border-r border-lavender-blue sm:translate-x-0" aria-label="Sidebar">
     <div class="h-full px-3 pb-4 overflow-y-auto bg-lav-sant">
       <ul class="space-y-2 font-medium">
         <li>
