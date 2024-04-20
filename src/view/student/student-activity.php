@@ -160,7 +160,13 @@ include_once './side-nav-bar.php';
               </button>
             </div>
           </form>
-          <!-- TODO: Private Comments -->
+          <div class="bg-ghost-white p-3 rounded-md">
+            <span class="text-deep-koamaru font-medium">
+              Juan Dela Cruz
+              <span class="italic block font-normal text-sm">April 19</span>
+            </span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nemo ad mollitia natus.</p>
+          </div>
         </div>
       </div>
     </aside>

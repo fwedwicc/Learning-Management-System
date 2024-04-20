@@ -60,8 +60,15 @@ include_once './side-nav-bar.php';
           </svg>
           <h5 class="text-xl font-medium text-corn-flower-blue">General Announcements</h5>
         </span>
-        <p class="font-normal text-deep-koamaru px-8 pt-1 pb-8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, dolores. Recusandae consequatur explicabo quibusdam dolore hic accusantium fuga tempore rerum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam pariatur voluptates velit, architecto quia obcaecati expedita esse ea enim rem laborum incidunt at consequatur blanditiis repudiandae! Itaque libero eum enim?</p>
-        <!-- TODO: Modal for general announcements -->
+        <div class="px-8 pt-1 pb-7">
+          <p class="font-normal text-deep-koamaru">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, dolores. Recusandae consequatur explicabo quibusdam dolore hic accusantium fuga tempore rerum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam pariatur voluptates velit, architecto quia obcaecati expedita esse ea enim rem laborum incidunt at consequatur blanditiis repudiandae! Itaque libero eum enim?</p>
+          <br>
+          <span>Posted on:
+            <span class="italic font-medium text-deep-koamaru">
+              April 18, 2024
+            </span>
+          </span>
+        </div>
       </div>
       <!--  Enrolled Course -->
       <h1 class="font-bold text-4xl pb-6 text-corn-flower-blue mt-8 mb-2">Enrolled Courses</h1>
@@ -126,7 +133,7 @@ include_once './side-nav-bar.php';
     </div>
   </div>
   <!-- Right Sidebar -->
-  <aside id="logo-sidebar" class="fixed top-0 right-0 z-40 w-[22rem] h-screen pt-20 transition-transform -translate-x-full bg-ghost-white sm:translate-x-0 hidden sm:block" aria-label="Sidebar">
+  <aside id="logo-sidebar" class="fixed top-0 right-0 z-30 w-[22rem] h-screen pt-20 transition-transform -translate-x-full bg-ghost-white sm:translate-x-0 hidden sm:block" aria-label="Sidebar">
     <div class="h-full pt-2 pb-7 gap-5 pl-1 pr-8 overflow-y-auto bg-ghost-white grid grid-rows-2">
       <!-- Calendar card -->
       <div class="block max-w-sm px-5 pt-3 bg-white rounded-2xl drop-shadows row-span-1 md:overflow-y-hidden">
