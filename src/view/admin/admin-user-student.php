@@ -185,14 +185,31 @@ include_once './side-nav-bar.php';
                     <input type="text" id="password" class="bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-lg focus:ring-neon-blue focus:border-neon-blue block w-full p-2.5 placeholder-moody-blue transition ease-in-out duration-300" placeholder="•••••••••" required>
                   </div>
                 </div>
+                <!-- Modal footer -->
+                <div class="border-t border-indigo-100 pt-6">
+                  <!-- Register button -->
+                  <button data-modal-target="register-confirmation-modal" data-modal-toggle="register-confirmation-modal" type="button" class="text-white bg-neon-blue hover:bg-free-speech-blue focus:ring-4 focus:outline-none focus:ring-perano font-medium rounded-md text-sm px-5 py-2.5 text-center transition ease-in-out duration-300 hover:scale-105">Register</button>
+                  <!-- Cancel button -->
+                  <button data-modal-hide="register-modal" type="button" class="ms-3 text-neon-blue bg-ghost-lavender hover:bg-lavender-blue focus:ring-4 focus:outline-none focus:ring-deep-lav-blue rounded-md text-sm font-medium px-5 py-2.5 focus:z-10 transition duration-300 ease-in-out hover:scale-105">Cancel</button>
+                </div>
+                <!-- Confirmation Modal Content -->
+                <div id="register-confirmation-modal" tabindex="-1" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-0rem)] max-h-full backdrop-blur-sm bg-ghost-lavender bg-opacity-50">
+                  <div class="relative p-4 w-full max-w-md max-h-full">
+                    <div class="relative bg-white rounded-2xl py-8">
+                      <div class="p-4 md:p-5 text-center space-x-4">
+                        <svg class="mx-auto mb-4 text-corn-flower-blue w-12 h-12" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        <h3 class="mb-12 text-lg font-normal text-deep-koamaru">Are you sure you want to register and enroll the account?</h3>
+                        <button data-modal-hide="register-confirmation-modal" type="button" class="text-white bg-red-400 hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-lg font-medium inline-flex items-center px-7 py-2.5 text-center transition duration-300 ease-in-out hover:scale-105">
+                          Yes
+                        </button>
+                        <button data-modal-hide="register-confirmation-modal" type="button" class="text-deep-koamaru bg-transparent border border-purple-blue hover:bg-ghost-lavender focus:ring-4 focus:outline-none focus:ring-perano font-medium rounded-lg text-lg font-medium inline-flex items-center px-7 py-2.5 text-center transition duration-300 ease-in-out hover:scale-105">No</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </form>
-              <!-- Modal footer -->
-              <div class="flex items-center p-4 md:p-5 space-x-3 rtl:space-x-reverse border-t border-indigo-100 rounded-b">
-                <!-- Register button -->
-                <button data-modal-hide="register-modal" type="button" class="text-white bg-neon-blue hover:bg-free-speech-blue focus:ring-4 focus:outline-none focus:ring-perano font-medium rounded-md text-sm px-5 py-2.5 text-center transition ease-in-out duration-300 hover:scale-105">Register</button>
-                <!-- Cancel button -->
-                <button data-modal-hide="register-modal" type="button" class="ms-3 text-neon-blue bg-ghost-lavender hover:bg-lavender-blue focus:ring-4 focus:outline-none focus:ring-deep-lav-blue rounded-md text-sm font-medium px-5 py-2.5 focus:z-10 transition duration-300 ease-in-out hover:scale-105">Cancel</button>
-              </div>
             </div>
           </div>
         </div>
