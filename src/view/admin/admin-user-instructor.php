@@ -19,42 +19,33 @@
 <?php
 include_once './side-nav-bar.php';
 ?>
-<!-- FIXME:  Instructor User Content-->
+
 <body class="bg-ghost-white">
   <div class="p-4 sm:ml-64 h-screen flex flex-col">
     <div class="pt-4 px-5 mt-14 flex-grow flex flex-col">
-      <div class="flex items-center justify-between">
-        <h1 class="font-bold text-4xl text-corn-flower-blue">Instructor List</h1>
-        <!-- Back Button -->
-        <a href="./student-course-overview.php" type="button" class="inline-flex gap-1.5 items-center justify-center text-neon-blue focus:outline-none hover:bg-ghost-lavender focus:ring-4 focus:ring-deep-lav-blue font-medium rounded-md text-sm pl-5 pr-3 py-2.5 transition ease-in-out duration-300 hover:scale-105 cursor-pointer">
-          Back
-          <svg class="w-4 h-4 text-neon-blue mt-[0.2rem]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7" />
-          </svg>
-        </a>
-      </div>
+      <h1 class="font-bold text-4xl text-corn-flower-blue">Instructors List</h1>
       <!-- Main Container -->
-      <div class="flex flex-column sm:flex-row flex-wrap space-y-4 sm:space-y-0 items-center justify-between pb-4 pt-8">
+      <div class="flex flex-column sm:flex-row flex-wrap space-y-4 sm:space-y-0 items-center justify-between pb-6 pt-8">
         <!-- Register new account -->
-        <button type="button" data-modal-target="register-modal" data-modal-toggle="register-modal" class="px-5 py-2.5 text-sm font-medium text-white inline-flex items-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-          <svg class="w-4 h-4 mr-2 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+        <button type="button" data-modal-target="register-modal" data-modal-toggle="register-modal" class="px-5 py-2.5 text-sm font-medium inline-flex items-center rounded-md bg-neon-blue text-white cursor-pointer transition ease-in-out duration-300 hover:scale-105 hover:bg-free-speech-blue focus:ring-4 focus:outline-none focus:ring-perano">
+          <svg class="w-4 h-4 mr-2 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
             <path fill-rule="evenodd" d="M8 7V2.2a2 2 0 0 0-.5.4l-4 3.9a2 2 0 0 0-.3.5H8Zm2 0V2h7a2 2 0 0 1 2 2v.1a5 5 0 0 0-4.7 1.4l-6.7 6.6a3 3 0 0 0-.8 1.6l-.7 3.7a3 3 0 0 0 3.5 3.5l3.7-.7a3 3 0 0 0 1.5-.9l4.2-4.2V20a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9h5a2 2 0 0 0 2-2Z" clip-rule="evenodd" />
             <path fill-rule="evenodd" d="M17.4 8a1 1 0 0 1 1.2.3 1 1 0 0 1 0 1.6l-.3.3-1.6-1.5.4-.4.3-.2Zm-2.1 2.1-4.6 4.7-.4 1.9 1.9-.4 4.6-4.7-1.5-1.5ZM17.9 6a3 3 0 0 0-2.2 1L9 13.5a1 1 0 0 0-.2.5L8 17.8a1 1 0 0 0 1.2 1.1l3.7-.7c.2 0 .4-.1.5-.3l6.6-6.6A3 3 0 0 0 18 6Z" clip-rule="evenodd" />
           </svg>
           Register
         </button>
         <!-- Main modal -->
-        <div id="register-modal" data-modal-backdrop="static" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div id="register-modal" data-modal-backdrop="static" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full backdrop-blur-sm bg-ghost-lavender bg-opacity-50">
           <div class="relative w-full max-w-4xl max-h-full">
             <!-- Modal content -->
-            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <div class="relative bg-white rounded-2xl shadow">
               <!-- Modal header -->
-              <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-                <h1 class="text-4xl font-bold text-gray-900 dark:text-white">
+              <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t border-indigo-100">
+                <h1 class="text-4xl font-bold text-corn-flower-blue">
                   Create account
                 </h1>
                 <!-- Close modal -->
-                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="register-modal">
+                <button type="button" class="rounded-lg text-sm h-8 w-8 ms-auto inline-flex justify-center items-center text-neon-blue focus:outline-none hover:bg-ghost-lavender focus:ring-4 focus:ring-deep-lav-blue transition ease-in-out duration-300 hover:scale-105 cursor-pointer" data-modal-toggle="register-modal">
                   <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
                   </svg>
@@ -62,39 +53,39 @@ include_once './side-nav-bar.php';
                 </button>
               </div>
               <!-- Modal body -->
-              <form class="p-6">
+              <form class="p-6 bg-white">
                 <!-- Student number -->
                 <div class="grid gap-6 mb-6 md:grid-cols-7">
                   <div class="col-span-2">
-                    <label for="student-number" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Student number</label>
-                    <input type="text" id="student-number" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" pattern="[0-9]{2}-[0-9]{4}" placeholder="12-3456" required>
+                    <label for="student-number" class="block mb-2 text-sm font-medium text-deep-koamaru">Student number</label>
+                    <input type="text" id="student-number" class="bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-lg focus:ring-neon-blue focus:border-neon-blue block w-full p-2.5 placeholder-moody-blue transition ease-in-out duration-300" pattern="[0-9]{2}-[0-9]{4}" placeholder="12-3456" required>
                   </div>
                 </div>
                 <!-- Personal data section -->
-                <hr class="h-px my-4 bg-gray-600 border-0 dark:border-gray-600">
-                <h3 class="text-2xl font-medium text-gray-900 dark:text-white mb-6">
+                <hr class="h-px my-4 bg-indigo-100 border-0 border-indigo-100">
+                <h3 class="text-2xl font-medium text-deep-koamaru mb-6">
                   Personal
                 </h3>
                 <div class="grid gap-6 mb-6 md:grid-cols-7">
                   <!-- First name -->
                   <div class="col-span-2">
-                    <label for="first-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First name</label>
-                    <input type="text" id="first-name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Juan" required>
+                    <label for="first-name" class="block mb-2 text-sm font-medium text-deep-koamaru">First name</label>
+                    <input type="text" id="first-name" class="bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-lg focus:ring-neon-blue focus:border-neon-blue block w-full p-2.5 placeholder-moody-blue transition ease-in-out duration-300" placeholder="Juan" required>
                   </div>
                   <!-- Middle name -->
                   <div class="col-span-2">
-                    <label for="middle-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Middle name</label>
-                    <input type="text" id="middle-name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Dela">
+                    <label for="middle-name" class="block mb-2 text-sm font-medium text-deep-koamaru">Middle name</label>
+                    <input type="text" id="middle-name" class="bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-lg focus:ring-neon-blue focus:border-neon-blue block w-full p-2.5 placeholder-moody-blue transition ease-in-out duration-300" placeholder="Dela">
                   </div>
                   <!-- Last name -->
                   <div class="col-span-2">
-                    <label for="last-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last name</label>
-                    <input type="text" id="last-name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Dela Cruz" required>
+                    <label for="last-name" class="block mb-2 text-sm font-medium text-deep-koamaru">Last name</label>
+                    <input type="text" id="last-name" class="bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-lg focus:ring-neon-blue focus:border-neon-blue block w-full p-2.5 placeholder-moody-blue transition ease-in-out duration-300" placeholder="Dela Cruz" required>
                   </div>
                   <!-- Suffix -->
                   <div class="col-span-1">
-                    <label for="suffix" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Suffix</label>
-                    <select id="suffix" class="cursor-pointer bg-gray-50 border border-gray-300 text-gray-900 rounded-lg text-sm px-5 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 focus:ring-blue-500 dark:text-white dark:focus:border-blue-500">
+                    <label for="suffix" class="block mb-2 text-sm font-medium text-deep-koamaru">Suffix</label>
+                    <select id="suffix" class="bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-lg focus:ring-neon-blue focus:border-neon-blue block w-full p-2.5 placeholder-moody-blue transition ease-in-out duration-300">
                       <option value="" selected>Select</option>
                       <option value="Jr.">Jr.</option>
                       <option value="Sr.">Sr.</option>
@@ -107,27 +98,27 @@ include_once './side-nav-bar.php';
                   </div>
                   <!-- Birth date -->
                   <div class="col-span-2">
-                    <label for="birth-date" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Date of birth</label>
+                    <label for="birth-date" class="block mb-2 text-sm font-medium text-deep-koamaru">Date of birth</label>
                     <div class="relative max-w-sm">
                       <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <svg class="w-4 h-4 text-moody-blue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                           <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
                         </svg>
                       </div>
-                      <input datepicker datepicker-autohide type="text" id="birth-date" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Select date" required>
+                      <input datepicker datepicker-autohide type="text" id="birth-date" class="bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-lg focus:ring-neon-blue focus:border-neon-blue block w-full ps-10 p-2.5 placeholder-moody-blue transition ease-in-out duration-300" placeholder="Select date" required>
                     </div>
                   </div>
                 </div>
                 <!-- Academic data section -->
-                <hr class="h-px my-4 bg-gray-600 border-0 dark:border-gray-600">
-                <h3 class="text-2xl font-medium text-gray-900 dark:text-white mb-6">
+                <hr class="h-px my-4 bg-indigo-100 border-0 border-indigo-100">
+                <h3 class="text-2xl font-medium text-deep-koamaru mb-6">
                   Academic
                 </h3>
                 <div class="grid gap-6 mb-6 md:grid-cols-7">
                   <!-- Program -->
                   <div class="col-span-2">
-                    <label for="program" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Program</label>
-                    <select id="program" class="cursor-pointer bg-gray-50 border border-gray-300 text-gray-900 rounded-lg text-sm w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 focus:ring-blue-500 dark:text-white dark:focus:border-blue-500" required>
+                    <label for="program" class="block mb-2 text-sm font-medium text-deep-koamaru">Program</label>
+                    <select id="program" class="bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-lg focus:ring-neon-blue focus:border-neon-blue block w-full p-2.5 placeholder-moody-blue transition ease-in-out duration-300" required>
                       <option value="" selected disabled>Select</option>
                       <option value="BSENT">BSENT</option>
                       <option value="BSA">BSA</option>
@@ -142,8 +133,8 @@ include_once './side-nav-bar.php';
                   </div>
                   <!-- Year level -->
                   <div class="col-span-2">
-                    <label for="year-level" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Year level</label>
-                    <select id="year-level" class="cursor-pointer bg-gray-50 border border-gray-300 text-gray-900 rounded-lg text-sm w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 focus:ring-blue-500 dark:text-white dark:focus:border-blue-500" required>
+                    <label for="year-level" class="block mb-2 text-sm font-medium text-deep-koamaru">Year level</label>
+                    <select id="year-level" class="bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-lg focus:ring-neon-blue focus:border-neon-blue block w-full p-2.5 placeholder-moody-blue transition ease-in-out duration-300" required>
                       <option value="" selected disabled>Select</option>
                       <option value="1st-year">1st year</option>
                       <option value="2nd-year">2nd year</option>
@@ -154,99 +145,84 @@ include_once './side-nav-bar.php';
                   </div>
                   <!-- Classification -->
                   <div class="col-span-2">
-                    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Classification</label>
+                    <label class="block mb-2 text-sm font-medium text-deep-koamaru">Classification</label>
                     <div class="flex mt-4">
                       <div class="flex items-center me-10">
-                        <input id="regular" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 cursor-pointer">
-                        <label for="regular" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Regular</label>
+                        <input id="regular" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-neon-blue bg-ghost-white border-lavender focus:ring-neon-blue focus:ring-2 cursor-pointer transition duration-300 ease-in-out">
+                        <label for="regular" class="ms-2 text-sm font-medium text-deep-koamaru">Regular</label>
                       </div>
                       <div class="flex items-center me-4">
-                        <input id="irregular" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 cursor-pointer">
-                        <label for="irregular" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Irregular</label>
+                        <input id="irregular" type="radio" value="" name="inline-radio-group" class="w-4 h-4 text-neon-blue bg-ghost-white border-lavender focus:ring-neon-blue focus:ring-2 cursor-pointer transition duration-300 ease-in-out">
+                        <label for="irregular" class="ms-2 text-sm font-medium text-deep-koamaru">Irregular</label>
                       </div>
                     </div>
                   </div>
                   <!-- Section -->
                   <div class="col-span-1">
-                    <label for="section" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Section</label>
-                    <input type="text" id="section" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="SBIT-1A" required>
+                    <label for="section" class="block mb-2 text-sm font-medium text-deep-koamaru">Section</label>
+                    <input type="text" id="section" class="bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-lg focus:ring-neon-blue focus:border-neon-blue block w-full p-2.5 placeholder-moody-blue transition ease-in-out duration-300" placeholder="SBIT-1A" required>
                   </div>
                 </div>
                 <!-- Account data section -->
-                <hr class="h-px my-4 bg-gray-600 border-0 dark:border-gray-600">
-                <h3 class="text-2xl font-medium text-gray-900 dark:text-white mb-6">
+                <hr class="h-px my-4 bg-indigo-100 border-0 dark:border-indigo-100">
+                <h3 class="text-2xl font-medium text-deep-koamaru mb-6">
                   Account
                 </h3>
                 <div class="grid gap-6 mb-6 md:grid-cols-7">
                   <!-- Email address -->
                   <div class="col-span-2">
-                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email address</label>
-                    <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="juan.dela.cruz@gmail.com" required>
+                    <label for="email" class="block mb-2 text-sm font-medium text-deep-koamaru">Email address</label>
+                    <input type="email" id="email" class="bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-lg focus:ring-neon-blue focus:border-neon-blue block w-full p-2.5 placeholder-moody-blue transition ease-in-out duration-300" placeholder="juan.dela.cruz@gmail.com" required>
                   </div>
                   <!-- Username -->
                   <div class="col-span-2">
-                    <label for="username" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Username</label>
-                    <input type="text" id="username" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Juan123" required>
+                    <label for="username" class="block mb-2 text-sm font-medium text-deep-koamaru">Username</label>
+                    <input type="text" id="username" class="bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-lg focus:ring-neon-blue focus:border-neon-blue block w-full p-2.5 placeholder-moody-blue transition ease-in-out duration-300" placeholder="Juan123" required>
                   </div>
                   <!-- Temporary password -->
                   <div class="col-span-2">
-                    <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Temporary password</label>
-                    <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="•••••••••" required>
+                    <label for="password" class="block mb-2 text-sm font-medium text-deep-koamaru">Temporary password</label>
+                    <input type="text" id="password" class="bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-lg focus:ring-neon-blue focus:border-neon-blue block w-full p-2.5 placeholder-moody-blue transition ease-in-out duration-300" placeholder="•••••••••" required>
                   </div>
                 </div>
+                <!-- Modal footer -->
+                <div class="border-t border-indigo-100 pt-6">
+                  <!-- Register button -->
+                  <button data-modal-target="register-confirmation-modal" data-modal-toggle="register-confirmation-modal" type="button" class="text-white bg-neon-blue hover:bg-free-speech-blue focus:ring-4 focus:outline-none focus:ring-perano font-medium rounded-md text-sm px-5 py-2.5 text-center transition ease-in-out duration-300 hover:scale-105">Register</button>
+                  <!-- Cancel button -->
+                  <button data-modal-hide="register-modal" type="button" class="ms-3 text-neon-blue bg-ghost-lavender hover:bg-lavender-blue focus:ring-4 focus:outline-none focus:ring-deep-lav-blue rounded-md text-sm font-medium px-5 py-2.5 focus:z-10 transition duration-300 ease-in-out hover:scale-105">Cancel</button>
+                </div>
               </form>
-              <!-- Modal footer -->
-              <div class="flex items-center p-4 md:p-5 space-x-3 rtl:space-x-reverse border-t border-gray-200 rounded-b dark:border-gray-600">
-                <!-- Register button -->
-                <button data-modal-hide="register-modal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Register</button>
-                <!-- Cancel button -->
-                <button data-modal-hide="register-modal" type="button" class="ms-3 text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Cancel</button>
-              </div>
             </div>
           </div>
         </div>
         <!-- Search and filter bar -->
         <div class="flex">
           <!-- <label for="search-dropdown" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Your</label> -->
-          <button id="dropdown-button" data-dropdown-toggle="dropdown" class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-s-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600" type="button">All programs <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <button id="dropdown-button" data-dropdown-toggle="dropdown" class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-white bg-neon-blue rounded-s-md hover:bg-free-speech-blue focus:ring-4 focus:outline-none focus:ring-perano transition ease-in-out duration-300" type="button">All programs
+            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
             </svg>
           </button>
           <!-- programs dropdown - tabi ng search bar -->
-          <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdown-button">
+          <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg drop-shadows w-44">
+            <ul class="py-2 text-sm text-deep-koamaru" aria-labelledby="dropdown-button">
               <li>
-                <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BSENT</button>
+                <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-ghost-white hover:text-neon-blue transition duration-300 ease-in-out">BSIT</button>
               </li>
               <li>
-                <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BSA</button>
+                <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-ghost-white hover:text-neon-blue transition duration-300 ease-in-out">BSCS</button>
               </li>
               <li>
-                <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BSMA</button>
-              </li>
-              <li>
-                <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BSIE</button>
-              </li>
-              <li>
-                <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BSECE</button>
-              </li>
-              <li>
-                <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BSIT</button>
-              </li>
-              <li>
-                <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BSCS</button>
-              </li>
-              <li>
-                <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BSIS</button>
-              </li>
-              <li>
-                <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">BSCE</button>
+                <button type="button" class="inline-flex w-full px-4 py-2 hover:bg-ghost-white hover:text-neon-blue transition duration-300 ease-in-out">BSIS</button>
               </li>
             </ul>
           </div>
-          <div class="relative w-full">
-            <input type="search" id="search-dropdown" class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg border-s-gray-50 border-s-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-s-gray-700  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500" placeholder="Search..." required>
-            <button type="submit" class="absolute top-0 end-0 p-2.5 text-sm font-medium h-full text-white bg-blue-700 rounded-e-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          <div class="relative w-[15rem]">
+            <!-- Search -->
+            <input type="search" id="search-dropdown" class="block p-2.5 w-full z-20 text-sm border border-lavender text-deep-koamaru bg-lav-sant rounded-e-lg focus:ring-neon-blue focus:border-neon-blue placeholder-moody-blue transition ease-in-out duration-300" placeholder="Search...">
+            <!-- Search Button -->
+            <button type="submit" class="absolute top-0 end-0 p-2.5 px-4 text-sm font-medium h-full text-white bg-neon-blue rounded-e-md hover:bg-free-speech-blue focus:ring-4 focus:outline-none focus:ring-perano transition duration-300 ease-in-out">
               <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
               </svg>
@@ -255,224 +231,121 @@ include_once './side-nav-bar.php';
           </div>
         </div>
       </div>
-      <!-- Main table of students list -->
-      <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-        <div class="max-h-[480px] overflow-y-auto">
-          <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 sticky top-0">
-              <tr>
-                <th scope="col" class="px-6 py-3">
-                  Student name
-                </th>
-                <th scope="col" class="px-6 py-3">
-                  Student number
-                </th>
-                <th scope="col" class="px-6 py-3">
-                  Program
-                </th>
-                <th scope="col" class="px-6 py-3">
-                  Classification
-                </th>
-                <th scope="col" class="px-6 py-3">
-                  Section
-                </th>
-                <th scope="col" class="px-6 py-3">
-                  Actions
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                  Frederick C. Moreno
-                </th>
-                <td class="px-6 py-4">
-                  22-2808
-                </td>
-                <td class="px-6 py-4">
-                  BSIT
-                </td>
-                <td class="px-6 py-4">
-                  Irregular
-                </td>
-                <td class="px-6 py-4">
-                  -
-                </td>
-                <td class="flex items-center px-6 py-4">
-                  <a href="./admin-edit-student.php" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                  <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Archive</a>
-                </td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                  Lian V. Torres
-                </th>
-                <td class="px-6 py-4">
-                  22-2806
-                </td>
-                <td class="px-6 py-4">
-                  BSIT
-                </td>
-                <td class="px-6 py-4">
-                  Irregular
-                </td>
-                <td class="px-6 py-4">
-                  -
-                </td>
-                <td class="flex items-center px-6 py-4">
-                  <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                  <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Archive</a>
-                </td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                  Reanna M. Carreon
-                </th>
-                <td class="px-6 py-4">
-                  22-2879
-                </td>
-                <td class="px-6 py-4">
-                  BSIT
-                </td>
-                <td class="px-6 py-4">
-                  Irregular
-                </td>
-                <td class="px-6 py-4">
-                  -
-                </td>
-                <td class="flex items-center px-6 py-4">
-                  <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                  <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Archive</a>
-                </td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                  Frederick C. Moreno
-                </th>
-                <td class="px-6 py-4">
-                  22-2808
-                </td>
-                <td class="px-6 py-4">
-                  BSIT
-                </td>
-                <td class="px-6 py-4">
-                  Irregular
-                </td>
-                <td class="px-6 py-4">
-                  -
-                </td>
-                <td class="flex items-center px-6 py-4">
-                  <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                  <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Archive</a>
-                </td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                  Lian V. Torres
-                </th>
-                <td class="px-6 py-4">
-                  22-2806
-                </td>
-                <td class="px-6 py-4">
-                  BSIT
-                </td>
-                <td class="px-6 py-4">
-                  Irregular
-                </td>
-                <td class="px-6 py-4">
-                  -
-                </td>
-                <td class="flex items-center px-6 py-4">
-                  <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                  <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Archive</a>
-                </td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                  Reanna M. Carreon
-                </th>
-                <td class="px-6 py-4">
-                  22-2879
-                </td>
-                <td class="px-6 py-4">
-                  BSIT
-                </td>
-                <td class="px-6 py-4">
-                  Irregular
-                </td>
-                <td class="px-6 py-4">
-                  -
-                </td>
-                <td class="flex items-center px-6 py-4">
-                  <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                  <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Archive</a>
-                </td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                  Frederick C. Moreno
-                </th>
-                <td class="px-6 py-4">
-                  22-2808
-                </td>
-                <td class="px-6 py-4">
-                  BSIT
-                </td>
-                <td class="px-6 py-4">
-                  Irregular
-                </td>
-                <td class="px-6 py-4">
-                  -
-                </td>
-                <td class="flex items-center px-6 py-4">
-                  <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                  <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Archive</a>
-                </td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                  Frederick C. Moreno
-                </th>
-                <td class="px-6 py-4">
-                  22-2808
-                </td>
-                <td class="px-6 py-4">
-                  BSIT
-                </td>
-                <td class="px-6 py-4">
-                  Irregular
-                </td>
-                <td class="px-6 py-4">
-                  -
-                </td>
-                <td class="flex items-center px-6 py-4">
-                  <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                  <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Archive</a>
-                </td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                  Frederick C. Moreno
-                </th>
-                <td class="px-6 py-4">
-                  22-2808
-                </td>
-                <td class="px-6 py-4">
-                  BSIT
-                </td>
-                <td class="px-6 py-4">
-                  Irregular
-                </td>
-                <td class="px-6 py-4">
-                  -
-                </td>
-                <td class="flex items-center px-6 py-4">
-                  <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                  <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Archive</a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+      <!-- Tab Component for Enrolled and Unenrolled -->
+      <div class="mb-4">
+        <ul class="flex flex-wrap -mb-px text-sm font-medium text-center transition duration-300 ease-in-out" id="default-tab" data-tabs-toggle="tab-content" role="tablist" data-tabs-inactive-classes="text-moody-blue" data-tabs-active-classes="text-neon-blue border-neon-blue bg-ghost-lavender">
+          <li class="me-2" role="presentation">
+            <button class="inline-block px-4 py-2 hover:bg-ghost-lavender transition duration-300 ease-in-out border-b-2 rounded-t-lg" id="active-table-tab" data-tabs-target="#active" type="button" role="tab" aria-controls="active" aria-selected="false">Active</button>
+          </li>
+          <li class="me-2" role="presentation">
+            <button class="inline-block px-4 py-2 hover:bg-ghost-lavender transition duration-300 ease-in-out border-b-2 rounded-t-lg" id="inactive-table-tab" data-tabs-target="#inactive" type="button" role="tab" aria-controls="inactive" aria-selected="false">Inactive</button>
+          </li>
+        </ul>
+      </div>
+      <!-- Active Table -->
+      <div id="tab-content">
+        <div class="hidden relative overflow-x-auto sm:rounded-lg" id="active" role="tabpanel" aria-labelledby="active-table-tab">
+          <div class="max-h-[480px] overflow-y-auto">
+            <table class="w-full text-sm text-left rtl:text-right text-deep-koamaru">
+              <thead class="text-xs text-corn-flower-blue uppercase bg-ghost-lavender sticky top-0">
+                <tr>
+                  <th scope="col" class="px-6 py-3">
+                    Student name
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                    Student number
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                    Program
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                    Classification
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                    Section
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                    Actions
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-white border-b border-indigo-100">
+                  <th scope="row" class="px-6 py-4 font-medium text-deep-koamaru whitespace-nowrap">
+                    Lian V. Torres
+                  </th>
+                  <td class="px-6 py-4">
+                    22-2806
+                  </td>
+                  <td class="px-6 py-4">
+                    BSIT
+                  </td>
+                  <td class="px-6 py-4">
+                    Irregular
+                  </td>
+                  <td class="px-6 py-4">
+                    -
+                  </td>
+                  <td class="flex items-center px-6 py-4">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Archive</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Inactive Table -->
+        <div class="hidden relative overflow-x-auto sm:rounded-lg" id="inactive" role="tabpanel" aria-labelledby="inactive-table-tab">
+          <div class="max-h-[480px] overflow-y-auto">
+            <table class="w-full text-sm text-left rtl:text-right text-deep-koamaru">
+              <thead class="text-xs text-corn-flower-blue uppercase bg-ghost-lavender sticky top-0">
+                <tr>
+                  <th scope="col" class="px-6 py-3">
+                    Student name
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                    Student number
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                    Program
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                    Classification
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                    Section
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                    Actions
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-white border-b border-indigo-100">
+                  <th scope="row" class="px-6 py-4 font-medium text-deep-koamaru whitespace-nowrap">
+                    Frederick C. Moreno
+                  </th>
+                  <td class="px-6 py-4">
+                    22-2808
+                  </td>
+                  <td class="px-6 py-4">
+                    BSIT
+                  </td>
+                  <td class="px-6 py-4">
+                    Irregular
+                  </td>
+                  <td class="px-6 py-4">
+                    -
+                  </td>
+                  <td class="flex items-center px-6 py-4">
+                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                    <a href="#" class="font-medium text-red-600 dark:text-red-500 hover:underline ms-3">Archive</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
