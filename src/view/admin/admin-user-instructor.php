@@ -204,7 +204,7 @@ include_once './side-nav-bar.php';
                 <svg class="mx-auto mb-4 text-corn-flower-blue w-12 h-12" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 11V6m0 8h.01M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                 </svg>
-                <h3 class="mb-12 text-lg font-normal text-center text-deep-koamaru px-6">Are you sure you want to register and enroll the account?</h3>
+                <h3 class="mb-12 text-lg font-normal text-center text-deep-koamaru px-6">Are you sure you want to register the account?</h3>
                 <div class="gap-4 flex justify-center">
                   <button data-modal-hide="register-confirmation-modal" data-modal-target="success-modal" data-modal-toggle="success-modal" type="button" class="text-white bg-neon-blue hover:bg-free-speech-blue focus:ring-4 focus:outline-none focus:ring-perano font-medium rounded-lg text-lg font-medium inline-flex items-center px-7 py-2.5 text-center transition duration-300 ease-in-out hover:scale-105">
                     Yes
@@ -223,7 +223,7 @@ include_once './side-nav-bar.php';
                 <svg class="mx-auto mb-4 text-green-400 w-16 h-16" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 1 1 0-18c1.052 0 2.062.18 3 .512M7 9.577l3.923 3.923 8.5-8.5M17 14v6m-3-3h6" />
                 </svg>
-                <h3 class="mb-12 text-lg font-normal text-deep-koamaru text-center">Instructor account registered and enrolled successfully!</h3>
+                <h3 class="mb-12 text-lg font-normal text-deep-koamaru text-center">Instructor account registered successfully!</h3>
                 <div class="flex justify-center">
                   <button data-modal-hide="success-modal" type="button" class="text-white bg-neon-blue hover:bg-free-speech-blue focus:ring-4 focus:outline-none focus:ring-perano font-medium rounded-lg text-lg font-medium inline-flex items-center px-7 py-2.5 text-center transition duration-300 ease-in-out hover:scale-105">
                     OK
