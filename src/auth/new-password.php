@@ -29,7 +29,11 @@
         <form class="space-y-3" action="#">
           <h5 class="text-xl font-medium text-deep-koamaru mb-3">New Password</h5>
           <p class="block text-sm font-normal text-deep-koamaru pb-5">Lorem ipsum dolor sit amet, consectetur adipis.</p>
-          <!-- Email Address Input -->
+          <label for="user" class="block text-sm font-medium text-deep-koamaru">New Password</label>
+          <!-- New Password Input -->
+          <input type="text" id="first-name" class="bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-md focus:ring-neon-blue focus:border-neon-blue block w-full p-2.5 placeholder-moody-blue transition ease-in-out duration-300" placeholder="Your password" required>
+          <label for="user" class="block text-sm font-medium text-deep-koamaru pt-4">Confirm New Password</label>
+          <!-- Confirm New Password Input -->
           <input type="text" id="first-name" class="bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-md focus:ring-neon-blue focus:border-neon-blue block w-full p-2.5 placeholder-moody-blue transition ease-in-out duration-300" placeholder="Your password" required><br>
           <!-- Error Message for validation -->
           <!-- <p class="text-sm text-red-600 dark:text-red-500"><span class="font-medium">Oh, snapp!</span> Some error message.</p> -->
