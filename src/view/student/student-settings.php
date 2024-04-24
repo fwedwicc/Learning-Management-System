@@ -43,123 +43,123 @@ include_once './side-nav-bar.php';
         </div>
         <div id="tab-content" class="pb-6">
           <!-- Account Profile Tab -->
-          <div class="hidden" id="account-profile" role="tabpanel" aria-labelledby="account-profile-tab">
+          <div class="hidden space-y-5" id="account-profile" role="tabpanel" aria-labelledby="account-profile-tab">
             <h1 class="text-4xl font-bold text-corn-flower-blue mb-8">
               Account Profile
             </h1>
             <!-- Student number -->
-            <div class="grid gap-6 mb-6 md:grid-cols-8">
-              <div class="col-span-2">
-                <div class="block rounded-2xl border border-purple-blue overflow-y-auto space-y-4">
-                  <div class="px-8 py-4 flex justify-between">
-                    <span class="text-corn-flower-blue font-medium">
-                      Student Number:
-                    </span>
-                    <span class="text-deep-koamaru font-normal">12-3456</span>
-                  </div>
+            <div class="inline-flex rounded-2xl bg-white drop-shadows overflow-y-auto space-y-4">
+              <div class="px-8 py-5 flex items-center gap-5">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-24 h-24 text-corn-flower-blue">
+                  <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0 0 21.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 0 0 3.065 7.097A9.716 9.716 0 0 0 12 21.75a9.716 9.716 0 0 0 6.685-2.653Zm-12.54-1.285A7.486 7.486 0 0 1 12 15a7.486 7.486 0 0 1 5.855 2.812A8.224 8.224 0 0 1 12 20.25a8.224 8.224 0 0 1-5.855-2.438ZM15.75 9a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" clip-rule="evenodd" />
+                </svg>
+                <div class="space-y-2 text-center">
+                  <span class="text-neon-blue font-bold text-2xl bg-ghost-lavender px-3 py-1 rounded-md">12-3456</span>
+                  <span class="block text-slate-500 text-sm">Student number</span>
                 </div>
               </div>
             </div>
-            <div class="grid gap-6 mb-6 md:grid-cols-3">
-              <!-- Personal data section -->
-              <div class="col-span-1">
-                <div class="block rounded-2xl border border-purple-blue overflow-y-auto space-y-4">
-                  <span class="border-purple-blue border-b border-solid block bg-ghost-lavender flex items-center py-4 pl-7 gap-2.5">
-                    <h5 class="text-xl font-medium text-corn-flower-blue">Personal</h5>
-                  </span>
-                  <div class="px-8 pt-1 pb-7 grid grid-cols-2 gap-4">
-                    <!-- First Name -->
-                    <span class="text-corn-flower-blue font-medium col-span-1">
-                      First Name:
-                    </span>
-                    <span class="text-deep-koamaru font-normal col-span-1">Juan</span>
-                    <!-- Middle Name -->
-                    <span class="text-corn-flower-blue font-medium col-span-1">
-                      Middle Name:
-                    </span>
-                    <span class="text-deep-koamaru font-normal col-span-1">Dela</span>
+            <!-- Main Container -->
+            <div class="grid gap-6 mb-6 grid-cols-3">
+              <!-- Personal -->
+              <div class="col-start-1 col-span-4">
+                <div class="block rounded-2xl bg-white drop-shadows overflow-y-auto space-y-4 p-8">
+                  <h5 class="text-2xl font-medium text-corn-flower-blue">Personal Information</h5>
+                  <div class="grid grid-cols-5 pt-4">
+                    <!-- First -->
+                    <div class="space-y-2.5 col-span-1">
+                      <span class="block text-slate-500">First name</span>
+                      <span class="block text-deep-koamaru font-medium">Juan</span>
+                    </div>
+                    <!-- Middle Name  -->
+                    <div class="space-y-2.5 col-span-1">
+                      <span class="block text-slate-500">Middle name</span>
+                      <span class="block text-deep-koamaru font-medium">Dela</span>
+                    </div>
                     <!-- Last Name -->
-                    <span class="text-corn-flower-blue font-medium col-span-1">
-                      Last Name:
-                    </span>
-                    <span class="text-deep-koamaru font-normal col-span-1">Cruz</span>
+                    <div class="space-y-2.5 col-span-1">
+                      <span class="block text-slate-500">Last name</span>
+                      <span class="block text-deep-koamaru font-medium">Cruz</span>
+                    </div>
                     <!-- Suffix -->
-                    <span class="text-corn-flower-blue font-medium col-span-1">
-                      Suffix:
-                    </span>
-                    <span class="text-deep-koamaru font-normal col-span-1">Jr.</span>
+                    <div class="space-y-2.5 col-span-1">
+                      <span class="block text-slate-500">Suffix</span>
+                      <span class="block text-deep-koamaru font-medium">Jr.</span>
+                    </div>
                     <!-- Date of Birth -->
-                    <span class="text-corn-flower-blue font-medium col-span-1">
-                      Date of Birth:
-                    </span>
-                    <span class="text-deep-koamaru font-normal col-span-1">November 32, 2099</span>
+                    <div class="space-y-2.5 col-span-1">
+                      <span class="block text-slate-500">Date of Birth</span>
+                      <span class="block text-deep-koamaru font-medium">July 32, 2099</span>
+                    </div>
                   </div>
                 </div>
               </div>
-              <!-- Academic Data Section -->
-              <div class="col-span-1">
-                <div class="block rounded-2xl border border-purple-blue overflow-y-auto space-y-4 h-full">
-                  <span class="border-purple-blue border-b border-solid block bg-ghost-lavender flex items-center py-4 pl-7 gap-2.5">
-                    <h5 class="text-xl font-medium text-corn-flower-blue">Academic</h5>
-                  </span>
-                  <div class="px-8 pt-1 pb-7 grid grid-cols-2 gap-4">
+              <!-- Academic -->
+              <div class="col-start-1 col-span-4">
+                <div class="block rounded-2xl bg-white drop-shadows overflow-y-auto space-y-4 p-8">
+                  <h5 class="text-2xl font-medium text-corn-flower-blue">Academic Information</h5>
+                  <div class="grid grid-cols-5 pt-4">
                     <!-- Program -->
-                    <span class="text-corn-flower-blue font-medium col-span-1">
-                      Program:
-                    </span>
-                    <span class="text-deep-koamaru font-normal col-span-1">BSIT</span>
-                    <!-- Year Level -->
-                    <span class="text-corn-flower-blue font-medium col-span-1">
-                      Year Level:
-                    </span>
-                    <span class="text-deep-koamaru font-normal col-span-1">1st Year</span>
+                    <div class="space-y-2.5 col-span-1">
+                      <span class="block text-slate-500">Program</span>
+                      <span class="block text-deep-koamaru font-medium">BSIT</span>
+                    </div>
+                    <!-- Year Level  -->
+                    <div class="space-y-2.5 col-span-1">
+                      <span class="block text-slate-500">Year Level</span>
+                      <span class="block text-deep-koamaru font-medium">1st Year</span>
+                    </div>
                     <!-- Classification -->
-                    <span class="text-corn-flower-blue font-medium col-span-1">
-                      Classification:
-                    </span>
-                    <span class="text-deep-koamaru font-normal col-span-1">Regular</span>
+                    <div class="space-y-2.5 col-span-1">
+                      <span class="block text-slate-500">Classification</span>
+                      <span class="block text-deep-koamaru font-medium">Regular</span>
+                    </div>
                     <!-- Section -->
-                    <span class="text-corn-flower-blue font-medium col-span-1">
-                      Section:
-                    </span>
-                    <span class="text-deep-koamaru font-normal col-span-1">SBIT-1A</span>
+                    <div class="space-y-2.5 col-span-1">
+                      <span class="block text-slate-500">Section</span>
+                      <span class="block text-deep-koamaru font-medium">SBIT-1A</span>
+                    </div>
                   </div>
                 </div>
               </div>
-              <!-- Account data section -->
-              <div class="col-span-1">
-                <div class="block rounded-2xl border border-purple-blue overflow-y-auto space-y-4 h-full">
-                  <span class="border-purple-blue border-b border-solid block bg-ghost-lavender flex items-center py-4 pl-7 gap-2.5">
-                    <h5 class="text-xl font-medium text-corn-flower-blue">Account</h5>
-                  </span>
-                  <div class="px-8 pt-1 pb-7 grid grid-cols-2 gap-4">
+              <!-- Account -->
+              <div class="col-start-1 col-span-4">
+                <div class="block rounded-2xl bg-white drop-shadows overflow-y-auto space-y-4 p-8">
+                  <h5 class="text-2xl font-medium text-corn-flower-blue">Account Information</h5>
+                  <div class="grid grid-cols-5 pt-4">
                     <!-- Email Address -->
-                    <span class="text-corn-flower-blue font-medium col-span-1">
-                      Email Address:
-                    </span>
-                    <span class="text-deep-koamaru font-normal col-span-1 truncate">juan.dela.cruz@gmail.com</span>
-                    <!-- Username -->
-                    <span class="text-corn-flower-blue font-medium col-span-1">
-                      Username:
-                    </span>
-                    <span class="text-deep-koamaru font-normal col-span-1">juandelacruz123</span>
+                    <div class="space-y-2.5 col-span-1">
+                      <span class="block text-slate-500">Email Address</span>
+                      <span class="block text-deep-koamaru font-medium">juan.dela.cruz@gmail.com</span>
+                    </div>
+                    <!-- Username  -->
+                    <div class="space-y-2.5 col-span-1">
+                      <span class="block text-slate-500">Username</span>
+                      <span class="block text-deep-koamaru font-medium">juandelacruz123</span>
+                    </div>
                     <!-- Temporary Password -->
-                    <span class="text-corn-flower-blue font-medium col-span-1">
-                      Temporary Password:
-                    </span>
-                    <span class="text-deep-koamaru font-normal col-span-1">juanpanot</span>
+                    <div class="space-y-2.5 col-span-1">
+                      <span class="block text-slate-500">Temporary Password</span>
+                      <span class="block text-deep-koamaru font-medium">juanpanot123</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <!-- Change Username Tab -->
-          <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="change-username" role="tabpanel" aria-labelledby="change-username-tab">
-            <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Change username tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+          <div class="hidden p-4" id="change-username" role="tabpanel" aria-labelledby="change-username-tab">
+            <!-- Current Password card -->
+            <div class="w-1/2 m-auto">
+              <?php
+              include 'settings-current-pass.php';
+              ?>
+            </div>
           </div>
           <!-- Change Password Tab -->
           <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="change-password" role="tabpanel" aria-labelledby="change-password-tab">
             <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Change password tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+            <!-- <button class="w-full text-white bg-neon-blue hover:bg-free-speech-blue focus:ring-4 focus:outline-none focus:ring-perano font-medium rounded-md text-sm px-5 py-2.5 text-center transition ease-in-out duration-300 hover:scale-105">Start Quiz</button> -->
           </div>
           <!-- Change Email Address Tab -->
           <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="change-email" role="tabpanel" aria-labelledby="change-email-tab">
