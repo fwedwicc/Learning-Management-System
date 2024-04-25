@@ -63,7 +63,7 @@ include_once './side-nav-bar.php';
             <div class="grid gap-6 mb-6 grid-cols-3">
               <!-- Personal -->
               <div class="col-start-1 col-span-4">
-                <div class="block rounded-2xl bg-white drop-shadows overflow-y-auto space-y-4 p-8">
+                <div class="block rounded-2xl bg-white shadow-[10px_10px_30px_-16px_rgba(224,227,246)] overflow-y-auto space-y-4 p-8">
                   <h5 class="text-2xl font-medium text-corn-flower-blue">Personal Information</h5>
                   <div class="grid grid-cols-5 pt-4">
                     <!-- First -->
@@ -96,7 +96,7 @@ include_once './side-nav-bar.php';
               </div>
               <!-- Academic -->
               <div class="col-start-1 col-span-4">
-                <div class="block rounded-2xl bg-white drop-shadows overflow-y-auto space-y-4 p-8">
+                <div class="block rounded-2xl bg-white shadow-[10px_10px_30px_-16px_rgba(224,227,246)] overflow-y-auto space-y-4 p-8">
                   <h5 class="text-2xl font-medium text-corn-flower-blue">Academic Information</h5>
                   <div class="grid grid-cols-5 pt-4">
                     <!-- Program -->
@@ -124,7 +124,7 @@ include_once './side-nav-bar.php';
               </div>
               <!-- Account -->
               <div class="col-start-1 col-span-4">
-                <div class="block rounded-2xl bg-white drop-shadows overflow-y-auto space-y-4 p-8">
+                <div class="block rounded-2xl bg-white shadow-[10px_10px_30px_-16px_rgba(224,227,246)] overflow-y-auto space-y-4 p-8">
                   <h5 class="text-2xl font-medium text-corn-flower-blue">Account Information</h5>
                   <div class="grid grid-cols-5 pt-4">
                     <!-- Email Address -->
@@ -147,6 +147,7 @@ include_once './side-nav-bar.php';
               </div>
             </div>
           </div>
+          <!-- // Account Profile -->
           <!-- Change Username Tab -->
           <div class="hidden p-4" id="change-username" role="tabpanel" aria-labelledby="change-username-tab">
             <!-- Current Password card -->
@@ -156,6 +157,7 @@ include_once './side-nav-bar.php';
               ?>
             </div>
           </div>
+          <!-- // Change Username Tab -->
           <!-- Change Password Tab -->
           <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="change-password" role="tabpanel" aria-labelledby="change-password-tab">
             <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Change password tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
