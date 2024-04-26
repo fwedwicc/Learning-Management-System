@@ -150,22 +150,77 @@ include_once './side-nav-bar.php';
           <!-- // Account Profile -->
           <!-- Change Username Tab -->
           <div class="hidden p-4" id="change-username" role="tabpanel" aria-labelledby="change-username-tab">
-            <!-- Current Password card -->
             <div class="w-1/2 m-auto">
-              <?php
-              include 'settings-current-pass.php';
-              ?>
+              <!-- Change Username -->
+              <div class="flex flex-col justify-center items-center">
+                <div class="w-full max-w-sm p-4 bg-white rounded-2xl drop-shadows sm:p-6 md:p-8">
+                  <form class="space-y-3" action="#">
+                    <h5 class="text-xl font-medium text-deep-koamaru mb-3">Change Username</h5>
+                    <p class="block text-sm font-normal text-deep-koamaru pb-5">Lorem ipsum dolor sit amet, consectetur adipis.</p>
+                    <label for="user" class="block text-sm font-medium text-deep-koamaru">Current Password</label>
+                    <!-- Current Password Input -->
+                    <input type="text" id="" class="bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-md focus:ring-neon-blue focus:border-neon-blue block w-full p-2.5 placeholder-moody-blue transition ease-in-out duration-300" placeholder="Your current password" required>
+                    <label for="user" class="block text-sm font-medium text-deep-koamaru pt-4">New Username</label>
+                    <!-- New Username -->
+                    <input type="text" id="" class="bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-md focus:ring-neon-blue focus:border-neon-blue block w-full p-2.5 placeholder-moody-blue transition ease-in-out duration-300" placeholder="New username" required><br>
+                    <!-- Error Message for validation -->
+                    <!-- <p class="text-sm text-red-600 dark:text-red-500"><span class="font-medium">Oh, snapp!</span> Some error message.</p> -->
+                    <!-- Submit Button -->
+                    <button type="submit" class="w-full text-white bg-neon-blue hover:bg-free-speech-blue focus:ring-4 focus:outline-none focus:ring-perano font-medium rounded-md text-sm px-5 py-2.5 text-center transition ease-in-out duration-300 hover:scale-105">Submit</button>
+                  </form>
+                </div>
+              </div>
+              <!-- // Change Username -->
             </div>
           </div>
           <!-- // Change Username Tab -->
           <!-- Change Password Tab -->
-          <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="change-password" role="tabpanel" aria-labelledby="change-password-tab">
-            <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Change password tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
-            <!-- <button class="w-full text-white bg-neon-blue hover:bg-free-speech-blue focus:ring-4 focus:outline-none focus:ring-perano font-medium rounded-md text-sm px-5 py-2.5 text-center transition ease-in-out duration-300 hover:scale-105">Start Quiz</button> -->
+          <div class="hidden p-4" id="change-password" role="tabpanel" aria-labelledby="change-password-tab">
+            <div class="w-1/2 m-auto">
+              <!-- Change Password -->
+              <div class="flex flex-col justify-center items-center">
+                <div class="w-full max-w-sm p-4 bg-white rounded-2xl drop-shadows sm:p-6 md:p-8">
+                  <form class="space-y-3" action="#">
+                    <h5 class="text-xl font-medium text-deep-koamaru mb-3">Change Password</h5>
+                    <p class="block text-sm font-normal text-deep-koamaru pb-5">Lorem ipsum dolor sit amet, consectetur adipis.</p>
+                    <label for="user" class="block text-sm font-medium text-deep-koamaru">Current Password</label>
+                    <!-- Current Password Input -->
+                    <input type="text" id="" class="bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-md focus:ring-neon-blue focus:border-neon-blue block w-full p-2.5 placeholder-moody-blue transition ease-in-out duration-300" placeholder="Your current password" required>
+                    <label for="user" class="block text-sm font-medium text-deep-koamaru pt-4">New Password</label>
+                    <!-- New Password -->
+                    <input type="text" id="" class="bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-md focus:ring-neon-blue focus:border-neon-blue block w-full p-2.5 placeholder-moody-blue transition ease-in-out duration-300" placeholder="New Password" required><br>
+                    <!-- Error Message for validation -->
+                    <!-- <p class="text-sm text-red-600 dark:text-red-500"><span class="font-medium">Oh, snapp!</span> Some error message.</p> -->
+                    <!-- Submit Button -->
+                    <button type="submit" class="w-full text-white bg-neon-blue hover:bg-free-speech-blue focus:ring-4 focus:outline-none focus:ring-perano font-medium rounded-md text-sm px-5 py-2.5 text-center transition ease-in-out duration-300 hover:scale-105">Submit</button>
+                  </form>
+                </div>
+              </div>
+              <!-- // Change Password -->
+            </div>
           </div>
           <!-- Change Email Address Tab -->
-          <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="change-email" role="tabpanel" aria-labelledby="change-email-tab">
-            <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Change email address tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+          <div class="hidden p-4" id="change-email" role="tabpanel" aria-labelledby="change-email-tab">
+            <!-- Change Email Address -->
+            <div class="flex flex-col justify-center items-center">
+              <div class="w-full max-w-sm p-4 bg-white rounded-2xl drop-shadows sm:p-6 md:p-8">
+                <form class="space-y-3" action="#">
+                  <h5 class="text-xl font-medium text-deep-koamaru mb-3">Change Email Address</h5>
+                  <p class="block text-sm font-normal text-deep-koamaru pb-5">Lorem ipsum dolor sit amet, consectetur adipis.</p>
+                  <label for="user" class="block text-sm font-medium text-deep-koamaru">Current Password</label>
+                  <!-- Current Password Input -->
+                  <input type="text" id="" class="bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-md focus:ring-neon-blue focus:border-neon-blue block w-full p-2.5 placeholder-moody-blue transition ease-in-out duration-300" placeholder="Your current password" required>
+                  <label for="user" class="block text-sm font-medium text-deep-koamaru pt-4">New Email Address</label>
+                  <!-- New Email Address -->
+                  <input type="text" id="" class="bg-ghost-white border border-lavender text-deep-koamaru text-sm rounded-md focus:ring-neon-blue focus:border-neon-blue block w-full p-2.5 placeholder-moody-blue transition ease-in-out duration-300" placeholder="New email address" required><br>
+                  <!-- Error Message for validation -->
+                  <!-- <p class="text-sm text-red-600 dark:text-red-500"><span class="font-medium">Oh, snapp!</span> Some error message.</p> -->
+                  <!-- Submit Button -->
+                  <button type="submit" class="w-full text-white bg-neon-blue hover:bg-free-speech-blue focus:ring-4 focus:outline-none focus:ring-perano font-medium rounded-md text-sm px-5 py-2.5 text-center transition ease-in-out duration-300 hover:scale-105">Submit</button>
+                </form>
+              </div>
+            </div>
+            <!-- // Change Email Address -->
           </div>
         </div>
       </div>
