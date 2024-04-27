@@ -15,14 +15,15 @@
   <!-- Css link -->
   <link rel="stylesheet" href="../../../assets/style.css">
 </head>
-<!-- Student side/navigation bar -->
+<!-- Admin side/navigation bar -->
 <?php
 include_once './side-nav-bar.php';
 ?>
 
 <body class="bg-ghost-white">
-  <div class="p-4 sm:ml-64 h-screen flex flex-col border border-solid border-black">
-    <div class="pt-4 px-5 mt-14 flex-grow flex flex-col">
+  <div class="p-4 sm:ml-64">
+    <div class="pt-4 px-5 rounded-2xl mt-14">
+      <!-- Title -->
       <div class="flex items-center justify-start">
         <span class="gap-4 inline-flex justify-center items-center">
           <h1 class="font-bold text-4xl text-corn-flower-blue">BSIT | <span>Software Engineering</span></h1>
@@ -31,6 +32,7 @@ include_once './side-nav-bar.php';
           </span>
         </span>
       </div>
+      <!-- Add Content Button -->
       <div class="flex justify-end">
         <button class="inline-flex gap-1 items-center justify-center pl-3 pr-4 py-2 bg-neon-blue text-white font-medium cursor-pointer transition ease-in-out duration-300 hover:scale-105 rounded-md hover:bg-free-speech-blue focus:ring-4 focus:outline-none focus:ring-perano mt-12">
           <svg class="w-5 h-5 mr-1 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -39,13 +41,11 @@ include_once './side-nav-bar.php';
           Add Content
         </button>
       </div>
-      <!-- Main Content -->
-      <div class="flex items-center justify-center flex-grow overflow-y-auto">
-        <div class="bg-indigo-100 p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium facilis nam expedita ullam quos voluptate alias quod obcaecati dolor, repellat maxime sequi deserunt perferendis, asperiores quas reiciendis tempore blanditiis itaque? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum autem dolore voluptas iste nam ratione aliquid eligendi alias omnis, cupiditate veniam illum sunt saepe nihil sapiente cumque odit ad recusandae. Lorrem   Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nobis reiciendis atque. Reprehenderit accusantium doloremque aspernatur eos esse repellendus, cumque optio facilis nemo reiciendis, veniam et illum delectus dolor praesentium. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, rerum? Vero ad aperiam aliquid consequatur quod voluptatem. Quam ut perferendis, error minus provident nulla eos distinctio consequuntur corporis laborum minima.lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui atque incidunt autem, nemo perferendis corporis consequuntur hic? Unde maiores veniam possimus rem laudantium quam, nisi similique recusandae porro excepturi aspernatur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium facilis nam expedita ullam quos voluptate alias quod obcaecati dolor, repellat maxime sequi deserunt perferendis, asperiores quas reiciendis tempore blanditiis itaque? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum autem dolore voluptas iste nam ratione aliquid eligendi alias omnis, cupiditate veniam illum sunt saepe nihil sapiente cumque odit ad recusandae. Lorrem   Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nobis reiciendis atque. Reprehenderit accusantium doloremque aspernatur eos esse repellendus, cumque optio facilis nemo reiciendis, veniam et illum delectus dolor praesentium. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, rerum? Vero ad aperiam aliquid consequatur quod voluptatem. Quam ut perferendis, error minus provident nulla eos distinctio consequuntur corporis laborum minima.lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui atque incidunt autem, nemo perferendis corporis consequuntur hic? Unde maiores veniam possimus rem laudantium quam, nisi similique recusandae porro excepturi aspernatur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium facilis nam expedita ullam quos voluptate alias quod obcaecati dolor, repellat maxime sequi deserunt perferendis, asperiores quas reiciendis tempore blanditiis itaque? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum autem dolore voluptas iste nam ratione aliquid eligendi alias omnis, cupiditate veniam illum sunt saepe nihil sapiente cumque odit ad recusandae. Lorrem   Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nobis reiciendis atque. Reprehenderit accusantium doloremque aspernatur eos esse repellendus, cumque optio facilis nemo reiciendis, veniam et illum delectus dolor praesentium. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, rerum? Vero ad aperiam aliquid consequatur quod voluptatem. Quam ut perferendis, error minus provident nulla eos distinctio consequuntur corporis laborum minima.lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui atque incidunt autem, nemo perferendis corporis consequuntur hic? Unde maiores veniam possimus rem laudantium quam, nisi similique recusandae porro excepturi aspernatur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium facilis nam expedita ullam quos voluptate alias quod obcaecati dolor, repellat maxime sequi deserunt perferendis, asperiores quas reiciendis tempore blanditiis itaque? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum autem dolore voluptas iste nam ratione aliquid eligendi alias omnis, cupiditate veniam illum sunt saepe nihil sapiente cumque odit ad recusandae. Lorrem   Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nobis reiciendis atque. Reprehenderit accusantium doloremque aspernatur eos esse repellendus, cumque optio facilis nemo reiciendis, veniam et illum delectus dolor praesentium. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, rerum? Vero ad aperiam aliquid consequatur quod voluptatem. Quam ut perferendis, error minus provident nulla eos distinctio consequuntur corporis laborum minima.lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui atque incidunt autem, nemo perferendis corporis consequuntur hic? Unde maiores veniam possimus rem laudantium quam, nisi similique recusandae porro excepturi aspernatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium facilis nam expedita ullam quos voluptate alias quod obcaecati dolor, repellat maxime sequi deserunt perferendis, asperiores quas reiciendis tempore blanditiis itaque? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum autem dolore voluptas iste nam ratione aliquid eligendi alias omnis, cupiditate veniam illum sunt saepe nihil sapiente cumque odit ad recusandae. Lorrem   Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nobis reiciendis atque. Reprehenderit accusantium doloremque aspernatur eos esse repellendus, cumque optio facilis nemo reiciendis, veniam et illum delectus dolor praesentium. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, rerum? Vero ad aperiam aliquid consequatur quod voluptatem. Quam ut perferendis, error minus provident nulla eos distinctio consequuntur corporis laborum minima.lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui atque incidunt autem, nemo perferendis corporis consequuntur hic? Unde maiores veniam possimus rem laudantium quam, nisi similique recusandae porro excepturi aspernatur.
-        
+      <!-- Main content -->
+      <div class="flex items-center justify-center flex-grow border border-black border-solid mt-8">
+        <div class="grid grid-cols-8">
+          <div class="col-span-2 bg-white p-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nulla iusto corrupti, deleniti est facere reiciendis tempore qui tenetur voluptates amet voluptatibus tempora voluptas soluta fuga ducimus exercitationem illo quisquam?</div>
+          <div class="col-span-6 bg-white p-6 max-h-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nostrum ipsa magni esse quidem earum saepe at eos, voluptatibus, iure assumenda natus cupiditate ea maiores, aliquam aspernatur omnis officia. Optio.</div>
         </div>
       </div>
     </div>
