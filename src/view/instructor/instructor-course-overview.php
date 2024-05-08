@@ -519,7 +519,7 @@ include_once './side-nav-bar.php';
         submitButton.classList.remove('hover:bg-ghost-lavender', 'text-neon-blue', 'cursor-pointer', 'bg-neon-blue', 'hover:bg-free-speech-blue');
       } else {
         submitButton.disabled = false;
-        submitButton.classList.add('hover:bg-ghost-lavender', 'text-white', 'cursor-pointer', 'bg-neon-blue', 'hover:bg-free-speech-blue');
+        submitButton.classList.add('text-white', 'cursor-pointer', 'bg-neon-blue', 'hover:bg-free-speech-blue');
         submitButton.classList.remove('text-witty-blue', 'cursor-not-allowed');
       }
     });
