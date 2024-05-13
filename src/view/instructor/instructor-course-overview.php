@@ -29,7 +29,12 @@ include_once './side-nav-bar.php';
         <h2 id="accordion-color-heading-1">
           <div class="flex justify-between items-center w-full border border-b-0 border-purple-blue rounded-t-xl">
             <button type="button" class="w-full inline-flex justify-between items-center rounded-r-xl rounded-tl-xl p-5 font-medium rtl:text-right text-deep-koamaru focus:ring-4 focus:ring-lavender-blue hover:bg-ghost-lavender transition duration-300 ease-in-out gap-3" data-accordion-target="#accordion-color-body-1" aria-expanded="true" aria-controls="accordion-color-body-1">
-              <span>Week 1 - Course Orientation</span>
+              <div class="flex items-center justify-center gap-4">
+                <span>Week 1 - Course Orientation</span>
+                <span class="inline-flex items-center bg-ghost-lavender text-neon-blue text-sm font-medium px-4 py-2 rounded-full">
+                  Unlocked
+                </span>
+              </div>
               <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
               </svg>
@@ -100,7 +105,12 @@ include_once './side-nav-bar.php';
         <h2 id="accordion-color-heading-2">
           <div class="flex justify-between items-center w-full border border-b-0 border-purple-blue">
             <button type="button" class="w-full inline-flex justify-between items-center rounded-r-xl p-5 font-medium rtl:text-right text-deep-koamaru focus:ring-4 focus:ring-lavender-blue hover:bg-ghost-lavender transition duration-300 ease-in-out gap-3" data-accordion-target="#accordion-color-body-2" aria-expanded="false" aria-controls="accordion-color-body-2">
-              <span>Week 2 & 3 - Web Basics Terminologies & Hypertext Markup Language</span>
+              <div class="flex items-center justify-center gap-4">
+                <span>Week 2 & 3 - Web Basics Terminologies & Hypertext Markup Language</span>
+                <span class="inline-flex items-center bg-ghost-lavender text-neon-blue text-sm font-medium px-4 py-2 rounded-full">
+                  Unlocked
+                </span>
+              </div>
               <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
               </svg>
@@ -193,7 +203,12 @@ include_once './side-nav-bar.php';
         <h2 id="accordion-color-heading-3">
           <div class="flex justify-between items-center w-full border border-b-0 border-purple-blue">
             <button type="button" class="w-full inline-flex justify-between items-center rounded-r-xl p-5 font-medium rtl:text-right text-deep-koamaru focus:ring-4 focus:ring-lavender-blue hover:bg-ghost-lavender transition duration-300 ease-in-out gap-3" data-accordion-target="#accordion-color-body-3" aria-expanded="false" aria-controls="accordion-color-body-3">
-              <span>Week 4 - Cascading Style Sheet</span>
+              <div class="flex items-center justify-center gap-4">
+                <span>Week 4 - Cascading Style Sheet</span>
+                <span class="inline-flex items-center bg-ghost-lavender text-neon-blue text-sm font-medium px-4 py-2 rounded-full">
+                  Locked
+                </span>
+              </div>
               <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
               </svg>
@@ -278,7 +293,12 @@ include_once './side-nav-bar.php';
         <h2 id="accordion-color-heading-4">
           <div class="flex justify-between items-center w-full border border-b-0 border-purple-blue">
             <button type="button" class="w-full inline-flex justify-between items-center rounded-r-xl p-5 font-medium rtl:text-right text-deep-koamaru focus:ring-4 focus:ring-lavender-blue hover:bg-ghost-lavender transition duration-300 ease-in-out gap-3" data-accordion-target="#accordion-color-body-4" aria-expanded="false" aria-controls="accordion-color-body-4">
-              <span>Week 5 & 6 - Intorduction to JavaScript</span>
+              <div class="flex items-center justify-center gap-4">
+                <span>Week 5 & 6 - Intorduction to JavaScript</span>
+                <span class="inline-flex items-center bg-ghost-lavender text-neon-blue text-sm font-medium px-4 py-2 rounded-full">
+                  Locked
+                </span>
+              </div>
               <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
               </svg>
@@ -364,7 +384,12 @@ include_once './side-nav-bar.php';
         <h2 id="accordion-color-heading-5">
           <div class="flex justify-between items-center w-full border border-b-1 border-purple-blue">
             <button type="button" class="w-full inline-flex justify-between items-center rounded-r-xl p-5 font-medium rtl:text-right text-deep-koamaru focus:ring-4 focus:ring-lavender-blue hover:bg-ghost-lavender transition duration-300 ease-in-out gap-3" data-accordion-target="#accordion-color-body-5" aria-expanded="false" aria-controls="accordion-color-body-5">
-              <span>Week 7 - Hypertext Preprocessor</span>
+              <div class="flex items-center justify-center gap-4">
+                <span>Week 7 - Hypertext Preprocessor</span>
+                <span class="inline-flex items-center bg-ghost-lavender text-neon-blue text-sm font-medium px-4 py-2 rounded-full">
+                  Locked
+                </span>
+              </div>
               <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5" />
               </svg>
